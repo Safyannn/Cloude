@@ -163,10 +163,20 @@ header{
   position:relative;
   min-height:88vh;
   display:flex;align-items:center;
-  background:
-    linear-gradient(180deg, rgba(17,17,17,.55) 0%, rgba(17,17,17,.86) 100%),
-    repeating-linear-gradient(45deg, #1c1c1c 0 2px, #171717 2px 40px);
+  background:repeating-linear-gradient(45deg, #1c1c1c 0 2px, #171717 2px 40px);
+  overflow:hidden;
 }
+.hero-bg{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;
+  z-index:0;
+}
+.hero-media::before{
+  content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg, rgba(17,17,17,.55) 0%, rgba(17,17,17,.88) 100%);
+}
+.hero-inner{position:relative;z-index:2;}
 .hero-inner{max-width:var(--maxw);margin:0 auto;padding:120px 32px 100px;width:100%;}
 .hero-tag{
   display:inline-flex;align-items:center;gap:10px;
@@ -194,24 +204,31 @@ header{
 .hero-strip .stat b{display:block;font-size:2rem;font-weight:700;color:var(--white);}
 .hero-strip .stat span{font-size:.82rem;color:rgba(255,255,255,.55);letter-spacing:.04em;text-transform:uppercase;}
 
-/* Image placeholders */
+/* Photo blocks */
 .imgph{
   background:var(--light);
   border:1px solid var(--border);
   border-radius:var(--radius-md);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:14px;
-  color:var(--gray);
   position:relative;
   overflow:hidden;
   min-height:260px;
 }
-.imgph::before{
-  content:"";position:absolute;inset:0;
-  background:repeating-linear-gradient(135deg, rgba(17,17,17,.035) 0 2px, transparent 2px 26px);
+.imgph img{
+  width:100%;height:100%;
+  min-height:260px;
+  object-fit:cover;
+  display:block;
 }
-.imgph svg{width:42px;height:42px;color:var(--red);opacity:.55;position:relative;}
-.imgph span{font-size:.82rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--gray);position:relative;}
+.imgph .cap{
+  position:absolute;left:18px;bottom:18px;z-index:2;
+  display:inline-flex;align-items:center;gap:10px;
+  background:rgba(17,17,17,.72);
+  backdrop-filter:blur(4px);
+  padding:10px 18px;
+  border-radius:100px;
+}
+.imgph .cap svg{width:16px;height:16px;stroke:var(--red);fill:none;stroke-width:1.6;}
+.imgph .cap span{font-size:.74rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--white);}
 
 /* Why section */
 .why{background:var(--white);}
@@ -489,19 +506,20 @@ footer{background:var(--dark);color:rgba(255,255,255,.55);border-top:1px solid r
       <a href="#fabrics">Fabrics</a>
       <a href="#faq">FAQ</a>
     </div>
-    <a href="#quote" class="btn btn-primary">Request Quote</a>
+    <a href="https://blackforgex.com/contact" class="btn btn-primary">Request Quote</a>
   </nav>
 </header>
 
 <!-- ========================= 1. HERO ========================= -->
 <section class="hero">
   <div class="hero-media">
+    <img class="hero-bg" src="images/hero-factory.jpg" alt="BLACKFORGEX screen printing factory floor in Sialkot, Pakistan">
     <div class="hero-inner">
       <span class="hero-tag"><i></i>OEM &nbsp;·&nbsp; ODM &nbsp;·&nbsp; Private Label Manufacturing</span>
       <h1>Premium Screen Printing Services<br>For Modern Apparel Brands</h1>
       <p class="lead">BLACKFORGEX builds screen-printed apparel programs for streetwear, sportswear, outdoor and private label brands — engineered inside our own Sialkot factory and shipped to partners in more than 40 countries.</p>
       <div class="btn-row">
-        <a href="#quote" class="btn btn-primary">Request Manufacturing Quote</a>
+        <a href="https://blackforgex.com/contact" class="btn btn-primary">Request Manufacturing Quote</a>
         <a href="#techniques" class="btn btn-outline-light">View Printing Services</a>
       </div>
       <div class="hero-strip">
@@ -520,8 +538,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.55);border-top:1px solid r
     <div class="why-grid">
       <div class="why-media">
         <div class="imgph" style="min-height:520px;">
-          <svg viewBox="0 0 24 24"><use href="#i-shirt"/></svg>
-          <span>Factory Image</span>
+          <img src="images/why-blackforgex-factory.jpg" alt="Production floor inside the BLACKFORGEX apparel factory" style="min-height:520px;">
+          <span class="cap"><svg viewBox="0 0 24 24"><use href="#i-shirt"/></svg><span>Factory Image</span></span>
         </div>
       </div>
       <div class="why-copy">
@@ -757,12 +775,12 @@ footer{background:var(--dark);color:rgba(255,255,255,.55);border-top:1px solid r
       <p>A look at the equipment, teams and checkpoints behind every BLACKFORGEX order.</p>
     </div>
     <div class="gallery-grid">
-      <div class="imgph"><svg viewBox="0 0 24 24"><use href="#i-shirt"/></svg><span>Factory Floor</span></div>
-      <div class="imgph"><svg viewBox="0 0 24 24"><use href="#i-circuit"/></svg><span>Printing Machine</span></div>
-      <div class="imgph"><svg viewBox="0 0 24 24"><use href="#i-palette"/></svg><span>Pantone Matching</span></div>
-      <div class="imgph"><svg viewBox="0 0 24 24"><use href="#i-camera"/></svg><span>Print Inspection</span></div>
-      <div class="imgph"><svg viewBox="0 0 24 24"><use href="#i-drop"/></svg><span>Ink Mixing Lab</span></div>
-      <div class="imgph"><svg viewBox="0 0 24 24"><use href="#i-box"/></svg><span>Finished Garments</span></div>
+      <div class="imgph"><img src="images/gallery-factory-floor.jpg" alt="BLACKFORGEX factory floor with screen printing press lines"><span class="cap"><svg viewBox="0 0 24 24"><use href="#i-shirt"/></svg><span>Factory Floor</span></span></div>
+      <div class="imgph"><img src="images/gallery-printing-machine.jpg" alt="Automatic screen printing machine in production"><span class="cap"><svg viewBox="0 0 24 24"><use href="#i-circuit"/></svg><span>Printing Machine</span></span></div>
+      <div class="imgph"><img src="images/gallery-pantone-matching.jpg" alt="Technician performing Pantone color matching against a swatch book"><span class="cap"><svg viewBox="0 0 24 24"><use href="#i-palette"/></svg><span>Pantone Matching</span></span></div>
+      <div class="imgph"><img src="images/gallery-print-inspection.jpg" alt="Quality inspector checking a freshly printed garment"><span class="cap"><svg viewBox="0 0 24 24"><use href="#i-camera"/></svg><span>Print Inspection</span></span></div>
+      <div class="imgph"><img src="images/gallery-ink-mixing.jpg" alt="Ink mixing lab preparing plastisol ink batches"><span class="cap"><svg viewBox="0 0 24 24"><use href="#i-drop"/></svg><span>Ink Mixing Lab</span></span></div>
+      <div class="imgph"><img src="images/gallery-finished-garments.jpg" alt="Finished garments folded and packed for shipment"><span class="cap"><svg viewBox="0 0 24 24"><use href="#i-box"/></svg><span>Finished Garments</span></span></div>
     </div>
   </div>
 </section>
@@ -806,8 +824,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.55);border-top:1px solid r
         </ul>
       </div>
       <div class="imgph" style="min-height:560px;">
-        <svg viewBox="0 0 24 24"><use href="#i-shield"/></svg>
-        <span>Quality Inspection</span>
+        <img src="images/quality-control-inspection.jpg" alt="Quality control inspector checking print registration on garments" style="min-height:560px;">
+        <span class="cap"><svg viewBox="0 0 24 24"><use href="#i-shield"/></svg><span>Quality Inspection</span></span>
       </div>
     </div>
   </div>
@@ -908,8 +926,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.55);border-top:1px solid r
     <h2>Let's put your next collection into production</h2>
     <p>Send us your artwork, fabric and target quantity — our team will respond with a full manufacturing quote within one business day.</p>
     <div class="btn-row">
-      <a href="#" class="btn btn-primary">Request Manufacturing Quote</a>
-      <a href="#" class="btn btn-outline-light">Chat On WhatsApp</a>
+      <a href="https://blackforgex.com/contact" class="btn btn-primary">Request Manufacturing Quote</a>
+      <a href="https://blackforgex.com/contact" class="btn btn-outline-light">Chat On WhatsApp</a>
     </div>
   </div>
 </section>
@@ -937,15 +955,15 @@ footer{background:var(--dark);color:rgba(255,255,255,.55);border-top:1px solid r
           <li><a href="#why">Why BlackForgeX</a></li>
           <li><a href="#process">Manufacturing Process</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="#quote">Request Quote</a></li>
+          <li><a href="https://blackforgex.com/contact">Request Quote</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
-          <li><a href="#">Sialkot, Pakistan</a></li>
-          <li><a href="#">hello@blackforgex.com</a></li>
-          <li><a href="#">WhatsApp Business</a></li>
+          <li><a href="https://blackforgex.com/contact">Sialkot, Pakistan</a></li>
+          <li><a href="https://blackforgex.com/contact">hello@blackforgex.com</a></li>
+          <li><a href="https://blackforgex.com/contact">WhatsApp Business</a></li>
         </ul>
       </div>
     </div>
