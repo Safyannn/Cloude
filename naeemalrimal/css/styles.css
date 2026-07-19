@@ -151,8 +151,11 @@ strong{color:var(--ink);font-weight:700}
   box-shadow:0 8px 30px -18px rgba(28,29,31,.4);border-block-end-color:var(--divider)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;width:100%}
 .brand{display:flex;align-items:center;gap:.7rem;flex:none}
-.brand__mark{width:44px;height:44px;flex:none;transition:width .35s var(--ease),height .35s var(--ease)}
-.shrink .brand__mark{width:38px;height:38px}
+.brand__mark{width:48px;height:48px;flex:none;border-radius:12px;background:#fff;padding:5px;
+  object-fit:contain;box-shadow:0 3px 12px -5px rgba(28,29,31,.3);
+  transition:width .35s var(--ease),height .35s var(--ease)}
+.shrink .brand__mark{width:40px;height:40px}
+.site-footer .brand__mark{box-shadow:none}
 .brand__text{display:flex;flex-direction:column;line-height:1.15}
 .brand__text b{font-family:var(--font-head);font-weight:800;font-size:1.18rem;color:var(--ink)}
 .brand__text span{font-size:.72rem;color:var(--muted);letter-spacing:.02em}
