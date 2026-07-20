@@ -279,7 +279,7 @@ body.nav-open .nav-toggle span::after{transform:rotate(-45deg);inset-block-start
   radial-gradient(50% 60% at 10% 90%, rgba(169,130,73,.35), transparent 60%)}
 #hero-sparks{position:absolute;inset:0;z-index:1;pointer-events:none;mix-blend-mode:screen}
 .hero__scrim{position:absolute;inset:0;z-index:2;background:
-  linear-gradient(90deg, rgba(20,18,16,.9) 0%, rgba(20,18,16,.6) 45%, rgba(20,18,16,.25) 100%)}
+  linear-gradient(270deg, rgba(20,18,16,.88) 0%, rgba(20,18,16,.55) 45%, rgba(20,18,16,.18) 100%)}
 .hero__inner{position:relative;z-index:3;padding-block:clamp(120px,16vh,180px) clamp(50px,8vh,90px)}
 .hero__content{max-width:660px}
 .hero .eyebrow{color:#ffb27d}
@@ -297,6 +297,41 @@ body.nav-open .nav-toggle span::after{transform:rotate(-45deg);inset-block-start
 .hero__scroll .mouse::before{content:"";position:absolute;inset-block-start:6px;inset-inline-start:50%;transform:translateX(50%);
   width:3px;height:7px;background:#fff;border-radius:2px;animation:scroll-dot 1.8s var(--ease) infinite}
 @keyframes scroll-dot{0%{opacity:0;transform:translate(50%,0)}40%{opacity:1}80%{opacity:0;transform:translate(50%,10px)}}
+
+/* ---------- Showreel — auto-scrolling image marquee ----------------------- */
+/* Pure CSS translateX loop (no JS scroll hijacking). Content is duplicated
+   once in the markup; period = 50% of track width, so margin (not flex gap)
+   spaces the items to keep the loop mathematically seamless. */
+.showreel{overflow:hidden;background:var(--bg);padding-block:clamp(1.4rem,3vw,2.4rem);
+  border-block-end:1px solid var(--divider);direction:ltr}
+.showreel__track{display:flex;width:max-content;direction:ltr;
+  animation:showreel 38s linear infinite;will-change:transform}
+.showreel:hover .showreel__track{animation-play-state:paused}
+.showreel__item{position:relative;flex:none;width:clamp(300px,34vw,480px);aspect-ratio:8/5;
+  border-radius:12px;overflow:hidden;margin-inline-end:clamp(.9rem,1.6vw,1.4rem);
+  transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+.showreel__item img{width:100%;height:100%;object-fit:cover}
+.showreel__item:hover{transform:scale(1.03);box-shadow:var(--shadow-lg);z-index:2}
+.showreel__cap{position:absolute;inset-inline:0;inset-block-end:0;z-index:1;
+  padding:2rem 1rem .65rem;direction:rtl;text-align:start;color:#fff;
+  font-family:var(--font-head);font-weight:700;font-size:.95rem;
+  background:linear-gradient(0deg,rgba(20,18,16,.8) 0%,rgba(20,18,16,.35) 55%,transparent 100%)}
+@keyframes showreel{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){
+  .showreel{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  .showreel__track{animation:none}
+}
+
+/* ---------- Social icon row (light backgrounds, e.g. contact page) -------- */
+.social-inline{display:flex;gap:.6rem;margin-block-start:1.2rem}
+.social-inline a{width:46px;height:46px;border-radius:12px;background:var(--panel);
+  border:1px solid var(--divider);display:flex;align-items:center;justify-content:center;
+  color:var(--ink);transition:.3s var(--ease)}
+.social-inline a:hover{background:var(--ember);border-color:var(--ember);color:#fff;transform:translateY(-3px)}
+.social-inline svg{width:22px;height:22px}
+
+/* ---------- Map helpers ---------------------------------------------------- */
+.map-actions{display:flex;justify-content:center;margin-block-start:1.1rem}
 
 /* ---------- Stats / counters --------------------------------------------- */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--gap)}
