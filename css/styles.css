@@ -382,6 +382,27 @@ body.nav-open .nav-toggle span::after{transform:rotate(-45deg);inset-block-start
 .breadcrumb a:hover{color:var(--ember)}
 .breadcrumb svg{width:14px;height:14px;transform:scaleX(-1)}
 
+/* ---------- Service detail pages ------------------------------------------ */
+.page-hero--photo{position:relative;color:#fff;background:var(--ink)}
+.page-hero--photo .page-hero__bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.page-hero--photo::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(0deg,rgba(20,18,16,.88) 0%,rgba(20,18,16,.45) 60%,rgba(20,18,16,.35) 100%)}
+.page-hero--photo .page-hero__inner{position:relative;z-index:2}
+.page-hero--photo h1{color:#fff}
+.page-hero--photo .breadcrumb{color:rgba(255,255,255,.75)}
+.page-hero--photo .breadcrumb a:hover{color:#ffb27d}
+.svc-detail{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,60px);align-items:start}
+.svc-detail__media{position:sticky;top:calc(var(--header-h) + 20px)}
+.svc-detail__media .media-frame{aspect-ratio:4/5;box-shadow:var(--shadow)}
+.svc-prose h2{font-size:clamp(1.4rem,2.6vw,1.9rem);margin-block:1.8rem .7rem}
+.svc-prose h2:first-child{margin-block-start:0}
+.svc-prose > p{font-size:1.04rem;line-height:1.9}
+.svc-prose .check-list li{font-weight:400}
+@media (max-width:860px){
+  .svc-detail{grid-template-columns:1fr}
+  .svc-detail__media{position:static}
+}
+
 /* ---------- Projects filter + gallery ------------------------------------ */
 .filter-bar{display:flex;flex-wrap:wrap;gap:.6rem;margin-block-end:2.4rem}
 .filter-btn{font-family:var(--font-head);font-weight:500;font-size:.94rem;color:var(--ink);
