@@ -369,6 +369,9 @@ body.nav-open .nav-toggle span::after{transform:rotate(-45deg);inset-block-start
 .cta-banner h2{color:#fff}
 .cta-banner p{color:rgba(255,255,255,.82);max-width:56ch;margin-inline:auto;margin-block:.9rem 1.8rem}
 .cta-banner__actions{display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center}
+.cta-contacts{margin-block-start:1.3rem;font-size:.92rem;color:rgba(255,255,255,.7)!important}
+.cta-contacts a{color:rgba(255,255,255,.9);font-weight:500;transition:color .3s}
+.cta-contacts a:hover{color:#ffb27d}
 
 /* ---------- Page hero (inner pages) -------------------------------------- */
 .page-hero{position:relative;padding-block:calc(var(--header-h) + clamp(46px,7vw,80px)) clamp(46px,7vw,80px);
@@ -383,7 +386,9 @@ body.nav-open .nav-toggle span::after{transform:rotate(-45deg);inset-block-start
 .breadcrumb svg{width:14px;height:14px;transform:scaleX(-1)}
 
 /* ---------- Service detail pages ------------------------------------------ */
-.page-hero--photo{position:relative;color:#fff;background:var(--ink)}
+.page-hero--photo{position:relative;color:#fff;background:var(--ink);
+  min-height:clamp(360px,44vh,540px);display:flex;align-items:flex-end;
+  padding-block:calc(var(--header-h) + 24px) clamp(36px,5vw,56px)}
 .page-hero--photo .page-hero__bg{position:absolute;inset:0;background-size:cover;background-position:center}
 .page-hero--photo::after{content:"";position:absolute;inset:0;
   background:linear-gradient(0deg,rgba(20,18,16,.88) 0%,rgba(20,18,16,.45) 60%,rgba(20,18,16,.35) 100%)}
