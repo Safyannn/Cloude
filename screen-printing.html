@@ -312,7 +312,6 @@
           <p>BlackForgeX prints for outdoor, <a href="https://blackforgex.com/products/tactical-clothing" target="_top">tactical</a>, workwear and private label apparel brands — where a print has to survive real use, not just look good on day one. Every order runs through Pantone-matched color, tested ink adhesion and inspected placement before it ships.</p>
           <div class="hero-actions">
             <a class="btn" href="https://blackforgex.com/contact" target="_top">Request a Quote</a>
-            <a class="btn-outline" href="#printing-methods">View Printing Methods</a>
           </div>
         </div>
         <div class="hero-media">
@@ -555,20 +554,6 @@
 
 <script>
   (function () {
-    // In-page anchor links: scroll manually instead of navigating, because inside
-    // an embed iframe the browser resolves "#id" against the parent site's base
-    // URL and tries to load the whole site in the iframe (refused to connect).
-    document.querySelectorAll('.bfx-page a[href^="#"]').forEach(function (link) {
-      link.addEventListener('click', function (e) {
-        var el = document.getElementById(link.getAttribute('href').slice(1));
-        if (el) {
-          e.preventDefault();
-          var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-          el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
-        }
-      });
-    });
-
     var items = document.querySelectorAll('.bfx-page .faq-item');
     items.forEach(function (item) {
       var btn = item.querySelector('.faq-question');
