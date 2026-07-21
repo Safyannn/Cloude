@@ -124,18 +124,12 @@
   .section-title { font-size: 40px; margin-bottom: 20px; }
   .section-intro { max-width: 820px; font-size: 17px; }
 
-  .img-placeholder {
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     background: var(--dark);
     color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-weight: 500;
-    font-size: 15px;
-    padding: 24px;
-    border-radius: 16px;
-    min-height: 260px;
   }
 
   /* ===== Hero ===== */
@@ -149,7 +143,12 @@
   .hero h1 { font-size: 46px; margin-bottom: 24px; }
   .hero p { font-size: 18px; margin-bottom: 36px; max-width: 580px; }
   .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
-  .hero-media .img-placeholder { min-height: 460px; }
+  .hero-media {
+    border-radius: 16px;
+    overflow: hidden;
+    height: 460px;
+    background: var(--dark);
+  }
 
   /* ===== Methods ===== */
   .methods { padding: 96px 0; background: var(--bg-light); }
@@ -171,7 +170,11 @@
     transform: translateY(-6px);
     box-shadow: 0 20px 44px rgba(17, 17, 17, 0.1);
   }
-  .method-card .img-placeholder { border-radius: 0; min-height: 210px; }
+  .method-card .method-photo {
+    height: 210px;
+    overflow: hidden;
+    background: var(--dark);
+  }
   .method-card-body {
     padding: 28px;
     display: flex;
@@ -185,6 +188,12 @@
   /* ===== Banner stripes ===== */
   .stripe { padding: 80px 0; }
   .stripe-dark { background: var(--dark); }
+  .stripe-photo-1 {
+    background: linear-gradient(rgba(17, 17, 17, 0.88), rgba(17, 17, 17, 0.88)), url('https://images.pexels.com/photos/34117503/pexels-photo-34117503.jpeg?auto=compress&cs=tinysrgb&w=1200') center/cover no-repeat var(--dark);
+  }
+  .stripe-photo-2 {
+    background: linear-gradient(rgba(17, 17, 17, 0.88), rgba(17, 17, 17, 0.88)), url('https://images.pexels.com/photos/33650433/pexels-photo-33650433.jpeg?auto=compress&cs=tinysrgb&w=1200') center/cover no-repeat var(--dark);
+  }
   .stripe-light { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
   .stripe-inner { max-width: 900px; }
   .stripe h2 { font-size: 32px; margin-bottom: 18px; }
@@ -246,7 +255,11 @@
   .faq-answer p { padding: 0 28px 24px; font-size: 15.5px; }
 
   /* ===== Final CTA ===== */
-  .final-cta { padding: 96px 0; background: var(--dark); text-align: center; }
+  .final-cta {
+    padding: 96px 0;
+    background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.9)), url('https://images.pexels.com/photos/33284506/pexels-photo-33284506.jpeg?auto=compress&cs=tinysrgb&w=1200') center/cover no-repeat var(--dark);
+    text-align: center;
+  }
   .final-cta h2 { color: var(--white); font-size: 38px; max-width: 820px; margin: 0 auto 20px; }
   .final-cta p { color: #b5b5b5; font-size: 17px; max-width: 660px; margin: 0 auto 36px; }
 
@@ -270,7 +283,7 @@
     .hero { padding: 64px 0; }
     .hero-grid { grid-template-columns: 1fr; }
     .hero h1 { font-size: 32px; }
-    .hero-media .img-placeholder { min-height: 320px; }
+    .hero-media { height: 320px; }
     .methods, .mid-cta, .seo-blocks, .faq, .final-cta { padding: 64px 0; }
     .stripe { padding: 56px 0; }
     .methods-grid { grid-template-columns: 1fr; }
@@ -302,7 +315,7 @@
           </div>
         </div>
         <div class="hero-media">
-          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Screen Printing Machine">Factory Image Placeholder — Screen Printing Machine</div>
+          <img class="photo" src="https://images.pexels.com/photos/1509308/pexels-photo-1509308.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Screen printing setup with squeegee and frame on the production table" width="1600" height="1067">
         </div>
       </div>
     </div>
@@ -317,7 +330,7 @@
       <div class="methods-grid">
 
         <div class="method-card">
-          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Plastisol Screen Printing">Factory Image Placeholder — Plastisol Screen Printing</div>
+          <div class="method-photo"><img class="photo" src="https://images.pexels.com/photos/33650424/pexels-photo-33650424.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Worker screen printing a t-shirt with plastisol ink in the workshop" loading="lazy" width="900" height="600"></div>
           <div class="method-card-body">
             <h3>Plastisol Screen Printing</h3>
             <p>Our standard, most-requested print method. Plastisol sits on top of the fabric with strong opacity, which means bold colors and clean logos show up clearly even on black or navy garments. It's durable, consistent across large runs, and the default choice for corporate branding, workwear and everyday apparel.</p>
@@ -326,7 +339,7 @@
         </div>
 
         <div class="method-card">
-          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Water-Based Screen Printing">Factory Image Placeholder — Water-Based Screen Printing</div>
+          <div class="method-photo"><img class="photo" src="https://images.pexels.com/photos/27893067/pexels-photo-27893067.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Operator running a water-based screen printing machine" loading="lazy" width="900" height="600"></div>
           <div class="method-card-body">
             <h3>Water-Based Screen Printing</h3>
             <p>Water-based ink soaks into the fibers instead of sitting on top, so the final print has almost no texture — you feel the fabric, not the ink. This is the method we recommend for performance tees and lightweight technical layers, where a soft hand-feel matters more than maximum opacity.</p>
@@ -335,7 +348,7 @@
         </div>
 
         <div class="method-card">
-          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Puff Print">Factory Image Placeholder — Puff Print</div>
+          <div class="method-photo"><img class="photo" src="https://images.pexels.com/photos/3966277/pexels-photo-3966277.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Craftsman working with a screen printing frame for raised puff prints" loading="lazy" width="900" height="600"></div>
           <div class="method-card-body">
             <h3>Puff Print</h3>
             <p>Foaming agents in the ink lift the print off the surface as it cures, creating a raised, tactile texture that catches the eye. Works best on heavier fabrics like hoodies, fleece and outerwear, where a flat print would get lost.</p>
@@ -344,7 +357,7 @@
         </div>
 
         <div class="method-card">
-          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Discharge Print">Factory Image Placeholder — Discharge Print</div>
+          <div class="method-photo"><img class="photo" src="https://images.pexels.com/photos/33650428/pexels-photo-33650428.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Worker finishing a discharge-printed garment on a heat press" loading="lazy" width="900" height="600"></div>
           <div class="method-card-body">
             <h3>Discharge Print</h3>
             <p>Instead of adding a layer of ink, discharge printing removes the garment's original dye and replaces it with color — the result is a soft, slightly faded finish with zero texture, closer to how a vintage tee looks after years of washing. Works only on cotton and cotton-heavy blends.</p>
@@ -353,7 +366,7 @@
         </div>
 
         <div class="method-card">
-          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Reflective and Safety Print">Factory Image Placeholder — Reflective &amp; Safety Print</div>
+          <div class="method-photo"><img class="photo" src="https://images.pexels.com/photos/33650427/pexels-photo-33650427.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Preparing a garment for reflective safety printing at a workshop station" loading="lazy" width="900" height="600"></div>
           <div class="method-card-body">
             <h3>Reflective &amp; Safety Print</h3>
             <p>Micro-glass beads embedded directly into the ink reflect light back at its source, making this print method genuinely functional, not just decorative. Built for tactical gear, workwear and low-visibility outdoor apparel where safety compliance actually matters — tested for durability through repeated washing.</p>
@@ -362,7 +375,7 @@
         </div>
 
         <div class="method-card">
-          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Foil Print">Factory Image Placeholder — Foil Print</div>
+          <div class="method-photo"><img class="photo" src="https://images.pexels.com/photos/32641559/pexels-photo-32641559.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Textile workshop with screen printing frames used for foil transfer accents" loading="lazy" width="900" height="600"></div>
           <div class="method-card-body">
             <h3>Foil Print</h3>
             <p>A metallic foil layer bonded to the garment under heat and pressure, used for sharp, reflective branding accents on premium or limited-run collections. A finishing touch, not a full-coverage print method.</p>
@@ -375,7 +388,7 @@
   </section>
 
   <!-- ===== SECTION 4 — BANNER STRIPE 1 ===== -->
-  <section class="stripe stripe-dark">
+  <section class="stripe stripe-dark stripe-photo-1">
     <div class="container">
       <div class="stripe-inner">
         <h2>Choosing the Right Screen Printing Manufacturer Is a Sourcing Decision, Not Just a Design One</h2>
@@ -397,7 +410,7 @@
   </section>
 
   <!-- ===== SECTION 6 — BANNER STRIPE 3 ===== -->
-  <section class="stripe stripe-dark">
+  <section class="stripe stripe-dark stripe-photo-2">
     <div class="container">
       <div class="stripe-inner">
         <h2>We Solve Placement Problems Most Manufacturers Turn Down</h2>
