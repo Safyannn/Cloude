@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Screen Printing Services | BlackForgeX</title>
+  <meta name="description" content="Custom screen printing for outdoor, tactical &amp; workwear brands. Plastisol, water-based, puff, discharge, reflective &amp; foil — Pantone-matched by BlackForgeX.">
+  <meta name="keywords" content="custom screen printing, screen printing manufacturer, plastisol printing, water-based screen printing, puff print, discharge print, reflective print, foil print, apparel printing services, screen printing Pakistan">
+</head>
+<body>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+  :root {
+    --red: #d60000;
+    --red-hover: #b80000;
+    --dark: #111111;
+    --body: #666666;
+    --white: #ffffff;
+    --bg-light: #e6e7ea;
+    --border: #ececec;
+  }
+
+  .bfx-page, .bfx-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .bfx-page {
+    background: var(--white);
+    color: var(--body);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .bfx-page img { max-width: 100%; display: block; }
+
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .bfx-page h1, .bfx-page h2 { color: var(--dark); font-weight: 700; line-height: 1.2; }
+  .bfx-page h3 { color: var(--dark); font-weight: 600; line-height: 1.3; }
+
+  .bfx-page a { color: var(--red); text-decoration: none; transition: color 0.2s ease; }
+  .bfx-page a:hover { color: var(--red-hover); }
+  .bfx-page a:focus-visible,
+  .bfx-page button:focus-visible {
+    outline: 3px solid var(--red);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  .btn {
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 16px 36px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .btn:hover {
+    background: var(--red-hover);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(214, 0, 0, 0.25);
+  }
+
+  .btn-outline {
+    display: inline-block;
+    background: transparent;
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 36px;
+    border-radius: 12px;
+    border: 2px solid var(--dark);
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+  }
+  .btn-outline:hover {
+    background: var(--dark);
+    color: var(--white);
+    transform: translateY(-2px);
+  }
+
+  .btn-outline-light {
+    display: inline-block;
+    background: transparent;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 36px;
+    border-radius: 12px;
+    border: 2px solid var(--white);
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+  }
+  .btn-outline-light:hover {
+    background: var(--white);
+    color: var(--dark);
+    transform: translateY(-2px);
+  }
+
+  .section-label {
+    display: inline-block;
+    color: var(--red);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .section-title { font-size: 40px; margin-bottom: 20px; }
+  .section-intro { max-width: 820px; font-size: 17px; }
+
+  .img-placeholder {
+    background: var(--dark);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 24px;
+    border-radius: 16px;
+    min-height: 260px;
+  }
+
+  /* ===== Hero ===== */
+  .hero { padding: 96px 0; background: var(--white); }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .hero h1 { font-size: 46px; margin-bottom: 24px; }
+  .hero p { font-size: 18px; margin-bottom: 36px; max-width: 580px; }
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .hero-media .img-placeholder { min-height: 460px; }
+
+  /* ===== Methods ===== */
+  .methods { padding: 96px 0; background: var(--bg-light); }
+  .methods-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 48px;
+  }
+  .method-card {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .method-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 44px rgba(17, 17, 17, 0.1);
+  }
+  .method-card .img-placeholder { border-radius: 0; min-height: 210px; }
+  .method-card-body {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .method-card h3 { font-size: 19px; margin-bottom: 12px; }
+  .method-card p { font-size: 14.5px; margin-bottom: 20px; flex-grow: 1; }
+  .method-card a { font-weight: 600; font-size: 14.5px; }
+
+  /* ===== Banner stripes ===== */
+  .stripe { padding: 80px 0; }
+  .stripe-dark { background: var(--dark); }
+  .stripe-light { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .stripe-inner { max-width: 900px; }
+  .stripe h2 { font-size: 32px; margin-bottom: 18px; }
+  .stripe-dark h2 { color: var(--white); }
+  .stripe p { font-size: 16.5px; margin-bottom: 30px; }
+  .stripe-dark p { color: #b5b5b5; }
+
+  /* ===== Mid CTA ===== */
+  .mid-cta { padding: 96px 0; background: var(--bg-light); text-align: center; }
+  .mid-cta h2 { font-size: 36px; max-width: 820px; margin: 0 auto 20px; }
+  .mid-cta p { font-size: 17px; max-width: 680px; margin: 0 auto 36px; }
+
+  /* ===== SEO text blocks ===== */
+  .seo-blocks { padding: 96px 0; background: var(--white); }
+  .seo-block { max-width: 900px; margin-bottom: 64px; }
+  .seo-block:last-child { margin-bottom: 0; }
+  .seo-block h2 { font-size: 30px; margin-bottom: 18px; }
+  .seo-block p { font-size: 16px; margin-bottom: 16px; }
+  .seo-block p:last-child { margin-bottom: 0; }
+
+  /* ===== FAQ ===== */
+  .faq { padding: 96px 0; background: var(--bg-light); }
+  .faq-list { max-width: 900px; margin: 48px auto 0; }
+  .faq-item {
+    background: var(--white);
+    border-radius: 14px;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16.5px;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+  }
+  .faq-question .faq-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: var(--red);
+    transition: transform 0.25s ease;
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .faq-answer p { padding: 0 28px 24px; font-size: 15.5px; }
+
+  /* ===== Final CTA ===== */
+  .final-cta { padding: 96px 0; background: var(--dark); text-align: center; }
+  .final-cta h2 { color: var(--white); font-size: 38px; max-width: 820px; margin: 0 auto 20px; }
+  .final-cta p { color: #b5b5b5; font-size: 17px; max-width: 660px; margin: 0 auto 36px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bfx-page *, .bfx-page *::before, .bfx-page *::after {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .hero h1 { font-size: 38px; }
+    .section-title { font-size: 34px; }
+    .hero-grid { gap: 40px; }
+    .methods-grid { grid-template-columns: repeat(2, 1fr); }
+    .stripe h2 { font-size: 28px; }
+  }
+
+  @media (max-width: 768px) {
+    .container { padding: 0 24px; }
+    .hero { padding: 64px 0; }
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 32px; }
+    .hero-media .img-placeholder { min-height: 320px; }
+    .methods, .mid-cta, .seo-blocks, .faq, .final-cta { padding: 64px 0; }
+    .stripe { padding: 56px 0; }
+    .methods-grid { grid-template-columns: 1fr; }
+    .mid-cta h2 { font-size: 29px; }
+    .final-cta h2 { font-size: 30px; }
+  }
+
+  @media (max-width: 520px) {
+    .hero h1 { font-size: 27px; }
+    .section-title { font-size: 26px; }
+    .stripe h2, .seo-block h2 { font-size: 23px; }
+    .btn, .btn-outline, .btn-outline-light { width: 100%; text-align: center; }
+  }
+</style>
+
+<div class="bfx-page">
+
+  <!-- ===== SECTION 1 — HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="section-label">Screen Printing Manufacturing</span>
+          <h1>Custom Screen Printing Built for Brands That Can't Afford a Bad Print Run</h1>
+          <p>BlackForgeX prints for outdoor, <a href="/products/tactical-clothing">tactical</a>, workwear and private label apparel brands — where a print has to survive real use, not just look good on day one. Every order runs through Pantone-matched color, tested ink adhesion and inspected placement before it ships.</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://blackforgex.com/contact">Request a Quote</a>
+            <a class="btn-outline" href="#printing-methods">View Printing Methods</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Screen Printing Machine">Factory Image Placeholder — Screen Printing Machine</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2 + 3 — METHODS OVERVIEW & CARDS ===== -->
+  <section class="methods" id="printing-methods">
+    <div class="container">
+      <span class="section-label">Printing Methods</span>
+      <h2 class="section-title">Six Printing Methods, Matched to What You're Actually Making</h2>
+      <p class="section-intro">Not every print method belongs on every fabric. A soft cotton tee, a laminated waterproof shell, and a heavyweight fleece hoodie each need a different ink system, cure time and pressure setting to hold up long-term. Rather than defaulting to one process for every order, we match the method to your fabric, your durability requirement and your budget — and tell you honestly when a technique isn't the right fit for what you're building.</p>
+      <div class="methods-grid">
+
+        <div class="method-card">
+          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Plastisol Screen Printing">Factory Image Placeholder — Plastisol Screen Printing</div>
+          <div class="method-card-body">
+            <h3>Plastisol Screen Printing</h3>
+            <p>Our standard, most-requested print method. Plastisol sits on top of the fabric with strong opacity, which means bold colors and clean logos show up clearly even on black or navy garments. It's durable, consistent across large runs, and the default choice for corporate branding, workwear and everyday apparel.</p>
+            <a href="https://blackforgex.com/contact">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="method-card">
+          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Water-Based Screen Printing">Factory Image Placeholder — Water-Based Screen Printing</div>
+          <div class="method-card-body">
+            <h3>Water-Based Screen Printing</h3>
+            <p>Water-based ink soaks into the fibers instead of sitting on top, so the final print has almost no texture — you feel the fabric, not the ink. This is the method we recommend for performance tees and lightweight technical layers, where a soft hand-feel matters more than maximum opacity.</p>
+            <a href="https://blackforgex.com/contact">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="method-card">
+          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Puff Print">Factory Image Placeholder — Puff Print</div>
+          <div class="method-card-body">
+            <h3>Puff Print</h3>
+            <p>Foaming agents in the ink lift the print off the surface as it cures, creating a raised, tactile texture that catches the eye. Works best on heavier fabrics like hoodies, fleece and outerwear, where a flat print would get lost.</p>
+            <a href="https://blackforgex.com/contact">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="method-card">
+          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Discharge Print">Factory Image Placeholder — Discharge Print</div>
+          <div class="method-card-body">
+            <h3>Discharge Print</h3>
+            <p>Instead of adding a layer of ink, discharge printing removes the garment's original dye and replaces it with color — the result is a soft, slightly faded finish with zero texture, closer to how a vintage tee looks after years of washing. Works only on cotton and cotton-heavy blends.</p>
+            <a href="https://blackforgex.com/contact">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="method-card">
+          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Reflective and Safety Print">Factory Image Placeholder — Reflective &amp; Safety Print</div>
+          <div class="method-card-body">
+            <h3>Reflective &amp; Safety Print</h3>
+            <p>Micro-glass beads embedded directly into the ink reflect light back at its source, making this print method genuinely functional, not just decorative. Built for tactical gear, workwear and low-visibility outdoor apparel where safety compliance actually matters — tested for durability through repeated washing.</p>
+            <a href="https://blackforgex.com/contact">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="method-card">
+          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Foil Print">Factory Image Placeholder — Foil Print</div>
+          <div class="method-card-body">
+            <h3>Foil Print</h3>
+            <p>A metallic foil layer bonded to the garment under heat and pressure, used for sharp, reflective branding accents on premium or limited-run collections. A finishing touch, not a full-coverage print method.</p>
+            <a href="https://blackforgex.com/contact">Get a Quote</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4 — BANNER STRIPE 1 ===== -->
+  <section class="stripe stripe-dark">
+    <div class="container">
+      <div class="stripe-inner">
+        <h2>Choosing the Right Screen Printing Manufacturer Is a Sourcing Decision, Not Just a Design One</h2>
+        <p>A print that looks perfect on a screen can crack, fade or misalign once it hits real production volume. We built our process around catching those problems before they reach you — sample approval, ink testing on your actual fabric, and inspection checkpoints through the run, not just at the end.</p>
+        <a class="btn" href="https://blackforgex.com/contact">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5 — BANNER STRIPE 2 ===== -->
+  <section class="stripe stripe-light">
+    <div class="container">
+      <div class="stripe-inner">
+        <h2>One Team Manages Your Order From Artwork to Shipment</h2>
+        <p>You won't get passed between departments as your order moves through production. The same merchandising contact who reviews your artwork file is the one confirming your ship date — so nothing gets lost in translation between design, production and logistics.</p>
+        <a class="btn" href="https://blackforgex.com/contact">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 6 — BANNER STRIPE 3 ===== -->
+  <section class="stripe stripe-dark">
+    <div class="container">
+      <div class="stripe-inner">
+        <h2>We Solve Placement Problems Most Manufacturers Turn Down</h2>
+        <p>Sleeve wraps, inside-neck branding, oversized back panels, multi-location runs on a single garment — these are routine requests for outdoor, tactical and streetwear brands, and routine rejections from manufacturers set up only for basic front-chest logos. We plan placement around your construction sequence, not the other way around.</p>
+        <a class="btn" href="https://blackforgex.com/contact">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7 — BANNER STRIPE 4 ===== -->
+  <section class="stripe stripe-light">
+    <div class="container">
+      <div class="stripe-inner">
+        <h2>Reach Us Directly — No Call Centers, No Ticket Queues</h2>
+        <p>Every inquiry goes to a real person who can quote, answer technical questions about fabric compatibility, and move your sample into production without a multi-day back-and-forth.</p>
+        <a class="btn" href="https://blackforgex.com/contact">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 8 — MID-PAGE CTA ===== -->
+  <section class="mid-cta">
+    <div class="container">
+      <span class="section-label">Let's Get Started</span>
+      <h2>Ready to See What Your Print Actually Looks Like on Your Fabric?</h2>
+      <p>Send your artwork file and target fabric, and we'll walk you through which printing method will actually hold up — before you commit to a full production run.</p>
+      <a class="btn" href="https://blackforgex.com/contact">Schedule a Consultation</a>
+    </div>
+  </section>
+
+  <!-- ===== SECTIONS 9–11 — SEO TEXT BLOCKS ===== -->
+  <section class="seo-blocks">
+    <div class="container">
+
+      <div class="seo-block">
+        <h2>Screen Printing Capability Built Around Technical and Outdoor Fabric</h2>
+        <p>Most screen printers are set up for cotton. BlackForgeX prints directly onto cut panels of waterproof shells, softshells, fleece and heavyweight workwear fabric — materials that need different mesh counts, ink chemistry and curing temperatures than a basic t-shirt run.</p>
+        <p>Before any order enters bulk production, we test adhesion and flex on the actual fabric you're using, not a generic substitute. That single step is why prints from BlackForgeX hold their color and shape after repeated washing and outdoor wear, instead of cracking within a season.</p>
+      </div>
+
+      <div class="seo-block">
+        <h2>A Screen Printing Partner for Brands With Non-Standard Requirements</h2>
+        <p>If you've been told "that placement isn't possible" or "we can't print on that fabric," that's usually a limitation of the printer, not the process. Reflective safety marks on tactical jackets, branding across a hood seam, multi-panel color matching on a technical softshell — we work through the construction sequence with your team to find a workable answer.</p>
+        <p>Our six core methods — plastisol, water-based, puff, discharge, reflective and foil — cover the durability, texture and finish requirements of technical apparel, <a href="/services/private-label-manufacturing">private label collections</a> and workwear programs alike, so you're not locked into whichever single method a smaller shop happens to offer.</p>
+      </div>
+
+      <div class="seo-block">
+        <h2>Consistent Print Quality From the First Unit to the Last</h2>
+        <p>Color matching, registration accuracy and cure quality are checked at set intervals throughout a production run — not only inspected at the start and the end. That's the difference between a print that's "close enough" and one that's actually consistent across a 5,000-unit order.</p>
+        <p>If your program also needs private label finishing — <a href="/services/labels-hangtags-packaging">woven labels, hangtags, folding and packaging</a> — we can bundle printing with those services under a single production timeline, so you're not coordinating separate vendors for one shipment.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq">
+    <div class="container">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Screen Printing Questions, Answered Directly</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is the minimum order quantity for screen printing?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>MOQs vary by method and garment type — plastisol and water-based generally allow lower minimums than foil or reflective printing. Share your product and target quantity and we'll confirm exact minimums.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can you match my brand's exact Pantone colors?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes. Every order is matched against Pantone reference codes and a physical strike-off sample is approved before full production begins.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you print on waterproof or laminated technical fabrics?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes — ink type, mesh count and cure settings are adjusted specifically for membranes, laminates and heavyweight blends that standard print shops aren't set up to handle.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What's the difference between plastisol and water-based printing?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Plastisol sits on top of the fabric with strong opacity and durability. Water-based ink soaks into the fibers for a softer feel, with slightly less opacity on dark garments.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can you handle prints in multiple locations on one garment?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes — chest, back, sleeve and hem prints can be planned and produced in a single coordinated run, with placement confirmed before production starts.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you support private label and OEM printing programs?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes, private label and OEM production is core to our business, including custom labels, hangtags and packaging alongside printing.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can you print reflective designs for tactical or workwear brands?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes. Our reflective printing is tested for wash durability, suited to tactical gear, workwear and low-visibility outdoor apparel.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you provide a sample before bulk production?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes — a sample is produced and approved before we move into bulk production on every order, regardless of quantity.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Put Your Next Print Run on Fabric It Was Designed For</h2>
+      <p>Screen printing is one part of a complete production program at BlackForgeX — pair it with <a href="/services/embroidery">embroidery</a> or browse the <a href="/products">full product range</a> we manufacture and print in-house.</p>
+      <a class="btn" href="https://blackforgex.com/contact">Request a Quote</a>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll('.bfx-page .faq-item');
+    items.forEach(function (item) {
+      var btn = item.querySelector('.faq-question');
+      var answer = item.querySelector('.faq-answer');
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        items.forEach(function (other) {
+          other.classList.remove('open');
+          other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          other.querySelector('.faq-answer').style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BlackForgeX",
+  "url": "https://blackforgex.com",
+  "logo": "https://blackforgex.com/logo.png",
+  "description": "BlackForgeX is an OEM and ODM apparel manufacturer based in Sialkot, Pakistan, specializing in technical outerwear, workwear, and outdoor clothing for private label brands worldwide.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sialkot",
+    "addressCountry": "Pakistan"
+  },
+  "areaServed": "Worldwide"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://blackforgex.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://blackforgex.com/services"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Screen Printing",
+      "item": "https://blackforgex.com/services/screen-printing"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Custom Screen Printing for Apparel",
+  "name": "Screen Printing Manufacturing",
+  "description": "Custom screen printing for outdoor, tactical, workwear and private label apparel brands, including plastisol, water-based, puff, discharge, reflective and foil printing with Pantone color matching.",
+  "provider": {
+    "@type": "Organization",
+    "name": "BlackForgeX",
+    "url": "https://blackforgex.com"
+  },
+  "areaServed": "Worldwide"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the minimum order quantity for screen printing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MOQs vary by method and garment type — plastisol and water-based generally allow lower minimums than foil or reflective printing. Share your product and target quantity and we'll confirm exact minimums."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you match my brand's exact Pantone colors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every order is matched against Pantone reference codes and a physical strike-off sample is approved before full production begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you print on waterproof or laminated technical fabrics?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — ink type, mesh count and cure settings are adjusted specifically for membranes, laminates and heavyweight blends that standard print shops aren't set up to handle."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between plastisol and water-based printing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plastisol sits on top of the fabric with strong opacity and durability. Water-based ink soaks into the fibers for a softer feel, with slightly less opacity on dark garments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you handle prints in multiple locations on one garment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — chest, back, sleeve and hem prints can be planned and produced in a single coordinated run, with placement confirmed before production starts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you support private label and OEM printing programs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, private label and OEM production is core to our business, including custom labels, hangtags and packaging alongside printing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you print reflective designs for tactical or workwear brands?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Our reflective printing is tested for wash durability, suited to tactical gear, workwear and low-visibility outdoor apparel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide a sample before bulk production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — a sample is produced and approved before we move into bulk production on every order, regardless of quantity."
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
