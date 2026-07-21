@@ -555,6 +555,20 @@
 
 <script>
   (function () {
+    // In-page anchor links: scroll manually instead of navigating, because inside
+    // an embed iframe the browser resolves "#id" against the parent site's base
+    // URL and tries to load the whole site in the iframe (refused to connect).
+    document.querySelectorAll('.bfx-page a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var el = document.getElementById(link.getAttribute('href').slice(1));
+        if (el) {
+          e.preventDefault();
+          var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+        }
+      });
+    });
+
     var items = document.querySelectorAll('.bfx-page .faq-item');
     items.forEach(function (item) {
       var btn = item.querySelector('.faq-question');
