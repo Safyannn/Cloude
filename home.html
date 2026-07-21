@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OEM &amp; ODM Apparel Manufacturer | BlackForgeX</title>
+  <meta name="description" content="BlackForgeX is an OEM/ODM technical apparel manufacturer in Sialkot, Pakistan. Private label jackets, workwear &amp; outdoor clothing. MOQ from 100 pcs.">
+  <meta name="keywords" content="OEM apparel manufacturer, ODM clothing manufacturer, private label apparel, technical apparel manufacturer, outdoor clothing manufacturer, jacket manufacturer Pakistan, Sialkot clothing factory, custom apparel manufacturing">
+</head>
+<body>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+  :root {
+    --red: #d60000;
+    --red-hover: #b80000;
+    --dark: #111111;
+    --body: #666666;
+    --white: #ffffff;
+    --bg-light: #e6e7ea;
+    --border: #ececec;
+  }
+
+  .bfx-page, .bfx-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .bfx-page {
+    background: var(--white);
+    color: var(--body);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .bfx-page img { max-width: 100%; display: block; }
+
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .bfx-page h1, .bfx-page h2 { color: var(--dark); font-weight: 700; line-height: 1.2; }
+  .bfx-page h3 { color: var(--dark); font-weight: 600; line-height: 1.3; }
+
+  .bfx-page a { color: var(--red); text-decoration: none; transition: color 0.2s ease; }
+  .bfx-page a:hover { color: var(--red-hover); }
+  .bfx-page a:focus-visible,
+  .bfx-page button:focus-visible {
+    outline: 3px solid var(--red);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  .btn {
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 16px 36px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .btn:hover {
+    background: var(--red-hover);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(214, 0, 0, 0.25);
+  }
+
+  .btn-outline {
+    display: inline-block;
+    background: transparent;
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 36px;
+    border-radius: 12px;
+    border: 2px solid var(--dark);
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+  }
+  .btn-outline:hover {
+    background: var(--dark);
+    color: var(--white);
+    transform: translateY(-2px);
+  }
+
+  .section-label {
+    display: inline-block;
+    color: var(--red);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .section-title { font-size: 40px; margin-bottom: 20px; }
+  .section-intro { max-width: 760px; font-size: 17px; }
+
+  .img-placeholder {
+    background: var(--dark);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 24px;
+    border-radius: 16px;
+    min-height: 260px;
+  }
+
+  /* ===== Hero ===== */
+  .hero { padding: 96px 0; background: var(--white); }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .hero h1 { font-size: 52px; margin-bottom: 24px; }
+  .hero h1 span { color: var(--red); }
+  .hero p { font-size: 18px; margin-bottom: 36px; max-width: 560px; }
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .hero-media .img-placeholder { min-height: 480px; }
+
+  /* ===== Trust bar ===== */
+  .trust-bar { background: var(--dark); padding: 48px 0; }
+  .trust-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    text-align: center;
+  }
+  .trust-item strong {
+    display: block;
+    color: var(--white);
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .trust-item span { color: #b5b5b5; font-size: 15px; font-weight: 500; }
+
+  /* ===== Who we work with ===== */
+  .buyers { padding: 96px 0; background: var(--white); }
+  .buyers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .buyer-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .buyer-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(17, 17, 17, 0.08);
+  }
+  .buyer-card h3 { font-size: 18px; margin-bottom: 10px; }
+  .buyer-card p { font-size: 15px; }
+
+  /* ===== Services ===== */
+  .services { padding: 96px 0; background: var(--bg-light); }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .service-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 32px 28px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 44px rgba(17, 17, 17, 0.1);
+  }
+  .service-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: rgba(214, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .service-icon svg { width: 26px; height: 26px; stroke: var(--red); }
+  .service-card h3 { font-size: 18px; margin-bottom: 10px; }
+  .service-card p { font-size: 14.5px; margin-bottom: 16px; }
+  .service-card a { font-weight: 600; font-size: 14.5px; }
+
+  /* ===== Products ===== */
+  .products { padding: 96px 0; background: var(--white); }
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 48px;
+  }
+  .product-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 44px rgba(17, 17, 17, 0.1);
+  }
+  .product-card .img-placeholder { border-radius: 0; min-height: 220px; }
+  .product-card-body { padding: 26px; }
+  .product-card h3 { font-size: 19px; margin-bottom: 10px; }
+  .product-card p { font-size: 14.5px; margin-bottom: 16px; }
+  .product-card a { font-weight: 600; font-size: 14.5px; }
+
+  /* ===== Process ===== */
+  .process { padding: 96px 0; background: var(--dark); }
+  .process .section-title, .process h3 { color: var(--white); }
+  .process .section-intro { color: #b5b5b5; }
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 56px;
+  }
+  .process-step {
+    background: #1b1b1b;
+    border: 1px solid #2a2a2a;
+    border-radius: 16px;
+    padding: 32px 28px;
+    transition: transform 0.25s ease;
+  }
+  .process-step:hover { transform: translateY(-4px); }
+  .process-step .step-num {
+    display: inline-block;
+    color: var(--red);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+  }
+  .process-step h3 { font-size: 18px; margin-bottom: 10px; }
+  .process-step p { color: #b5b5b5; font-size: 14.5px; }
+
+  /* ===== Why ===== */
+  .why { padding: 96px 0; background: var(--white); }
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 48px;
+  }
+  .why-card {
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--red);
+    border-radius: 14px;
+    padding: 32px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .why-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(17, 17, 17, 0.08);
+  }
+  .why-card h3 { font-size: 19px; margin-bottom: 12px; }
+  .why-card p { font-size: 15px; }
+
+  /* ===== FAQ ===== */
+  .faq { padding: 96px 0; background: var(--bg-light); }
+  .faq-list { max-width: 900px; margin: 48px auto 0; }
+  .faq-item {
+    background: var(--white);
+    border-radius: 14px;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16.5px;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+  }
+  .faq-question .faq-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: var(--red);
+    transition: transform 0.25s ease;
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .faq-answer p { padding: 0 28px 24px; font-size: 15.5px; }
+
+  /* ===== Final CTA ===== */
+  .final-cta { padding: 96px 0; background: var(--dark); text-align: center; }
+  .final-cta h2 { color: var(--white); font-size: 38px; max-width: 800px; margin: 0 auto 20px; }
+  .final-cta p { color: #b5b5b5; font-size: 17px; max-width: 640px; margin: 0 auto 36px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bfx-page *, .bfx-page *::before, .bfx-page *::after {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .hero h1 { font-size: 42px; }
+    .section-title { font-size: 34px; }
+    .hero-grid { gap: 40px; }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .products-grid, .process-grid, .buyers-grid { grid-template-columns: repeat(2, 1fr); }
+    .trust-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    .container { padding: 0 24px; }
+    .hero { padding: 64px 0; }
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 36px; }
+    .hero-media .img-placeholder { min-height: 320px; }
+    .buyers, .services, .products, .process, .why, .faq, .final-cta { padding: 64px 0; }
+    .buyers-grid, .products-grid, .process-grid, .why-grid { grid-template-columns: 1fr; }
+    .final-cta h2 { font-size: 30px; }
+  }
+
+  @media (max-width: 520px) {
+    .hero h1 { font-size: 30px; }
+    .section-title { font-size: 27px; }
+    .services-grid, .trust-grid { grid-template-columns: 1fr; }
+    .trust-grid { gap: 24px; }
+    .btn, .btn-outline { width: 100%; text-align: center; }
+  }
+</style>
+
+<div class="bfx-page">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <h1>OEM &amp; ODM Technical Apparel Manufacturing, <span>Built for Serious Brands</span></h1>
+          <p>BlackForgeX is an OEM and ODM apparel manufacturer based in Sialkot, Pakistan, specializing in technical outerwear, workwear, and outdoor clothing for private label brands worldwide. From tech pack to export-ready shipment, production runs under one roof — with minimums starting at 100 pieces per style.</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://blackforgex.com/contact">Request a Quote</a>
+            <a class="btn-outline" href="/products">View Product Categories</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Production Floor">Factory Image Placeholder — Production Floor</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BAR ===== -->
+  <section class="trust-bar" aria-label="BlackForgeX key manufacturing facts">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item"><strong>20+</strong><span>Countries Served</span></div>
+        <div class="trust-item"><strong>100 pcs</strong><span>MOQ per Style</span></div>
+        <div class="trust-item"><strong>7&ndash;14 Days</strong><span>Sampling Time</span></div>
+        <div class="trust-item"><strong>30&ndash;45 Days</strong><span>Bulk Production Lead Time</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHO WE WORK WITH ===== -->
+  <section class="buyers">
+    <div class="container">
+      <span class="section-label">Who We Work With</span>
+      <h2 class="section-title">A Production Partner for B2B Apparel Buyers</h2>
+      <p class="section-intro">BlackForgeX manufactures exclusively for businesses — there is no retail side to compete with your brand. Production capacity is structured around the needs of labels that require consistent quality, documented inspection, and dependable export timelines.</p>
+      <div class="buyers-grid">
+        <div class="buyer-card">
+          <h3>Outdoor &amp; Technical Brands</h3>
+          <p>Hiking, ski, and outdoor labels sourcing waterproof shells, insulated jackets, and technical layering systems built to spec.</p>
+        </div>
+        <div class="buyer-card">
+          <h3>Workwear &amp; Tactical Companies</h3>
+          <p>Uniform programs, industrial workwear suppliers, and tactical clothing brands that need durable construction and repeatable sizing across reorders.</p>
+        </div>
+        <div class="buyer-card">
+          <h3>Private Label &amp; Ecommerce Sellers</h3>
+          <p>Amazon sellers, DTC startups, importers, and distributors launching or scaling their own clothing lines under their own brand name.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services">
+    <div class="container">
+      <span class="section-label">Manufacturing Services</span>
+      <h2 class="section-title">Every Stage of Production, In-House</h2>
+      <p class="section-intro">BlackForgeX handles development, production, branding, and finishing as one continuous process. Explore each service in detail, or see the full scope on the <a href="/services">services overview page</a>.</p>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.12 15.88"/><path d="M14.47 14.48 20 20"/><path d="M8.12 8.12 12 12"/></svg>
+          </div>
+          <h3>Cut &amp; Sew Manufacturing</h3>
+          <p>Full-scale garment production from pattern to finished piece, across technical outerwear, workwear, and knits.</p>
+          <a href="/services/cut-and-sew-manufacturing">Explore cut &amp; sew production</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+          </div>
+          <h3>Screen Printing</h3>
+          <p>Multi-color screen printing for logos and graphics with durable, wash-tested inks on a wide range of fabrics.</p>
+          <a href="/services/screen-printing">Explore screen printing</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2H2v10l9.29 9.29a1 1 0 0 0 1.42 0l8.58-8.58a1 1 0 0 0 0-1.42L12 2z"/><circle cx="7" cy="7" r="1.5"/></svg>
+          </div>
+          <h3>Private Label Manufacturing</h3>
+          <p>Your brand, your label, your packaging — manufactured to your specifications and shipped ready for market.</p>
+          <a href="/services/private-label-manufacturing">Explore private label</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
+          </div>
+          <h3>Sublimation Printing</h3>
+          <p>All-over, fade-resistant printing for sportswear and activewear where color coverage and detail matter.</p>
+          <a href="/services/sublimation-printing">Explore sublimation</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.92 12 21 3 12 13.08 2.58a2 2 0 0 1 2.83 0l5.5 5.5a2 2 0 0 1 .01 2.84z"/><path d="m8 8 8 8"/></svg>
+          </div>
+          <h3>Embroidery</h3>
+          <p>Machine embroidery for logos, badges, and detailing — a premium finish for outerwear, polos, and uniforms.</p>
+          <a href="/services/embroidery">Explore embroidery</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16.5 9.4 7.55 4.24"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96 12 12.01l8.73-5.05"/><path d="M12 22.08V12"/></svg>
+          </div>
+          <h3>Labels, Hangtags &amp; Packaging</h3>
+          <p>Woven labels, printed hangtags, polybags, and retail-ready packaging produced alongside your garments.</p>
+          <a href="/services/labels-hangtags-packaging">Explore packaging</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+          </div>
+          <h3>Tech Pack &amp; Sample Development</h3>
+          <p>Pattern making, spec sheets, and physical samples that turn a concept into a production-ready garment.</p>
+          <a href="/services/tech-pack-sample-development">Explore development</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+          </div>
+          <h3>Quality Inspection &amp; Export</h3>
+          <p>In-line and final QC inspection, compliance documentation, and export logistics to ports worldwide.</p>
+          <a href="/services">See all services</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="products">
+    <div class="container">
+      <span class="section-label">Product Categories</span>
+      <h2 class="section-title">What BlackForgeX Manufactures</h2>
+      <p class="section-intro">Production covers seven core categories, each built through the same <a href="/services/cut-and-sew-manufacturing">cut &amp; sew manufacturing</a> process with category-specific fabrics, seam construction, and hardware.</p>
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Waterproof Jacket Production Line">Factory Image Placeholder — Jackets &amp; Outerwear</div>
+          <div class="product-card-body">
+            <h3>Jackets &amp; Outerwear</h3>
+            <p>Waterproof, softshell, hardshell, puffer, fleece, and windbreaker jackets with taped seams and technical hardware.</p>
+            <a href="/products/jackets-outerwear">View jackets &amp; outerwear</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Technical Pants Production">Factory Image Placeholder — Outdoor &amp; Technical Pants</div>
+          <div class="product-card-body">
+            <h3>Outdoor &amp; Technical Pants</h3>
+            <p>Cargo, hiking, and stretch technical pants with reinforced stitching, articulated knees, and utility pocketing.</p>
+            <a href="/products/outdoor-technical-pants">View technical pants</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Workwear and Uniform Production">Factory Image Placeholder — Workwear &amp; Uniforms</div>
+          <div class="product-card-body">
+            <h3>Workwear &amp; Uniforms</h3>
+            <p>Durable industrial workwear and uniform programs built for repeat orders with consistent sizing and specs.</p>
+            <a href="/products/workwear-uniforms">View workwear &amp; uniforms</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Tactical Clothing Production">Factory Image Placeholder — Tactical Clothing</div>
+          <div class="product-card-body">
+            <h3>Tactical Clothing</h3>
+            <p>Tactical shirts, pants, and outer layers using ripstop fabrics, bartack reinforcement, and mil-spec detailing.</p>
+            <a href="/products/tactical-clothing">View tactical clothing</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Ski and Winter Wear Production">Factory Image Placeholder — Ski, Snowboard &amp; Winter Wear</div>
+          <div class="product-card-body">
+            <h3>Ski, Snowboard &amp; Winter Wear</h3>
+            <p>Insulated ski jackets, snow pants, and thermal layers with waterproof-breathable membranes and snow skirts.</p>
+            <a href="/products/ski-snowboard-winter-wear">View winter wear</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Sportswear Production">Factory Image Placeholder — Sportswear &amp; Activewear</div>
+          <div class="product-card-body">
+            <h3>Sportswear &amp; Activewear</h3>
+            <p>Performance tees, training wear, and gym apparel in moisture-wicking knits, ideal for <a href="/services/sublimation-printing">sublimation printing</a>.</p>
+            <a href="/products/sportswear-activewear">View sportswear</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="img-placeholder" role="img" aria-label="Factory Image Placeholder — Hoodie and Knitwear Production">Factory Image Placeholder — Hoodies, Sweatshirts, T-Shirts &amp; Polos</div>
+          <div class="product-card-body">
+            <h3>Hoodies, Sweatshirts, T-Shirts &amp; Polos</h3>
+            <p>Core knitwear programs in custom weights and fits, finished with your labels, prints, and embroidery.</p>
+            <a href="/products/hoodies-sweatshirts-tshirts-polos">View knitwear</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="process">
+    <div class="container">
+      <span class="section-label">How Production Works</span>
+      <h2 class="section-title">From Tech Pack to Export in Six Steps</h2>
+      <p class="section-intro">Every order at BlackForgeX follows the same documented process, so buyers know exactly where their production stands at each stage.</p>
+      <div class="process-grid">
+        <div class="process-step">
+          <span class="step-num">STEP 01</span>
+          <h3>Tech Pack &amp; Specification</h3>
+          <p>You share a tech pack, sample, or reference product. If you don't have a tech pack, our development team builds one with you.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">STEP 02</span>
+          <h3>Sampling</h3>
+          <p>A physical pre-production sample is developed in 7&ndash;14 days and revised until you approve fit, fabric, and construction.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">STEP 03</span>
+          <h3>Fabric Sourcing &amp; Approval</h3>
+          <p>Fabrics, trims, membranes, and hardware are sourced to spec, with swatches and lab-dip approvals before cutting begins.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">STEP 04</span>
+          <h3>Bulk Production</h3>
+          <p>Cutting, sewing, printing, and embroidery run in-house, with bulk lead times of 30&ndash;45 days after sample approval.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">STEP 05</span>
+          <h3>Quality Inspection</h3>
+          <p>In-line checks during production and a final AQL inspection before packing, with reports available on request.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-num">STEP 06</span>
+          <h3>Packing &amp; Export</h3>
+          <p>Garments are packed to your retail or bulk specification and shipped by sea, air, or courier to 20+ countries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY ===== -->
+  <section class="why">
+    <div class="container">
+      <span class="section-label">Why BlackForgeX</span>
+      <h2 class="section-title">Built to Be a Long-Term Manufacturing Partner</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <h3>Development Under One Roof</h3>
+          <p>Pattern making, <a href="/services/tech-pack-sample-development">tech pack and sample development</a>, and bulk production happen in the same facility — no handoffs between separate factories, no lost details between development and production.</p>
+        </div>
+        <div class="why-card">
+          <h3>Documented Quality Control</h3>
+          <p>Every order passes in-line inspection during sewing and a final AQL-based inspection before packing. Buyers receive consistent quality across reorders, not just first orders.</p>
+        </div>
+        <div class="why-card">
+          <h3>Startup-Friendly Minimums</h3>
+          <p>MOQs start at 100 pieces per style, which lets new brands test the market and scale into larger runs without switching manufacturers mid-growth.</p>
+        </div>
+        <div class="why-card">
+          <h3>Complete Branding &amp; Finishing</h3>
+          <p>Printing, embroidery, woven labels, hangtags, and <a href="/services/labels-hangtags-packaging">retail-ready packaging</a> are produced alongside your garments, so products arrive market-ready.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq">
+    <div class="container">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Common Questions from Buyers</h2>
+      <p class="section-intro">Direct answers to the questions brands ask before starting production. For anything specific to your project, <a href="https://blackforgex.com/contact">contact the BlackForgeX team</a>.</p>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is the minimum order quantity (MOQ) at BlackForgeX?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>The minimum order quantity at BlackForgeX starts at 100 pieces per style. Highly technical products such as fully seam-taped waterproof jackets may require higher minimums depending on fabric availability, which is confirmed at the quotation stage.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How long does sample development take?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Sample development takes 7&ndash;14 working days after the tech pack and fabric details are confirmed. Complex technical outerwear may take longer if specialty fabrics or hardware need to be sourced first.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What are the bulk production lead times?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Bulk production typically takes 30&ndash;45 days after sample approval and order confirmation. Exact timelines depend on order quantity, fabric lead times, and the complexity of printing, embroidery, and finishing.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Which countries does BlackForgeX ship to?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>BlackForgeX exports worldwide and currently serves brands in 20+ countries, including the United States, United Kingdom, Germany, Australia, Canada, and across Europe and the Middle East. Shipping is arranged by sea, air, or courier depending on order size and urgency.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is the difference between OEM and ODM manufacturing?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>With OEM manufacturing, you provide the design and tech pack, and BlackForgeX produces the garment exactly to your specification. With ODM manufacturing, BlackForgeX supplies existing development — patterns, fits, and constructions — which are then customized and branded as your own product. Both models are available on every product category.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What fabrics can BlackForgeX work with?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>BlackForgeX works with waterproof-breathable laminates, softshell bonded fabrics, ripstop nylon, polyester blends, fleece, down and synthetic insulation, moisture-wicking knits, and cotton blends. Fabric sourcing, custom dyeing, and lab-dip approval are handled in-house as part of every order.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What branding options are available for my products?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Available branding options include screen printing, sublimation printing, DTF printing, embroidery, heat transfers, woven labels, printed hangtags, and custom retail packaging. All branding is applied in-house during production, so finished goods ship market-ready under your own label.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How do I start a project with BlackForgeX?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Send your tech pack, reference product, or product idea through the contact page at blackforgex.com/contact. If you don't have a tech pack yet, the development team can build one with you as the first step. You'll receive a quotation covering sampling cost, unit pricing, MOQ, and lead times.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Ready to Put Your Next Production Run in Reliable Hands?</h2>
+      <p>Share your tech pack or product idea and receive a detailed quotation covering sampling, pricing, MOQ, and lead times — usually within two business days.</p>
+      <a class="btn" href="https://blackforgex.com/contact">Start Your Project</a>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll('.bfx-page .faq-item');
+    items.forEach(function (item) {
+      var btn = item.querySelector('.faq-question');
+      var answer = item.querySelector('.faq-answer');
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        items.forEach(function (other) {
+          other.classList.remove('open');
+          other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          other.querySelector('.faq-answer').style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BlackForgeX",
+  "url": "https://blackforgex.com",
+  "logo": "https://blackforgex.com/logo.png",
+  "description": "BlackForgeX is an OEM and ODM apparel manufacturer based in Sialkot, Pakistan, specializing in technical outerwear, workwear, and outdoor clothing for private label brands worldwide.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sialkot",
+    "addressCountry": "Pakistan"
+  },
+  "areaServed": "Worldwide"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "BlackForgeX",
+  "url": "https://blackforgex.com"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://blackforgex.com/"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the minimum order quantity (MOQ) at BlackForgeX?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The minimum order quantity at BlackForgeX starts at 100 pieces per style. Highly technical products such as fully seam-taped waterproof jackets may require higher minimums depending on fabric availability, which is confirmed at the quotation stage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does sample development take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sample development takes 7–14 working days after the tech pack and fabric details are confirmed. Complex technical outerwear may take longer if specialty fabrics or hardware need to be sourced first."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the bulk production lead times?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bulk production typically takes 30–45 days after sample approval and order confirmation. Exact timelines depend on order quantity, fabric lead times, and the complexity of printing, embroidery, and finishing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which countries does BlackForgeX ship to?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BlackForgeX exports worldwide and currently serves brands in 20+ countries, including the United States, United Kingdom, Germany, Australia, Canada, and across Europe and the Middle East. Shipping is arranged by sea, air, or courier depending on order size and urgency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between OEM and ODM manufacturing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With OEM manufacturing, you provide the design and tech pack, and BlackForgeX produces the garment exactly to your specification. With ODM manufacturing, BlackForgeX supplies existing development — patterns, fits, and constructions — which are then customized and branded as your own product. Both models are available on every product category."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What fabrics can BlackForgeX work with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BlackForgeX works with waterproof-breathable laminates, softshell bonded fabrics, ripstop nylon, polyester blends, fleece, down and synthetic insulation, moisture-wicking knits, and cotton blends. Fabric sourcing, custom dyeing, and lab-dip approval are handled in-house as part of every order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What branding options are available for my products?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Available branding options include screen printing, sublimation printing, DTF printing, embroidery, heat transfers, woven labels, printed hangtags, and custom retail packaging. All branding is applied in-house during production, so finished goods ship market-ready under your own label."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I start a project with BlackForgeX?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Send your tech pack, reference product, or product idea through the contact page at blackforgex.com/contact. If you don't have a tech pack yet, the development team can build one with you as the first step. You'll receive a quotation covering sampling cost, unit pricing, MOQ, and lead times."
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
