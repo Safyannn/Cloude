@@ -381,6 +381,21 @@
     .section-label { font-size: 12.5px; letter-spacing: 1.5px; }
     .bfx-page .btn { padding: 15px 28px; font-size: 15.5px; }
   }
+
+  /* ===== Boxed sections (Hostinger grid-friendly) ===== */
+  .trust-bar, .services, .process, .methods, .stripe, .mid-cta, .final-cta, .faq,
+  .labels, .panels, .gallery, .color-banner, .full-banner, .split-grey {
+    border-radius: 24px;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  @media (max-width: 768px) {
+    .trust-bar, .services, .process, .methods, .stripe, .mid-cta, .final-cta, .faq,
+    .labels, .panels, .gallery, .color-banner, .full-banner, .split-grey {
+      border-radius: 18px;
+      margin: 8px 0;
+    }
+  }
 </style>
 
 <div class="bfx-page">
