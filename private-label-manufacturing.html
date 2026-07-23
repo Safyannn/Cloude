@@ -318,19 +318,22 @@
     .bfx-page .btn { padding: 15px 28px; font-size: 15.5px; }
   }
 
-  /* ===== Boxed sections (Hostinger grid-friendly) ===== */
-  .trust-bar, .services, .process, .methods, .stripe, .mid-cta, .final-cta, .faq,
-  .labels, .panels, .gallery, .color-banner, .full-banner, .split-grey {
-    border-radius: 24px;
-    overflow: hidden;
-    margin: 10px 0;
-  }
   @media (max-width: 768px) {
     .trust-bar, .services, .process, .methods, .stripe, .mid-cta, .final-cta, .faq,
     .labels, .panels, .gallery, .color-banner, .full-banner, .split-grey {
       border-radius: 18px;
       margin: 8px 0;
     }
+  }
+
+  /* ===== Full-bleed break-out (edge-to-edge inside Hostinger container) ===== */
+  .bfx-page > section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
   }
 </style>
 
