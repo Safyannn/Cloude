@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Label Clothing Manufacturer | BlackForgeX</title>
+  <meta name="description" content="Private label clothing manufacturing by BlackForgeX — woven labels, hangtags, heat transfer &amp; satin care labels, produced with your garments under one roof.">
+  <meta name="keywords" content="private label clothing manufacturer, private label apparel manufacturing, woven labels, custom hangtags, heat transfer labels, satin care labels, white label clothing, private label manufacturer Pakistan">
+</head>
+<body>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+  :root {
+    --red: #d60000;
+    --red-hover: #b80000;
+    --dark: #111111;
+    --body: #666666;
+    --white: #ffffff;
+    --bg-light: #e6e7ea;
+    --border: #ececec;
+  }
+
+  .bfx-page, .bfx-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .bfx-page {
+    background: var(--white);
+    color: var(--body);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .bfx-page img { max-width: 100%; display: block; }
+
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .bfx-page h1, .bfx-page h2 { color: var(--dark); font-weight: 700; line-height: 1.2; }
+  .bfx-page h3 { color: var(--dark); font-weight: 600; line-height: 1.3; }
+
+  .bfx-page a { color: var(--red); text-decoration: none; transition: color 0.2s ease; }
+  .bfx-page a:hover { color: var(--red-hover); }
+  .bfx-page a:focus-visible,
+  .bfx-page button:focus-visible {
+    outline: 3px solid var(--red);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  .bfx-page .btn {
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 16px 36px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .bfx-page .btn:hover {
+    background: var(--red-hover);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(214, 0, 0, 0.25);
+  }
+
+  .section-label {
+    display: inline-block;
+    color: var(--red);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .section-title { font-size: 40px; margin-bottom: 20px; }
+  .section-intro { max-width: 820px; font-size: 17px; }
+
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: var(--dark);
+    color: var(--white);
+  }
+
+  /* ===== Hero ===== */
+  .hero { padding: 96px 0; background: var(--white); }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .hero h1 { font-size: 46px; margin-bottom: 24px; }
+  .hero p { font-size: 18px; margin-bottom: 36px; max-width: 580px; }
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .hero-media {
+    border-radius: 16px;
+    overflow: hidden;
+    height: 460px;
+    background: var(--dark);
+  }
+
+  /* ===== Intro + Label cards ===== */
+  .labels { padding: 96px 0; background: var(--bg-light); }
+  .labels-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 48px;
+  }
+  .label-card {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .label-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 44px rgba(17, 17, 17, 0.1);
+  }
+  .label-card .label-photo {
+    height: 240px;
+    overflow: hidden;
+    background: var(--dark);
+  }
+  .label-card-body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .label-card h3 { font-size: 20px; margin-bottom: 12px; }
+  .label-card p { font-size: 15px; margin-bottom: 20px; flex-grow: 1; }
+  .label-card a { font-weight: 600; font-size: 15px; }
+
+  /* ===== Banner stripes ===== */
+  .stripe { padding: 80px 0; }
+  .stripe-dark { background: var(--dark); }
+  .stripe-photo-1 {
+    background: linear-gradient(rgba(17, 17, 17, 0.88), rgba(17, 17, 17, 0.88)), url('https://images.pexels.com/photos/6441571/pexels-photo-6441571.jpeg?auto=compress&cs=tinysrgb&w=1200') center/cover no-repeat var(--dark);
+  }
+  .stripe-light { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .stripe-inner { max-width: 900px; }
+  .stripe h2 { font-size: 32px; margin-bottom: 18px; }
+  .stripe-dark h2 { color: var(--white); }
+  .stripe p { font-size: 16.5px; margin-bottom: 30px; }
+  .stripe-dark p { color: #b5b5b5; }
+
+  /* ===== Mid CTA ===== */
+  .mid-cta { padding: 96px 0; background: var(--bg-light); text-align: center; }
+  .mid-cta h2 { font-size: 36px; max-width: 820px; margin: 0 auto 20px; }
+  .mid-cta p { font-size: 17px; max-width: 680px; margin: 0 auto 36px; }
+
+  /* ===== SEO text blocks ===== */
+  .seo-blocks { padding: 96px 0; background: var(--white); }
+  .seo-block { max-width: 900px; margin-bottom: 64px; }
+  .seo-block:last-child { margin-bottom: 0; }
+  .seo-block h2 { font-size: 30px; margin-bottom: 18px; }
+  .seo-block p { font-size: 16px; margin-bottom: 16px; }
+  .seo-block p:last-child { margin-bottom: 0; }
+
+  /* ===== FAQ ===== */
+  .faq { padding: 96px 0; background: var(--bg-light); }
+  .faq-list { max-width: 900px; margin: 48px auto 0; }
+  .faq-item {
+    background: var(--white);
+    border-radius: 14px;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16.5px;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+  }
+  .faq-question .faq-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: var(--red);
+    transition: transform 0.25s ease;
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .faq-answer p { padding: 0 28px 24px; font-size: 15.5px; }
+
+  /* ===== Final CTA ===== */
+  .final-cta { padding: 96px 0; background: var(--dark); text-align: center; }
+  .final-cta h2 { color: var(--white); font-size: 38px; max-width: 820px; margin: 0 auto 20px; }
+  .final-cta p { color: #b5b5b5; font-size: 17px; max-width: 660px; margin: 0 auto 36px; }
+  .bfx-page .final-cta p a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bfx-page *, .bfx-page *::before, .bfx-page *::after {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .hero h1 { font-size: 38px; }
+    .section-title { font-size: 34px; }
+    .hero-grid { gap: 40px; }
+    .stripe h2 { font-size: 28px; }
+  }
+
+  @media (max-width: 768px) {
+    .container { padding: 0 24px; }
+    .hero { padding: 64px 0; }
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 32px; }
+    .hero-media { height: 320px; }
+    .labels, .mid-cta, .seo-blocks, .faq, .final-cta { padding: 64px 0; }
+    .stripe { padding: 56px 0; }
+    .labels-grid { grid-template-columns: 1fr; }
+    .mid-cta h2 { font-size: 29px; }
+    .final-cta h2 { font-size: 30px; }
+  }
+
+  @media (max-width: 520px) {
+    .hero h1 { font-size: 27px; }
+    .section-title { font-size: 26px; }
+    .stripe h2, .seo-block h2 { font-size: 23px; }
+    .bfx-page .btn { width: 100%; text-align: center; }
+  }
+</style>
+
+<div class="bfx-page">
+
+  <!-- ===== SECTION 1 — HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="section-label">Private Label Manufacturing</span>
+          <h1>Private Label Manufacturing for Brands That Want Full Ownership of Their Product</h1>
+          <p>BlackForgeX builds private label programs for outdoor, technical and workwear brands from the ground up — your branding, your labels, your specifications, produced under one roof in Sialkot instead of coordinated across five different vendors.</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://blackforgex.com/contact" target="_top">Get Started</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img class="photo" src="https://images.pexels.com/photos/18978674/pexels-photo-18978674.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Blank hangtag attached to a red garment, ready for custom branding" width="1600" height="1067">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2 + 3 — INTRO & LABEL TYPE CARDS ===== -->
+  <section class="labels">
+    <div class="container">
+      <span class="section-label">Get The Best</span>
+      <h2 class="section-title">Private Label Production Built to Launch and Scale a Brand, Not Just Fill an Order</h2>
+      <p class="section-intro">Whether you're launching your first collection or moving an established brand's production to a more capable factory, private label manufacturing only works if the details are handled with the same care as the garment itself. That means your woven labels, hangtags and packaging need to match your brand as precisely as your stitching does. We treat labeling and branding as part of production, not an afterthought bolted on at the end.</p>
+      <div class="labels-grid">
+
+        <div class="label-card">
+          <div class="label-photo"><img class="photo" src="https://images.pexels.com/photos/9594084/pexels-photo-9594084.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Woven clothing label close-up on muted fabric" loading="lazy" width="900" height="600"></div>
+          <div class="label-card-body">
+            <h3>Woven Labels</h3>
+            <p>A woven label is often the first thing a customer touches when they check the size or care instructions on a garment — it's a small detail that signals whether a brand is established or still figuring itself out. We produce woven labels in a range of finishes, from clean damask weaves for everyday branding to satin-finish weaves for a softer, more premium hand-feel on lingerie, baby wear or formal pieces.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="label-card">
+          <div class="label-photo"><img class="photo" src="https://images.pexels.com/photos/6441572/pexels-photo-6441572.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Custom blank hangtags hanging on strings against a black background" loading="lazy" width="900" height="600"></div>
+          <div class="label-card-body">
+            <h3>Custom Hangtags</h3>
+            <p>A hangtag is the first impression a product makes before it's even worn. We produce hangtags in the paper stock, print finish and shape your brand needs — from simple kraft-card tags for a minimal, sustainable look to foil-stamped or embossed tags for a premium retail shelf presence.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="label-card">
+          <div class="label-photo"><img class="photo" src="https://images.pexels.com/photos/11417942/pexels-photo-11417942.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Smooth white label tag on textured fabric for a tag-free finish" loading="lazy" width="900" height="600"></div>
+          <div class="label-card-body">
+            <h3>Heat Transfer Labels</h3>
+            <p>For brands that want the clean look of a printed label without the texture or cost of a woven one, heat transfer labels bond directly to the fabric for a smooth, tag-free finish — a common choice for activewear and technical apparel where a stitched label could cause irritation against skin.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="label-card">
+          <div class="label-photo"><img class="photo" src="https://images.pexels.com/photos/8058803/pexels-photo-8058803.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Printed satin care label tags on a textured red background" loading="lazy" width="900" height="600"></div>
+          <div class="label-card-body">
+            <h3>Printed Satin &amp; Care Labels</h3>
+            <p>Satin labels hold fine print detail exceptionally well, which makes them the standard choice for care and content labels that need to stay legible — fiber content, wash instructions, country of origin — without adding bulk to a garment's inside seam.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4 — BANNER STRIPE 1 ===== -->
+  <section class="stripe stripe-dark stripe-photo-1">
+    <div class="container">
+      <div class="stripe-inner">
+        <h2>A Manufacturing Partner for Brands at Every Stage</h2>
+        <p>Startups and established brands need different things from a private label manufacturer — one needs guidance on MOQs and first-sample development, the other needs a factory that can scale without inconsistency creeping in. We work with both, without treating either as a lesser priority.</p>
+        <a class="btn" href="https://blackforgex.com/contact" target="_top">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5 — BANNER STRIPE 2 ===== -->
+  <section class="stripe stripe-light">
+    <div class="container">
+      <div class="stripe-inner">
+        <h2>Full Private Label or White Label — Your Call</h2>
+        <p>Some brands want every detail custom from the first pattern. Others want a proven blank built well, then branded as their own. Both are private label manufacturing, and both get the same production discipline from us — the only difference is how much of the process starts from your specifications versus ours.</p>
+        <a class="btn" href="https://blackforgex.com/contact" target="_top">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 6 — BANNER STRIPE 3 ===== -->
+  <section class="stripe stripe-dark">
+    <div class="container">
+      <div class="stripe-inner">
+        <h2>From Concept to Shipped Product, One Team the Whole Way</h2>
+        <p>Your production contact doesn't change between sampling and bulk manufacturing. The person who approved your first label placement is the same one confirming your ship date — so nothing gets lost in a handoff between departments.</p>
+        <a class="btn" href="https://blackforgex.com/contact" target="_top">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7 — BANNER STRIPE 4 ===== -->
+  <section class="stripe stripe-light">
+    <div class="container">
+      <div class="stripe-inner">
+        <h2>Your Branding Deserves the Same Precision as Your Garment</h2>
+        <p>A perfectly constructed jacket with a crooked label or a low-resolution hangtag print undercuts everything else you got right. We hold labeling and packaging to the same inspection standard as stitching and fabric.</p>
+        <a class="btn" href="https://blackforgex.com/contact" target="_top">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 8 — MID-PAGE CTA ===== -->
+  <section class="mid-cta">
+    <div class="container">
+      <span class="section-label">Let's Get Started</span>
+      <h2>Ready to Put Your Brand on a Product Built to Last?</h2>
+      <p>Send your logo, label specifications and target product, and we'll walk you through what a full private label production run looks like — realistic MOQs, timelines and cost included.</p>
+      <a class="btn" href="https://blackforgex.com/contact" target="_top">Schedule a Consultation</a>
+    </div>
+  </section>
+
+  <!-- ===== SECTIONS 9–12 — SEO TEXT BLOCKS ===== -->
+  <section class="seo-blocks">
+    <div class="container">
+
+      <div class="seo-block">
+        <h2>Full-Service Private Label Manufacturing, Not Just Blank Goods With a Label Attached</h2>
+        <p>Private label manufacturing done properly means your brand controls more than just a logo placement. At BlackForgeX, that includes fabric selection, construction specification, label and hangtag design, and packaging — all produced together so the finished product feels like one cohesive brand experience, not a blank garment with your name stitched on afterward.</p>
+        <p>From your first sample through to the shipped order, the same team manages quality assurance and timeline — so you're never coordinating separately with a garment factory, a label supplier and a packaging vendor for one product.</p>
+      </div>
+
+      <div class="seo-block">
+        <h2>A Complete Private Label Facility Built to Compete With Bigger Brands</h2>
+        <p>Brand loyalty and market stability come from consistency — the same fit, the same finish, the same label quality on unit 1 and unit 5,000. Our private label production capability is built around that consistency, giving smaller and emerging brands the same manufacturing discipline that larger, established labels rely on.</p>
+        <p>With comprehensive in-house production — cutting, sewing, labeling and packaging — you can scale your clothing line while controlling costs and protecting margin, instead of losing both to a fragmented supply chain.</p>
+      </div>
+
+      <div class="seo-block">
+        <h2>Build a Private Label Line That Actually Looks Like Your Brand</h2>
+        <p>We work with brand owners at every stage — from a first-time founder figuring out MOQs and lead times to an established label restructuring its supply chain. Whatever stage you're at, our job is to find a workable path to production, not just quote you a price and leave the rest to figure out yourself.</p>
+        <p>Private label apparel from BlackForgeX comes with hangtags, woven labels, satin care labels and heat transfer labels available in every size and finish — so your branding is consistent across the entire product, not just the main label.</p>
+      </div>
+
+      <div class="seo-block">
+        <h2>Flexible Private Label Options for Brands at Any Volume</h2>
+        <p>Not every brand needs the same private label setup. We offer a range of options suited to different order volumes and budgets — from smaller private label runs for emerging brands to large-scale programs for established labels — without compromising on construction quality at any tier.</p>
+        <p>This same capability extends across our product range, including <a href="https://blackforgex.com/contact" target="_top">hoodies, t-shirts and technical outerwear</a> — so a brand can build its entire private label catalog through one manufacturing partner instead of splitting production across multiple factories.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq">
+    <div class="container">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Private Label Questions, Answered Directly</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What's the difference between private label and white label manufacturing?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>White label uses a proven, ready-made product design that you brand as your own. Private label starts from your own specifications — fabric, construction, fit — built from scratch for your brand. We offer both.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is the minimum order quantity for private label production?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>MOQs vary by product and label type. Share your target garment and quantity and we'll confirm exact minimums for your specific program.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can you produce woven labels, hangtags and packaging together with the garment?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes — labeling, hangtags and packaging are produced as part of the same production timeline as the garment, not sourced separately.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer heat transfer labels for activewear and technical apparel?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes. Heat transfer labels are a common choice for performance and technical apparel where a sewn-in label could cause irritation against the skin.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can I start with a small private label run as a new brand?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes — we work with both first-time brand owners and established labels, and can guide you through realistic MOQs and sample development for a first-time launch.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you handle both design guidance and bulk production?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes. Our team supports you from initial concept and sample approval through to bulk production and shipping, with one point of contact throughout.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Put Your Brand Name on Production You Can Stand Behind</h2>
+      <p>Share your logo, label specifications and target product through the <a href="https://blackforgex.com/contact" target="_top">BlackForgeX contact page</a> — you'll get a clear picture of MOQs, timelines and costs before you commit to anything.</p>
+      <a class="btn" href="https://blackforgex.com/contact" target="_top">Get Started</a>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll('.bfx-page .faq-item');
+    items.forEach(function (item) {
+      var btn = item.querySelector('.faq-question');
+      var answer = item.querySelector('.faq-answer');
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        items.forEach(function (other) {
+          other.classList.remove('open');
+          other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          other.querySelector('.faq-answer').style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BlackForgeX",
+  "url": "https://blackforgex.com",
+  "logo": "https://blackforgex.com/logo.png",
+  "description": "BlackForgeX is an OEM and ODM apparel manufacturer based in Sialkot, Pakistan, specializing in technical outerwear, workwear, and outdoor clothing for private label brands worldwide.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sialkot",
+    "addressCountry": "Pakistan"
+  },
+  "areaServed": "Worldwide"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://blackforgex.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://blackforgex.com/services"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Private Label Manufacturing",
+      "item": "https://blackforgex.com/services/private-label-manufacturing"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Private Label Apparel Manufacturing",
+  "name": "Private Label Manufacturing",
+  "description": "Full-service private label clothing manufacturing including woven labels, custom hangtags, heat transfer labels, printed satin care labels, and packaging, produced together with the garment under one roof.",
+  "provider": {
+    "@type": "Organization",
+    "name": "BlackForgeX",
+    "url": "https://blackforgex.com"
+  },
+  "areaServed": "Worldwide"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between private label and white label manufacturing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "White label uses a proven, ready-made product design that you brand as your own. Private label starts from your own specifications — fabric, construction, fit — built from scratch for your brand. We offer both."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the minimum order quantity for private label production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MOQs vary by product and label type. Share your target garment and quantity and we'll confirm exact minimums for your specific program."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you produce woven labels, hangtags and packaging together with the garment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — labeling, hangtags and packaging are produced as part of the same production timeline as the garment, not sourced separately."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer heat transfer labels for activewear and technical apparel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Heat transfer labels are a common choice for performance and technical apparel where a sewn-in label could cause irritation against the skin."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start with a small private label run as a new brand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we work with both first-time brand owners and established labels, and can guide you through realistic MOQs and sample development for a first-time launch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you handle both design guidance and bulk production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Our team supports you from initial concept and sample approval through to bulk production and shipping, with one point of contact throughout."
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
