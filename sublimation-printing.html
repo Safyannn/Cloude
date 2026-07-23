@@ -6,6 +6,7 @@
   <title>Sublimation Printing for Apparel | BlackForgeX</title>
   <meta name="description" content="Dye sublimation printing by BlackForgeX — full-color, edge-to-edge graphics bonded into the fabric. Cut-and-sew &amp; blank garment sublimation for sportswear brands.">
   <meta name="keywords" content="sublimation printing, dye sublimation apparel, all-over print manufacturer, cut and sew sublimation, sportswear printing, jersey sublimation, activewear printing, sublimation printing Pakistan">
+  <link rel="canonical" href="https://blackforgex.com/services/sublimation-printing">
 </head>
 <body>
 
@@ -289,6 +290,21 @@
     .gallery-item { height: 280px; }
     .bfx-page .btn { width: 100%; text-align: center; }
   }
+
+  /* ===== Mobile polish ===== */
+  .bfx-page a, .bfx-page button { -webkit-tap-highlight-color: transparent; }
+  @media (max-width: 768px) {
+    .container { padding: 0 20px; }
+    .hero-grid, .split-grid, .method-row, .panels-grid { gap: 28px; }
+    .hero p, .section-intro { font-size: 16px; }
+    .section-title { font-size: 28px; }
+    .faq-question { padding: 18px 20px; font-size: 15.5px; }
+    .faq-answer p { padding: 0 20px 20px; font-size: 15px; }
+  }
+  @media (max-width: 520px) {
+    .section-label { font-size: 12.5px; letter-spacing: 1.5px; }
+    .bfx-page .btn { padding: 15px 28px; font-size: 15.5px; }
+  }
 </style>
 
 <div class="bfx-page">
@@ -525,115 +541,114 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "BlackForgeX",
-  "url": "https://blackforgex.com",
-  "logo": "https://blackforgex.com/logo.png",
-  "description": "BlackForgeX is an OEM and ODM apparel manufacturer based in Sialkot, Pakistan, specializing in technical outerwear, workwear, and outdoor clothing for private label brands worldwide.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Sialkot",
-    "addressCountry": "Pakistan"
-  },
-  "areaServed": "Worldwide"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://blackforgex.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://blackforgex.com/services"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Sublimation Printing",
-      "item": "https://blackforgex.com/services/sublimation-printing"
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Dye Sublimation Printing for Apparel",
-  "name": "Sublimation Printing",
-  "description": "Full-color dye sublimation printing for sportswear, activewear and technical apparel, including cut-and-sew sublimation on fabric panels and blank garment sublimation, backed by complete in-house manufacturing.",
-  "provider": {
-    "@type": "Organization",
-    "name": "BlackForgeX",
-    "url": "https://blackforgex.com"
-  },
-  "areaServed": "Worldwide"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What fabrics work with sublimation printing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sublimation requires 100% polyester or polyester-coated fabric. It does not work reliably on cotton or cotton blends — for those, screen printing or heat transfer is a better fit."
+      "@type": "Organization",
+      "@id": "https://blackforgex.com/#organization",
+      "name": "BlackForgeX",
+      "url": "https://blackforgex.com",
+      "logo": "https://blackforgex.com/logo.png",
+      "description": "BlackForgeX is an OEM and ODM technical apparel manufacturer based in Sialkot, Pakistan, specializing in outdoor, tactical, workwear and private label apparel production.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sialkot",
+        "addressCountry": "PK"
+      },
+      "areaServed": "Worldwide",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://blackforgex.com/contact"
       }
     },
     {
-      "@type": "Question",
-      "name": "What's the difference between cut-and-sew sublimation and blank garment sublimation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Cut-and-sew sublimation prints on fabric panels before assembly, giving a cleaner result across seams. Blank garment sublimation prints on a finished garment, which is faster and more cost-effective but limited by existing seam placement."
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://blackforgex.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://blackforgex.com/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Sublimation Printing",
+          "item": "https://blackforgex.com/services/sublimation-printing"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Dye Sublimation Printing for Apparel",
+      "provider": {
+        "@id": "https://blackforgex.com/#organization"
+      },
+      "areaServed": "Worldwide",
+      "description": "Full-color dye sublimation printing for sportswear, activewear and technical apparel, including cut-and-sew sublimation on fabric panels and blank garment sublimation, backed by complete in-house manufacturing.",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Apparel brands, OEM buyers, ODM buyers, private label brands"
       }
     },
     {
-      "@type": "Question",
-      "name": "Does sublimation printing work on dark-colored garments?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No — sublimation requires a light or white base fabric, since the ink is transparent and relies on the fabric's base color showing through."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How durable is a sublimated print compared to screen printing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Because the ink bonds into the fabric itself rather than sitting on the surface, sublimated prints generally resist cracking, peeling and fading better than surface-level prints over repeated washing."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you produce a fully manufactured, sublimated garment, not just print a blank?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — sublimation printing is one part of our full manufacturing capability, which includes fabric sourcing, cutting, sewing and finishing under the same production timeline."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What's the minimum order quantity for sublimation printing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MOQs depend on the garment type and whether it's cut-and-sew or blank garment sublimation. Share your target product and quantity and we'll confirm exact minimums."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What fabrics work with sublimation printing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sublimation requires 100% polyester or polyester-coated fabric. It does not work reliably on cotton or cotton blends — for those, screen printing or heat transfer is a better fit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between cut-and-sew sublimation and blank garment sublimation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cut-and-sew sublimation prints on fabric panels before assembly, giving a cleaner result across seams. Blank garment sublimation prints on a finished garment, which is faster and more cost-effective but limited by existing seam placement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does sublimation printing work on dark-colored garments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — sublimation requires a light or white base fabric, since the ink is transparent and relies on the fabric's base color showing through."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How durable is a sublimated print compared to screen printing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because the ink bonds into the fabric itself rather than sitting on the surface, sublimated prints generally resist cracking, peeling and fading better than surface-level prints over repeated washing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you produce a fully manufactured, sublimated garment, not just print a blank?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — sublimation printing is one part of our full manufacturing capability, which includes fabric sourcing, cutting, sewing and finishing under the same production timeline."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the minimum order quantity for sublimation printing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MOQs depend on the garment type and whether it's cut-and-sew or blank garment sublimation. Share your target product and quantity and we'll confirm exact minimums."
+          }
+        }
+      ]
     }
   ]
 }

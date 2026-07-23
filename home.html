@@ -6,6 +6,7 @@
   <title>OEM &amp; ODM Apparel Manufacturer | BlackForgeX</title>
   <meta name="description" content="BlackForgeX is an OEM/ODM technical apparel manufacturer in Sialkot, Pakistan. Private label jackets, workwear &amp; outdoor clothing. MOQ from 100 pcs.">
   <meta name="keywords" content="OEM apparel manufacturer, ODM clothing manufacturer, private label apparel, technical apparel manufacturer, outdoor clothing manufacturer, jacket manufacturer Pakistan, Sialkot clothing factory, custom apparel manufacturing">
+  <link rel="canonical" href="https://blackforgex.com/">
 </head>
 <body>
 
@@ -364,6 +365,21 @@
     .services-grid, .trust-grid { grid-template-columns: 1fr; }
     .trust-grid { gap: 24px; }
     .btn, .btn-outline { width: 100%; text-align: center; }
+  }
+
+  /* ===== Mobile polish ===== */
+  .bfx-page a, .bfx-page button { -webkit-tap-highlight-color: transparent; }
+  @media (max-width: 768px) {
+    .container { padding: 0 20px; }
+    .hero-grid, .split-grid, .method-row, .panels-grid { gap: 28px; }
+    .hero p, .section-intro { font-size: 16px; }
+    .section-title { font-size: 28px; }
+    .faq-question { padding: 18px 20px; font-size: 15.5px; }
+    .faq-answer p { padding: 0 20px 20px; font-size: 15px; }
+  }
+  @media (max-width: 520px) {
+    .section-label { font-size: 12.5px; letter-spacing: 1.5px; }
+    .bfx-page .btn { padding: 15px 28px; font-size: 15.5px; }
   }
 </style>
 
@@ -762,112 +778,113 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "BlackForgeX",
-  "url": "https://blackforgex.com",
-  "logo": "https://blackforgex.com/logo.png",
-  "description": "BlackForgeX is an OEM and ODM apparel manufacturer based in Sialkot, Pakistan, specializing in technical outerwear, workwear, and outdoor clothing for private label brands worldwide.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Sialkot",
-    "addressCountry": "Pakistan"
-  },
-  "areaServed": "Worldwide"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "BlackForgeX",
-  "url": "https://blackforgex.com"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://blackforgex.com/"
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the minimum order quantity (MOQ) at BlackForgeX?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The minimum order quantity at BlackForgeX starts at 100 pieces per style. Highly technical products such as fully seam-taped waterproof jackets may require higher minimums depending on fabric availability, which is confirmed at the quotation stage."
+      "@type": "Organization",
+      "@id": "https://blackforgex.com/#organization",
+      "name": "BlackForgeX",
+      "url": "https://blackforgex.com",
+      "logo": "https://blackforgex.com/logo.png",
+      "description": "BlackForgeX is an OEM and ODM technical apparel manufacturer based in Sialkot, Pakistan, specializing in outdoor, tactical, workwear and private label apparel production.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sialkot",
+        "addressCountry": "PK"
+      },
+      "areaServed": "Worldwide",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://blackforgex.com/contact"
       }
     },
     {
-      "@type": "Question",
-      "name": "How long does sample development take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sample development takes 7–14 working days after the tech pack and fabric details are confirmed. Complex technical outerwear may take longer if specialty fabrics or hardware need to be sourced first."
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://blackforgex.com"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "name": "BlackForgeX",
+      "url": "https://blackforgex.com",
+      "publisher": {
+        "@id": "https://blackforgex.com/#organization"
       }
     },
     {
-      "@type": "Question",
-      "name": "What are the bulk production lead times?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Bulk production typically takes 30–45 days after sample approval and order confirmation. Exact timelines depend on order quantity, fabric lead times, and the complexity of printing, embroidery, and finishing."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which countries does BlackForgeX ship to?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "BlackForgeX exports worldwide and currently serves brands in 20+ countries, including the United States, United Kingdom, Germany, Australia, Canada, and across Europe and the Middle East. Shipping is arranged by sea, air, or courier depending on order size and urgency."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between OEM and ODM manufacturing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "With OEM manufacturing, you provide the design and tech pack, and BlackForgeX produces the garment exactly to your specification. With ODM manufacturing, BlackForgeX supplies existing development — patterns, fits, and constructions — which are then customized and branded as your own product. Both models are available on every product category."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What fabrics can BlackForgeX work with?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "BlackForgeX works with waterproof-breathable laminates, softshell bonded fabrics, ripstop nylon, polyester blends, fleece, down and synthetic insulation, moisture-wicking knits, and cotton blends. Fabric sourcing, custom dyeing, and lab-dip approval are handled in-house as part of every order."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What branding options are available for my products?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Available branding options include screen printing, sublimation printing, DTF printing, embroidery, heat transfers, woven labels, printed hangtags, and custom retail packaging. All branding is applied in-house during production, so finished goods ship market-ready under your own label."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I start a project with BlackForgeX?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Send your tech pack, reference product, or product idea through the contact page at blackforgex.com/contact. If you don't have a tech pack yet, the development team can build one with you as the first step. You'll receive a quotation covering sampling cost, unit pricing, MOQ, and lead times."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the minimum order quantity (MOQ) at BlackForgeX?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The minimum order quantity at BlackForgeX starts at 100 pieces per style. Highly technical products such as fully seam-taped waterproof jackets may require higher minimums depending on fabric availability, which is confirmed at the quotation stage."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does sample development take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sample development takes 7–14 working days after the tech pack and fabric details are confirmed. Complex technical outerwear may take longer if specialty fabrics or hardware need to be sourced first."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the bulk production lead times?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bulk production typically takes 30–45 days after sample approval and order confirmation. Exact timelines depend on order quantity, fabric lead times, and the complexity of printing, embroidery, and finishing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which countries does BlackForgeX ship to?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BlackForgeX exports worldwide and currently serves brands in 20+ countries, including the United States, United Kingdom, Germany, Australia, Canada, and across Europe and the Middle East. Shipping is arranged by sea, air, or courier depending on order size and urgency."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between OEM and ODM manufacturing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With OEM manufacturing, you provide the design and tech pack, and BlackForgeX produces the garment exactly to your specification. With ODM manufacturing, BlackForgeX supplies existing development — patterns, fits, and constructions — which are then customized and branded as your own product. Both models are available on every product category."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What fabrics can BlackForgeX work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BlackForgeX works with waterproof-breathable laminates, softshell bonded fabrics, ripstop nylon, polyester blends, fleece, down and synthetic insulation, moisture-wicking knits, and cotton blends. Fabric sourcing, custom dyeing, and lab-dip approval are handled in-house as part of every order."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What branding options are available for my products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Available branding options include screen printing, sublimation printing, DTF printing, embroidery, heat transfers, woven labels, printed hangtags, and custom retail packaging. All branding is applied in-house during production, so finished goods ship market-ready under your own label."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I start a project with BlackForgeX?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send your tech pack, reference product, or product idea through the contact page at blackforgex.com/contact. If you don't have a tech pack yet, the development team can build one with you as the first step. You'll receive a quotation covering sampling cost, unit pricing, MOQ, and lead times."
+          }
+        }
+      ]
     }
   ]
 }

@@ -6,6 +6,7 @@
   <title>Private Label Clothing Manufacturer | BlackForgeX</title>
   <meta name="description" content="Private label clothing manufacturing by BlackForgeX — brand development, woven labels, hangtags, packaging, QC &amp; worldwide shipping under one roof.">
   <meta name="keywords" content="private label clothing manufacturer, private label apparel manufacturing, woven labels, custom hangtags, heat transfer labels, satin care labels, white label clothing, brand development, private label manufacturer Pakistan">
+  <link rel="canonical" href="https://blackforgex.com/services/private-label-manufacturing">
 </head>
 <body>
 
@@ -300,6 +301,21 @@
     .section-title { font-size: 26px; }
     .split-text h2, .stripe h2, .seo-block h2 { font-size: 23px; }
     .bfx-page .btn { width: 100%; text-align: center; }
+  }
+
+  /* ===== Mobile polish ===== */
+  .bfx-page a, .bfx-page button { -webkit-tap-highlight-color: transparent; }
+  @media (max-width: 768px) {
+    .container { padding: 0 20px; }
+    .hero-grid, .split-grid, .method-row, .panels-grid { gap: 28px; }
+    .hero p, .section-intro { font-size: 16px; }
+    .section-title { font-size: 28px; }
+    .faq-question { padding: 18px 20px; font-size: 15.5px; }
+    .faq-answer p { padding: 0 20px 20px; font-size: 15px; }
+  }
+  @media (max-width: 520px) {
+    .section-label { font-size: 12.5px; letter-spacing: 1.5px; }
+    .bfx-page .btn { padding: 15px 28px; font-size: 15.5px; }
   }
 </style>
 
@@ -626,115 +642,114 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "BlackForgeX",
-  "url": "https://blackforgex.com",
-  "logo": "https://blackforgex.com/logo.png",
-  "description": "BlackForgeX is an OEM and ODM apparel manufacturer based in Sialkot, Pakistan, specializing in technical outerwear, workwear, and outdoor clothing for private label brands worldwide.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Sialkot",
-    "addressCountry": "Pakistan"
-  },
-  "areaServed": "Worldwide"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://blackforgex.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://blackforgex.com/services"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Private Label Manufacturing",
-      "item": "https://blackforgex.com/services/private-label-manufacturing"
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Private Label Apparel Manufacturing",
-  "name": "Private Label Manufacturing",
-  "description": "Full-service private label clothing manufacturing including brand development, woven labels, custom hangtags, heat transfer labels, printed satin care labels, quality control, packaging and worldwide shipping, produced under one roof.",
-  "provider": {
-    "@type": "Organization",
-    "name": "BlackForgeX",
-    "url": "https://blackforgex.com"
-  },
-  "areaServed": "Worldwide"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What's the difference between private label and white label manufacturing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "White label uses a proven, ready-made product design that you brand as your own. Private label starts from your own specifications — fabric, construction, fit — built from scratch for your brand. We offer both."
+      "@type": "Organization",
+      "@id": "https://blackforgex.com/#organization",
+      "name": "BlackForgeX",
+      "url": "https://blackforgex.com",
+      "logo": "https://blackforgex.com/logo.png",
+      "description": "BlackForgeX is an OEM and ODM technical apparel manufacturer based in Sialkot, Pakistan, specializing in outdoor, tactical, workwear and private label apparel production.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sialkot",
+        "addressCountry": "PK"
+      },
+      "areaServed": "Worldwide",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://blackforgex.com/contact"
       }
     },
     {
-      "@type": "Question",
-      "name": "What is the minimum order quantity for private label production?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MOQs start at 100 pieces per style for most garments, and can vary by product and label type. Share your target garment and quantity and we'll confirm exact minimums for your specific program."
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://blackforgex.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://blackforgex.com/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Private Label Manufacturing",
+          "item": "https://blackforgex.com/services/private-label-manufacturing"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Private Label Apparel Manufacturing",
+      "provider": {
+        "@id": "https://blackforgex.com/#organization"
+      },
+      "areaServed": "Worldwide",
+      "description": "Full-service private label clothing manufacturing including brand development, woven labels, custom hangtags, heat transfer labels, printed satin care labels, quality control, packaging and worldwide shipping, produced under one roof.",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Apparel brands, OEM buyers, ODM buyers, private label brands"
       }
     },
     {
-      "@type": "Question",
-      "name": "Can you produce woven labels, hangtags and packaging together with the garment?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — labeling, hangtags and packaging are produced as part of the same production timeline as the garment, not sourced separately."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you offer heat transfer labels for activewear and technical apparel?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Heat transfer labels are a common choice for performance and technical apparel where a sewn-in label could cause irritation against the skin."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I start with a small private label run as a new brand?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — we work with both first-time brand owners and established labels, and can guide you through realistic MOQs and sample development for a first-time launch."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you handle both design guidance and bulk production?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Our team supports you from initial concept and sample approval through to bulk production and shipping, with one point of contact throughout."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What's the difference between private label and white label manufacturing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "White label uses a proven, ready-made product design that you brand as your own. Private label starts from your own specifications — fabric, construction, fit — built from scratch for your brand. We offer both."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the minimum order quantity for private label production?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MOQs start at 100 pieces per style for most garments, and can vary by product and label type. Share your target garment and quantity and we'll confirm exact minimums for your specific program."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you produce woven labels, hangtags and packaging together with the garment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — labeling, hangtags and packaging are produced as part of the same production timeline as the garment, not sourced separately."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer heat transfer labels for activewear and technical apparel?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Heat transfer labels are a common choice for performance and technical apparel where a sewn-in label could cause irritation against the skin."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I start with a small private label run as a new brand?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — we work with both first-time brand owners and established labels, and can guide you through realistic MOQs and sample development for a first-time launch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle both design guidance and bulk production?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our team supports you from initial concept and sample approval through to bulk production and shipping, with one point of contact throughout."
+          }
+        }
+      ]
     }
   ]
 }

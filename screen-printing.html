@@ -6,6 +6,7 @@
   <title>Custom Screen Printing Services | BlackForgeX</title>
   <meta name="description" content="Custom screen printing for outdoor, tactical &amp; workwear brands. Plastisol, water-based, puff, discharge, reflective &amp; foil — Pantone-matched by BlackForgeX.">
   <meta name="keywords" content="custom screen printing, screen printing manufacturer, plastisol printing, water-based screen printing, puff print, discharge print, reflective print, foil print, apparel printing services, screen printing Pakistan">
+  <link rel="canonical" href="https://blackforgex.com/services/screen-printing">
 </head>
 <body>
 
@@ -307,6 +308,21 @@
     .stripe h2, .seo-block h2 { font-size: 23px; }
     .btn, .btn-outline, .btn-outline-light { width: 100%; text-align: center; }
   }
+
+  /* ===== Mobile polish ===== */
+  .bfx-page a, .bfx-page button { -webkit-tap-highlight-color: transparent; }
+  @media (max-width: 768px) {
+    .container { padding: 0 20px; }
+    .hero-grid, .split-grid, .method-row, .panels-grid { gap: 28px; }
+    .hero p, .section-intro { font-size: 16px; }
+    .section-title { font-size: 28px; }
+    .faq-question { padding: 18px 20px; font-size: 15.5px; }
+    .faq-answer p { padding: 0 20px 20px; font-size: 15px; }
+  }
+  @media (max-width: 520px) {
+    .section-label { font-size: 12.5px; letter-spacing: 1.5px; }
+    .bfx-page .btn { padding: 15px 28px; font-size: 15.5px; }
+  }
 </style>
 
 <div class="bfx-page">
@@ -587,131 +603,130 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "BlackForgeX",
-  "url": "https://blackforgex.com",
-  "logo": "https://blackforgex.com/logo.png",
-  "description": "BlackForgeX is an OEM and ODM apparel manufacturer based in Sialkot, Pakistan, specializing in technical outerwear, workwear, and outdoor clothing for private label brands worldwide.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Sialkot",
-    "addressCountry": "Pakistan"
-  },
-  "areaServed": "Worldwide"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://blackforgex.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Services",
-      "item": "https://blackforgex.com/services"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Screen Printing",
-      "item": "https://blackforgex.com/services/screen-printing"
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Custom Screen Printing for Apparel",
-  "name": "Screen Printing Manufacturing",
-  "description": "Custom screen printing for outdoor, tactical, workwear and private label apparel brands, including plastisol, water-based, puff, discharge, reflective and foil printing with Pantone color matching.",
-  "provider": {
-    "@type": "Organization",
-    "name": "BlackForgeX",
-    "url": "https://blackforgex.com"
-  },
-  "areaServed": "Worldwide"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the minimum order quantity for screen printing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "MOQs vary by method and garment type — plastisol and water-based generally allow lower minimums than foil or reflective printing. Share your product and target quantity and we'll confirm exact minimums."
+      "@type": "Organization",
+      "@id": "https://blackforgex.com/#organization",
+      "name": "BlackForgeX",
+      "url": "https://blackforgex.com",
+      "logo": "https://blackforgex.com/logo.png",
+      "description": "BlackForgeX is an OEM and ODM technical apparel manufacturer based in Sialkot, Pakistan, specializing in outdoor, tactical, workwear and private label apparel production.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sialkot",
+        "addressCountry": "PK"
+      },
+      "areaServed": "Worldwide",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://blackforgex.com/contact"
       }
     },
     {
-      "@type": "Question",
-      "name": "Can you match my brand's exact Pantone colors?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Every order is matched against Pantone reference codes and a physical strike-off sample is approved before full production begins."
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://blackforgex.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://blackforgex.com/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Screen Printing",
+          "item": "https://blackforgex.com/services/screen-printing"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Custom Screen Printing for Apparel",
+      "provider": {
+        "@id": "https://blackforgex.com/#organization"
+      },
+      "areaServed": "Worldwide",
+      "description": "Custom screen printing for outdoor, tactical, workwear and private label apparel brands, including plastisol, water-based, puff, discharge, reflective and foil printing with Pantone color matching.",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Apparel brands, OEM buyers, ODM buyers, private label brands"
       }
     },
     {
-      "@type": "Question",
-      "name": "Do you print on waterproof or laminated technical fabrics?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — ink type, mesh count and cure settings are adjusted specifically for membranes, laminates and heavyweight blends that standard print shops aren't set up to handle."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What's the difference between plastisol and water-based printing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Plastisol sits on top of the fabric with strong opacity and durability. Water-based ink soaks into the fibers for a softer feel, with slightly less opacity on dark garments."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you handle prints in multiple locations on one garment?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — chest, back, sleeve and hem prints can be planned and produced in a single coordinated run, with placement confirmed before production starts."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you support private label and OEM printing programs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, private label and OEM production is core to our business, including custom labels, hangtags and packaging alongside printing."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can you print reflective designs for tactical or workwear brands?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Our reflective printing is tested for wash durability, suited to tactical gear, workwear and low-visibility outdoor apparel."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you provide a sample before bulk production?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — a sample is produced and approved before we move into bulk production on every order, regardless of quantity."
-      }
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the minimum order quantity for screen printing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MOQs vary by method and garment type — plastisol and water-based generally allow lower minimums than foil or reflective printing. Share your product and target quantity and we'll confirm exact minimums."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you match my brand's exact Pantone colors?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every order is matched against Pantone reference codes and a physical strike-off sample is approved before full production begins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you print on waterproof or laminated technical fabrics?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — ink type, mesh count and cure settings are adjusted specifically for membranes, laminates and heavyweight blends that standard print shops aren't set up to handle."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between plastisol and water-based printing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Plastisol sits on top of the fabric with strong opacity and durability. Water-based ink soaks into the fibers for a softer feel, with slightly less opacity on dark garments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you handle prints in multiple locations on one garment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — chest, back, sleeve and hem prints can be planned and produced in a single coordinated run, with placement confirmed before production starts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you support private label and OEM printing programs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, private label and OEM production is core to our business, including custom labels, hangtags and packaging alongside printing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you print reflective designs for tactical or workwear brands?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our reflective printing is tested for wash durability, suited to tactical gear, workwear and low-visibility outdoor apparel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide a sample before bulk production?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — a sample is produced and approved before we move into bulk production on every order, regardless of quantity."
+          }
+        }
+      ]
     }
   ]
 }
