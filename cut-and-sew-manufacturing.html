@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cut &amp; Sew Clothing Manufacturer | BlackForgeX</title>
+  <meta name="description" content="Precision cut &amp; sew manufacturing by BlackForgeX — pattern making, technical fabrics, taped seams &amp; export-grade finishing for outdoor and private label brands.">
+  <meta name="keywords" content="cut and sew manufacturer, cut and sew clothing manufacturing, custom apparel manufacturing, pattern making, sample development, technical apparel manufacturer, garment manufacturer Sialkot Pakistan">
+</head>
+<body>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+  :root {
+    --red: #d60000;
+    --red-hover: #b80000;
+    --dark: #111111;
+    --body: #666666;
+    --white: #ffffff;
+    --bg-light: #e6e7ea;
+    --border: #ececec;
+  }
+
+  .bfx-page, .bfx-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .bfx-page {
+    background: var(--white);
+    color: var(--body);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .bfx-page img { max-width: 100%; display: block; }
+
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .bfx-page h1, .bfx-page h2 { color: var(--dark); font-weight: 700; line-height: 1.2; }
+  .bfx-page h3 { color: var(--dark); font-weight: 600; line-height: 1.3; }
+
+  .bfx-page a { color: var(--red); text-decoration: none; transition: color 0.2s ease; }
+  .bfx-page a:hover { color: var(--red-hover); }
+  .bfx-page a:focus-visible,
+  .bfx-page button:focus-visible {
+    outline: 3px solid var(--red);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  .bfx-page .btn {
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 16px 36px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .bfx-page .btn:hover {
+    background: var(--red-hover);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(214, 0, 0, 0.25);
+  }
+
+  .section-label {
+    display: inline-block;
+    color: var(--red);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .section-title { font-size: 40px; margin-bottom: 20px; }
+  .section-intro { max-width: 820px; font-size: 17px; }
+
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: var(--dark);
+    color: var(--white);
+  }
+
+  /* ===== 1. Split hero ===== */
+  .hero { padding: 72px 0; background: var(--white); }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .hero h1 { font-size: 46px; margin-bottom: 24px; }
+  .hero p { font-size: 18px; margin-bottom: 36px; max-width: 580px; }
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .hero-media {
+    border-radius: 16px;
+    overflow: hidden;
+    height: 440px;
+    background: var(--dark);
+  }
+
+  /* ===== 2. Full-bleed banner ===== */
+  .full-banner {
+    padding: 96px 0;
+    background: linear-gradient(rgba(17, 17, 17, 0.82), rgba(17, 17, 17, 0.82)), url('https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/cut-and-sew/web/banner-cutting-machine.jpg') center/cover no-repeat var(--dark);
+    text-align: center;
+  }
+  .full-banner h2 { color: var(--white); font-size: 38px; max-width: 900px; margin: 0 auto 20px; }
+  .full-banner p { color: #d5d5d5; font-size: 17px; max-width: 720px; margin: 0 auto 36px; }
+
+  /* ===== 3. Centered text blocks ===== */
+  .text-blocks { padding: 72px 0; background: var(--white); }
+  .text-block {
+    max-width: 820px;
+    margin: 0 auto 44px;
+    text-align: center;
+  }
+  .text-block:last-child { margin-bottom: 0; }
+  .text-block h2 { font-size: 30px; margin-bottom: 18px; }
+  .text-block p { font-size: 16px; margin-bottom: 16px; }
+  .text-block p:last-child { margin-bottom: 0; }
+
+  /* ===== 4. Split image panels ===== */
+  .panels { padding: 72px 0; background: var(--bg-light); }
+  .panels-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+  .panel {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    background: var(--dark);
+  }
+  .panel img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .panel::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(17,17,17,0.1) 30%, rgba(17,17,17,0.88) 100%);
+  }
+  .panel-body {
+    position: relative;
+    z-index: 1;
+    padding: 32px;
+  }
+  .panel-body h3 { color: var(--white); font-size: 24px; margin-bottom: 10px; }
+  .panel-body p { color: #d5d5d5; font-size: 15.5px; margin-bottom: 22px; max-width: 480px; }
+
+  /* ===== 5-6. Banners ===== */
+  .stripe { padding: 64px 0; }
+  .stripe-light { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .stripe-factory {
+    background: linear-gradient(rgba(17, 17, 17, 0.88), rgba(17, 17, 17, 0.88)), url('https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/cut-and-sew/web/banner-factory.jpg') center/cover no-repeat var(--dark);
+  }
+  .stripe-inner { max-width: 900px; }
+  .stripe h2 { font-size: 32px; margin-bottom: 18px; }
+  .stripe-factory h2 { color: var(--white); }
+  .stripe p { font-size: 16.5px; margin-bottom: 30px; }
+  .stripe-factory p { color: #b5b5b5; }
+
+  /* ===== 7. Mid CTA + product row ===== */
+  .mid-cta {
+    padding: 72px 0;
+    background: linear-gradient(rgba(17, 17, 17, 0.85), rgba(17, 17, 17, 0.85)), url('https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/cut-and-sew/web/midcta-cutting-tables.jpg') center/cover no-repeat var(--dark);
+    text-align: center;
+  }
+  .mid-cta h2 { color: var(--white); font-size: 36px; max-width: 820px; margin: 0 auto 20px; }
+  .mid-cta p { color: #d5d5d5; font-size: 17px; max-width: 680px; margin: 0 auto 36px; }
+
+  .product-row { padding: 72px 0; background: var(--white); }
+  .product-row-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .product-cell {
+    border-radius: 14px;
+    overflow: hidden;
+    height: 260px;
+    background: var(--dark);
+    transition: transform 0.25s ease;
+  }
+  .product-cell:hover { transform: translateY(-4px); }
+  .product-row-caption {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 26px;
+  }
+
+  /* ===== 8. Services grid ===== */
+  .services { padding: 72px 0; background: var(--bg-light); }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .service-card {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 44px rgba(17, 17, 17, 0.1);
+  }
+  .service-card .service-photo {
+    height: 180px;
+    overflow: hidden;
+    background: var(--dark);
+  }
+  .service-card-body {
+    padding: 26px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .service-card h3 { font-size: 18px; margin-bottom: 10px; }
+  .service-card p { font-size: 14.5px; margin-bottom: 18px; flex-grow: 1; }
+  .service-card a { font-weight: 600; font-size: 14.5px; }
+
+  /* ===== FAQ ===== */
+  .faq { padding: 72px 0; background: var(--white); }
+  .faq .section-title { font-size: 28px; }
+  .faq-list { max-width: 900px; margin: 48px auto 0; }
+  .faq-item {
+    background: var(--bg-light);
+    border-radius: 14px;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16.5px;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+  }
+  .faq-question .faq-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: var(--red);
+    transition: transform 0.25s ease;
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .faq-answer p { padding: 0 28px 24px; font-size: 15.5px; }
+
+  /* ===== Final CTA ===== */
+  .final-cta { padding: 72px 0; background: var(--dark); text-align: center; }
+  .final-cta h2 { color: var(--white); font-size: 38px; max-width: 820px; margin: 0 auto 20px; }
+  .final-cta p { color: #b5b5b5; font-size: 17px; max-width: 660px; margin: 0 auto 36px; }
+  .bfx-page .final-cta p a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bfx-page *, .bfx-page *::before, .bfx-page *::after {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .hero h1 { font-size: 38px; }
+    .section-title { font-size: 34px; }
+    .hero-grid { gap: 40px; }
+    .full-banner h2 { font-size: 32px; }
+    .stripe h2 { font-size: 28px; }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .product-row-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    .container { padding: 0 24px; }
+    .hero { padding: 48px 0; }
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 32px; }
+    .hero-media { height: 300px; }
+    .text-blocks, .panels, .mid-cta, .product-row, .services, .faq, .final-cta { padding: 48px 0; }
+    .full-banner { padding: 64px 0; }
+    .stripe { padding: 48px 0; }
+    .panels-grid { grid-template-columns: 1fr; }
+    .panel { min-height: 340px; }
+    .mid-cta h2, .final-cta h2 { font-size: 29px; }
+    .full-banner h2 { font-size: 27px; }
+  }
+
+  @media (max-width: 520px) {
+    .hero h1 { font-size: 27px; }
+    .section-title { font-size: 26px; }
+    .text-block h2, .stripe h2, .panel-body h3 { font-size: 23px; }
+    .services-grid, .product-row-grid { grid-template-columns: 1fr; }
+    .product-cell { height: 240px; }
+    .bfx-page .btn { width: 100%; text-align: center; }
+  }
+</style>
+
+<div class="bfx-page">
+
+  <!-- ===== 1. SPLIT HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="section-label">Cut &amp; Sew Manufacturing</span>
+          <h1>Precision Cut &amp; Sew Manufacturing for Technical Apparel Brands</h1>
+          <p>BlackForgeX runs structured cut and sew production for outdoor, tactical and private label brands — built on trained pattern makers, calibrated cutting rooms and consistent stitch quality across every production run.</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://blackforgex.com/contact" target="_top">Get Started</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img class="photo" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/cut-and-sew/web/hero-cutting-floor.jpg" alt="Pattern cutter working precisely on fabric at the BlackForgeX cutting table" width="1300" height="731">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. FULL-BLEED BANNER ===== -->
+  <section class="full-banner">
+    <div class="container">
+      <h2>Build Your Cut &amp; Sew Program With a Manufacturer That Understands Technical Fabrics</h2>
+      <p>From technical softshells to insulated workwear, our cutting and sewing lines are calibrated to hold tight tolerances on performance fabrics — not just basic cotton garments.</p>
+      <a class="btn" href="https://blackforgex.com/contact" target="_top">Inquire Now</a>
+    </div>
+  </section>
+
+  <!-- ===== 3. CENTERED TEXT BLOCKS ===== -->
+  <section class="text-blocks">
+    <div class="container">
+
+      <div class="text-block">
+        <h2>Cut &amp; Sew Capability Built for Technical and Outdoor Apparel</h2>
+        <p>Cut and sew is the foundation of every technical garment we produce. BlackForgeX supports brands with pattern making, grading, prototyping and sample manufacturing, backed by a cutting floor that holds accuracy across medium and large-scale production runs.</p>
+        <p>We work within tight tolerances that technical fabrics demand, so a waterproof jacket or an insulated workwear piece performs the same in unit 1 as it does in unit 5,000.</p>
+      </div>
+
+      <div class="text-block">
+        <h2>A Structured Cut &amp; Sew Manufacturer Based in Sialkot, Pakistan</h2>
+        <p>Operating from Sialkot, BlackForgeX gives outdoor and technical apparel brands a fully in-house cut and sew solution — from fabric relaxing and cutting to sewing, finishing and inspection — without outsourcing critical stages to third parties.</p>
+        <p>Our technical background means we can work with membranes, laminates, insulation and heavyweight fabrics that standard cut and sew lines are not set up to handle.</p>
+      </div>
+
+      <div class="text-block">
+        <h2>Built to Handle Complex Customization Requirements</h2>
+        <p>Whether you are a private label startup or an established outdoor brand, our cut and sew team is equipped to manage complex constructions — taped seams, multi-panel patterns, reinforced stitching and technical trims.</p>
+        <p>We only move into bulk production after your sample is approved, and every order is inspected with the same attention regardless of order size.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== 4. SPLIT IMAGE PANELS ===== -->
+  <section class="panels">
+    <div class="container">
+      <div class="panels-grid">
+
+        <div class="panel">
+          <img src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/cut-and-sew/web/panel-pattern-development.jpg" alt="Technical pattern development table with templates and markers" loading="lazy" width="900" height="720">
+          <div class="panel-body">
+            <h3>Technical Pattern Development</h3>
+            <p>Precision pattern making and grading for multi-panel technical garments, built to hold shape and performance across every size run.</p>
+            <a class="btn" href="https://blackforgex.com/contact" target="_top">Inquire Now</a>
+          </div>
+        </div>
+
+        <div class="panel">
+          <img src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/cut-and-sew/web/panel-trims-finishing.jpg" alt="Craftsman hand-finishing technical seam construction with chalk markings" loading="lazy" width="900" height="600">
+          <div class="panel-body">
+            <h3>Custom Cut &amp; Sew Trims and Finishing</h3>
+            <p>Reinforced seams, taped construction and technical trims finished to export-grade standards for outdoor and workwear brands.</p>
+            <a class="btn" href="https://blackforgex.com/contact" target="_top">Inquire Now</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. GUIDANCE BANNER ===== -->
+  <section class="stripe stripe-light">
+    <div class="container">
+      <div class="stripe-inner">
+        <h2>Guidance at Every Stage of Your Cut &amp; Sew Production</h2>
+        <p>Our merchandising team stays involved from tech pack review through to final shipment, so you always know your production status, timelines and next steps.</p>
+        <a class="btn" href="https://blackforgex.com/contact" target="_top">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. FACTORY BANNER ===== -->
+  <section class="stripe stripe-factory">
+    <div class="container">
+      <div class="stripe-inner">
+        <h2>Your Brand's Production Foundation Starts on Our Cutting Floor</h2>
+        <p>Consistent quality across every cut and sew order is what earns us long-term partnerships — supported by realistic lead times, transparent pricing and MOQs suited to growing private label brands.</p>
+        <a class="btn" href="https://blackforgex.com/contact" target="_top">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. MID CTA + PRODUCT ROW ===== -->
+  <section class="mid-cta">
+    <div class="container">
+      <span class="section-label">Let's Get Started</span>
+      <h2>Want to See Examples of Our Cut &amp; Sew Work?</h2>
+      <p>Share your target fabric type and order volume, and we'll help you find the right cut and sew program for your brand.</p>
+      <a class="btn" href="https://blackforgex.com/contact" target="_top">Schedule a Consultation</a>
+    </div>
+  </section>
+
+  <section class="product-row">
+    <div class="container">
+      <div class="product-row-grid">
+        <div class="product-cell"><img class="photo" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/cut-and-sew/web/product-1.jpg" alt="Minimal white cut and sew apparel collection on models" loading="lazy" width="900" height="351"></div>
+        <div class="product-cell"><img class="photo" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/cut-and-sew/web/product-2.jpg" alt="Dark tracksuit set produced through cut and sew manufacturing" loading="lazy" width="900" height="413"></div>
+        <div class="product-cell"><img class="photo" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/cut-and-sew/web/product-3.jpg" alt="Light blue technical jackets from a cut and sew production run" loading="lazy" width="900" height="900"></div>
+        <div class="product-cell"><img class="photo" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/cut-and-sew/web/product-4.jpg" alt="Black studio apparel set showing finished cut and sew garments" loading="lazy" width="900" height="648"></div>
+      </div>
+      <p class="product-row-caption">A sample of cut &amp; sew production and finished garment work across apparel categories.</p>
+    </div>
+  </section>
+
+  <!-- ===== 8. SERVICES GRID ===== -->
+  <section class="services">
+    <div class="container">
+      <span class="section-label">Get The Best</span>
+      <h2 class="section-title">Cut &amp; Sew Manufacturer Services</h2>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-photo"><img class="photo" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/cut-and-sew/web/card-cutsew.jpg" alt="Sewing line producing custom cut and sew garments" loading="lazy" width="900" height="600"></div>
+          <div class="service-card-body">
+            <h3>Cut &amp; Sew Manufacturing</h3>
+            <p>Full customization from fabric selection to finished garment, developed by a dedicated team trained on technical and performance fabrics.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-photo"><img class="photo" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/cut-and-sew/web/card-basic.jpg" alt="Production line running standardized cut and sew garment programs" loading="lazy" width="900" height="600"></div>
+          <div class="service-card-body">
+            <h3>Cut &amp; Sew — Basic Programs</h3>
+            <p>Standardized precut builds for brands that need fast turnaround without compromising on construction quality.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-photo"><img class="photo" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/cut-and-sew/web/card-pattern.jpg" alt="Pattern maker developing a technical garment template" loading="lazy" width="490" height="490"></div>
+          <div class="service-card-body">
+            <h3>Technical Pattern &amp; Sample Development</h3>
+            <p>From concept sketch or reference garment to a working prototype, ready for your approval before bulk production begins.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-photo"><img class="photo" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/cut-and-sew/web/card-specialized.jpg" alt="Hand stitching detail work on dark technical fabric" loading="lazy" width="900" height="678"></div>
+          <div class="service-card-body">
+            <h3>Specialized Construction &amp; Tailoring</h3>
+            <p>Complex builds for tactical, workwear and private label garments — reinforced seams, taping and technical trims included.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq">
+    <div class="container">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Cut &amp; Sew Questions, Answered Directly</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What's the difference between cut and sew manufacturing and blank garment decoration?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Cut and sew starts from raw fabric — cutting custom patterns and sewing garments from scratch to your specifications. Blank garment decoration adds prints or embroidery to an already-manufactured garment.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can you cut and sew technical fabrics like waterproof membranes and laminates?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes — our cutting and sewing lines are calibrated for membranes, laminates, insulation and other heavyweight technical fabrics, not just basic cotton.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is the minimum order quantity for cut and sew production?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>MOQs vary by garment complexity and fabric type. Share your target product and quantity and we'll confirm exact minimums.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you provide a sample before bulk production?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes — every order moves into bulk production only after the sample is reviewed and approved.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can you handle complex constructions like taped seams and multi-panel patterns?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes, this is a core part of our cut and sew capability for tactical, workwear and technical outdoor apparel.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Where is BlackForgeX's cut and sew production based?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Our facility is based in Sialkot, Pakistan, handling cutting, sewing, finishing and inspection fully in-house.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How is quality maintained across large production runs?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Every order is inspected with the same standard regardless of size, so a 200-unit run and a 5,000-unit run receive the same level of quality control.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Start Your Cut &amp; Sew Program With a Factory Built for It</h2>
+      <p>Share your tech pack, reference garment or product idea through the <a href="https://blackforgex.com/contact" target="_top">BlackForgeX contact page</a> — you'll get realistic MOQs, timelines and pricing before committing to anything.</p>
+      <a class="btn" href="https://blackforgex.com/contact" target="_top">Get Started</a>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll('.bfx-page .faq-item');
+    items.forEach(function (item) {
+      var btn = item.querySelector('.faq-question');
+      var answer = item.querySelector('.faq-answer');
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        items.forEach(function (other) {
+          other.classList.remove('open');
+          other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          other.querySelector('.faq-answer').style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BlackForgeX",
+  "url": "https://blackforgex.com",
+  "logo": "https://blackforgex.com/logo.png",
+  "description": "BlackForgeX is an OEM and ODM apparel manufacturer based in Sialkot, Pakistan, specializing in technical outerwear, workwear, and outdoor clothing for private label brands worldwide.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Sialkot",
+    "addressCountry": "Pakistan"
+  },
+  "areaServed": "Worldwide"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://blackforgex.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://blackforgex.com/services"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Cut & Sew Manufacturing",
+      "item": "https://blackforgex.com/services/cut-and-sew-manufacturing"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Cut and Sew Apparel Manufacturing",
+  "name": "Cut & Sew Manufacturing",
+  "description": "Precision cut and sew manufacturing for technical, outdoor, tactical and private label apparel, including pattern making, grading, sample development, specialized construction and export-grade finishing.",
+  "provider": {
+    "@type": "Organization",
+    "name": "BlackForgeX",
+    "url": "https://blackforgex.com"
+  },
+  "areaServed": "Worldwide"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between cut and sew manufacturing and blank garment decoration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cut and sew starts from raw fabric — cutting custom patterns and sewing garments from scratch to your specifications. Blank garment decoration adds prints or embroidery to an already-manufactured garment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you cut and sew technical fabrics like waterproof membranes and laminates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — our cutting and sewing lines are calibrated for membranes, laminates, insulation and other heavyweight technical fabrics, not just basic cotton."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the minimum order quantity for cut and sew production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MOQs vary by garment complexity and fabric type. Share your target product and quantity and we'll confirm exact minimums."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide a sample before bulk production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — every order moves into bulk production only after the sample is reviewed and approved."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you handle complex constructions like taped seams and multi-panel patterns?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, this is a core part of our cut and sew capability for tactical, workwear and technical outdoor apparel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is BlackForgeX's cut and sew production based?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our facility is based in Sialkot, Pakistan, handling cutting, sewing, finishing and inspection fully in-house."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is quality maintained across large production runs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every order is inspected with the same standard regardless of size, so a 200-unit run and a 5,000-unit run receive the same level of quality control."
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
