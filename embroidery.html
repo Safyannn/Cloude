@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Embroidery Services | BlackForgeX Apparel Manufacturer</title>
+  <meta name="description" content="Custom machine embroidery by BlackForgeX — flat, 3D puff, patches &amp; chenille. In-house digitizing, correct backing per fabric, durable wash-tested stitching.">
+  <meta name="keywords" content="custom embroidery, embroidery manufacturer, 3D puff embroidery, flat embroidery, chenille embroidery, custom patches, logo digitizing, apparel embroidery services, embroidery Pakistan">
+  <link rel="canonical" href="https://blackforgex.com/services/embroidery">
+</head>
+<body>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+  :root {
+    --red: #d60000;
+    --red-hover: #b80000;
+    --dark: #111111;
+    --body: #666666;
+    --white: #ffffff;
+    --bg-light: #e6e7ea;
+    --border: #ececec;
+  }
+
+  html, body { margin: 0 !important; padding: 0 !important; width: 100%; overflow-x: hidden; }
+
+  .bfx-page, .bfx-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .bfx-page {
+    overflow-x: hidden;
+    width: 100%;
+    background: var(--white);
+    color: var(--body);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .bfx-page img { max-width: 100%; display: block; }
+
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .bfx-page h1, .bfx-page h2 { color: var(--dark); font-weight: 700; line-height: 1.2; }
+  .bfx-page h3 { color: var(--dark); font-weight: 600; line-height: 1.3; }
+
+  .bfx-page a { color: var(--red); text-decoration: none; transition: color 0.2s ease; }
+  .bfx-page a:hover { color: var(--red-hover); }
+  .bfx-page a:focus-visible,
+  .bfx-page button:focus-visible {
+    outline: 3px solid var(--red);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  .bfx-page .btn {
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 16px 36px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .bfx-page .btn:hover {
+    background: var(--red-hover);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(214, 0, 0, 0.25);
+  }
+
+  .section-label {
+    display: inline-block;
+    color: var(--red);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .section-title { font-size: 40px; margin-bottom: 20px; }
+  .section-intro { max-width: 820px; font-size: 17px; }
+
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: var(--dark);
+    color: var(--white);
+  }
+
+  /* ===== Hero ===== */
+  .hero { padding: 72px 0; background: var(--white); }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .hero h1 { font-size: 46px; margin-bottom: 24px; }
+  .hero p { font-size: 18px; margin-bottom: 36px; max-width: 580px; }
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .hero-media {
+    border-radius: 16px;
+    overflow: hidden;
+    height: 460px;
+    background: var(--dark);
+  }
+
+  /* ===== Types cards ===== */
+  .types { padding: 72px 0; background: var(--bg-light); }
+  .types-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 48px;
+  }
+  .type-card {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .type-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 44px rgba(17, 17, 17, 0.1);
+  }
+  .type-card .type-photo {
+    height: 250px;
+    overflow: hidden;
+    background: var(--dark);
+  }
+  .type-card-body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .type-card h3 { font-size: 20px; margin-bottom: 12px; }
+  .type-card p { font-size: 15px; margin-bottom: 20px; flex-grow: 1; }
+  .type-card a { font-weight: 600; font-size: 15px; }
+
+  /* ===== Banner stripes ===== */
+  .stripe { padding: 64px 0; }
+  .stripe-dark { background: var(--dark); }
+  .stripe-photo-1 {
+    background: linear-gradient(rgba(17, 17, 17, 0.86), rgba(17, 17, 17, 0.86)), url('https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/embroidery/web/stripe-digitizing.jpg') center/cover no-repeat var(--dark);
+  }
+  .stripe-photo-2 {
+    background: linear-gradient(rgba(17, 17, 17, 0.86), rgba(17, 17, 17, 0.86)), url('https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/embroidery/web/stripe-private-label.jpg') center/cover no-repeat var(--dark);
+  }
+  .stripe-light { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .stripe-inner { max-width: 900px; }
+  .stripe h2 { font-size: 32px; margin-bottom: 18px; }
+  .stripe-dark h2 { color: var(--white); }
+  .stripe p { font-size: 16.5px; margin-bottom: 30px; }
+  .stripe-dark p { color: #b5b5b5; }
+
+  /* ===== Mid CTA ===== */
+  .mid-cta {
+    padding: 72px 0;
+    background: linear-gradient(rgba(17, 17, 17, 0.85), rgba(17, 17, 17, 0.85)), url('https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/embroidery/web/midcta-embroidered.jpg') center/cover no-repeat var(--dark);
+    text-align: center;
+  }
+  .mid-cta h2 { color: var(--white); font-size: 36px; max-width: 820px; margin: 0 auto 20px; }
+  .mid-cta p { color: #d5d5d5; font-size: 17px; max-width: 680px; margin: 0 auto 36px; }
+
+  /* ===== SEO text blocks ===== */
+  .seo-blocks { padding: 72px 0; background: var(--white); }
+  .text-block {
+    max-width: 820px;
+    margin: 0 auto 44px;
+    text-align: center;
+  }
+  .text-block:last-child { margin-bottom: 0; }
+  .text-block h2 { font-size: 30px; margin-bottom: 18px; }
+  .text-block p { font-size: 16px; margin-bottom: 16px; }
+  .text-block p:last-child { margin-bottom: 0; }
+
+  /* ===== FAQ ===== */
+  .faq { padding: 72px 0; background: var(--bg-light); }
+  .faq .section-title { font-size: 28px; }
+  .faq-list { max-width: 900px; margin: 48px auto 0; }
+  .faq-item {
+    background: var(--white);
+    border-radius: 14px;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16.5px;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+  }
+  .faq-question .faq-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: var(--red);
+    transition: transform 0.25s ease;
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .faq-answer p { padding: 0 28px 24px; font-size: 15.5px; }
+
+  /* ===== Final CTA ===== */
+  .final-cta { padding: 72px 0; background: var(--dark); text-align: center; }
+  .final-cta h2 { color: var(--white); font-size: 38px; max-width: 820px; margin: 0 auto 20px; }
+  .final-cta p { color: #b5b5b5; font-size: 17px; max-width: 660px; margin: 0 auto 36px; }
+  .bfx-page .final-cta p a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bfx-page *, .bfx-page *::before, .bfx-page *::after {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .hero h1 { font-size: 38px; }
+    .section-title { font-size: 34px; }
+    .hero-grid { gap: 40px; }
+    .stripe h2 { font-size: 28px; }
+  }
+
+  @media (max-width: 768px) {
+    .container { padding: 0 20px; }
+    .hero { padding: 48px 0; }
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 32px; }
+    .hero p, .section-intro { font-size: 16px; }
+    .hero-media { height: 320px; }
+    .types, .mid-cta, .seo-blocks, .faq, .final-cta { padding: 48px 0; }
+    .stripe { padding: 48px 0; }
+    .types-grid { grid-template-columns: 1fr; }
+    .section-title { font-size: 28px; }
+    .mid-cta h2, .final-cta h2 { font-size: 29px; }
+    .faq-question { padding: 18px 20px; font-size: 15.5px; }
+    .faq-answer p { padding: 0 20px 20px; font-size: 15px; }
+  }
+
+  @media (max-width: 520px) {
+    .hero h1 { font-size: 27px; }
+    .section-title { font-size: 26px; }
+    .stripe h2, .text-block h2 { font-size: 23px; }
+    .section-label { font-size: 12.5px; letter-spacing: 1.5px; }
+    .bfx-page .btn { width: 100%; text-align: center; padding: 15px 28px; }
+  }
+
+  /* ===== Boxed sections (Hostinger grid-friendly) ===== */
+  .types, .stripe, .mid-cta, .final-cta, .faq {
+    border-radius: 24px;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  @media (max-width: 768px) {
+    .types, .stripe, .mid-cta, .final-cta, .faq {
+      border-radius: 18px;
+      margin: 8px 0;
+    }
+  }
+</style>
+
+<div class="bfx-page">
+
+  <!-- ===== 1. HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="section-label">Custom Embroidery</span>
+          <h1>Custom Embroidery That Holds Its Shape, Wash After Wash</h1>
+          <p>BlackForgeX runs machine embroidery for outdoor, tactical, workwear and private label brands — digitized precisely, stitched on the right backing for your fabric, and built to survive the field, not just look good in a catalog.</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://blackforgex.com/contact" target="_top">Get Started</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img class="photo" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/embroidery/web/hero-cap-embroidery.jpg" alt="Premium raised script embroidery stitched on a black cap" width="1300" height="654">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. INTRO + 3. TYPE CARDS ===== -->
+  <section class="types">
+    <div class="container">
+      <span class="section-label">Get The Best</span>
+      <h2 class="section-title">Embroidery Built Into a Full Manufacturing Line, Not Bolted On</h2>
+      <p class="section-intro">Embroidery is only as good as the digitizing behind it and the backing beneath it. A logo that looks sharp on a cotton cap can pucker, distort or pull loose on a stretchy performance fabric if it's stitched the same way. Because BlackForgeX embroiders as part of our own production line — not as an outsourced add-on — we control digitizing, stabilizer choice, thread type and placement together, so the result holds up on the actual garment you're making.</p>
+      <div class="types-grid">
+
+        <div class="type-card">
+          <div class="type-photo"><img class="photo" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/embroidery/web/card-flat.jpg" alt="Flat gold crest embroidery sitting flush on a navy polo" loading="lazy" width="900" height="600"></div>
+          <div class="type-card-body">
+            <h3>Flat Embroidery</h3>
+            <p>The standard for logos and lettering on caps, polos, workwear and jackets — clean, durable satin and fill stitching that sits flush against the fabric. The most versatile option for consistent brand marks across a full apparel program.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="type-card">
+          <div class="type-photo"><img class="photo" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/embroidery/web/card-puff.jpg" alt="Raised 3D puff embroidery logo on a structured cap" loading="lazy" width="900" height="675"></div>
+          <div class="type-card-body">
+            <h3>3D Puff Embroidery</h3>
+            <p>Foam placed under the stitching lifts the design off the surface for a bold, raised effect — most common on structured caps and headwear where a logo needs to stand out and hold its form.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="type-card">
+          <div class="type-photo"><img class="photo" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/embroidery/web/card-patches.jpg" alt="Custom embroidered mountain patch with clean satin borders" loading="lazy" width="900" height="900"></div>
+          <div class="type-card-body">
+            <h3>Custom Patches &amp; Appliqué</h3>
+            <p>Embroidered patches produced to any shape or size, then applied to garments — ideal for tactical, workwear and uniform programs that need a consistent, replaceable brand mark, or a layered appliqué look on heavier apparel.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="type-card">
+          <div class="type-photo"><img class="photo" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/embroidery/web/card-chenille.jpg" alt="Textured chenille varsity-style embroidered patch" loading="lazy" width="900" height="600"></div>
+          <div class="type-card-body">
+            <h3>Chenille &amp; Specialty Embroidery</h3>
+            <p>Textured, high-pile chenille and specialty threads for a premium, tactile finish — used on varsity-style, heritage and limited-run collections where the embroidery itself is part of the design statement.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. BANNER STRIPE 1 ===== -->
+  <section class="stripe stripe-dark stripe-photo-1">
+    <div class="container">
+      <div class="stripe-inner">
+        <h2>Digitizing Is Where Good Embroidery Is Won or Lost</h2>
+        <p>Before a single stitch is made, your artwork is converted into a digitized embroidery file that tells the machine exactly how to stitch. Poor digitizing is the reason so much embroidery looks lumpy or distorted. We digitize each design for the specific fabric and placement it's going on — not with one generic file reused everywhere.</p>
+        <a class="btn" href="https://blackforgex.com/contact" target="_top">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. BANNER STRIPE 2 ===== -->
+  <section class="stripe stripe-light">
+    <div class="container">
+      <div class="stripe-inner">
+        <h2>Combine Embroidery With Printing on a Single Garment</h2>
+        <p>Many brands want an embroidered logo on the chest and a printed graphic on the back of the same piece. Because we run embroidery, screen printing and sublimation under one roof, we can combine decoration methods on one garment in a single production timeline — instead of shipping your order between separate vendors.</p>
+        <a class="btn" href="https://blackforgex.com/contact" target="_top">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. BANNER STRIPE 3 ===== -->
+  <section class="stripe stripe-dark stripe-photo-2">
+    <div class="container">
+      <div class="stripe-inner">
+        <h2>Private Label Embroidery Under Your Own Brand</h2>
+        <p>Produce a full line of embroidered apparel carrying your brand's logo and identity, ready to sell under your own label. From the digitized mark to the finished, labeled garment, the whole program runs through one accountable team.</p>
+        <a class="btn" href="https://blackforgex.com/contact" target="_top">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. MID-PAGE CTA ===== -->
+  <section class="mid-cta">
+    <div class="container">
+      <span class="section-label">Let's Get Started</span>
+      <h2>Ready to See Your Logo Stitched the Right Way?</h2>
+      <p>Send us your logo and the garment you want it on, and we'll advise on the right embroidery type, backing and thread before anything goes into production.</p>
+      <a class="btn" href="https://blackforgex.com/contact" target="_top">Schedule a Consultation</a>
+    </div>
+  </section>
+
+  <!-- ===== 8-10. SEO TEXT BLOCKS ===== -->
+  <section class="seo-blocks">
+    <div class="container">
+
+      <div class="text-block">
+        <h2>Custom Embroidery for Brands That Need It Done Consistently</h2>
+        <p>Embroidery is one of the most durable ways to brand apparel — the design is stitched into the fabric with thread rather than applied on top, so it doesn't crack or peel the way some prints can. That durability makes it the standard choice for workwear, uniforms, caps and corporate branding that has to survive heavy, repeated use.</p>
+        <p>BlackForgeX produces custom embroidery across a wide range of garments and accessories — from technical jackets and workwear to caps, polos and bags — with the same digitizing and quality discipline applied to every order, regardless of size.</p>
+      </div>
+
+      <div class="text-block">
+        <h2>Why the Right Backing and Thread Matter as Much as the Design</h2>
+        <p>The same logo needs different handling on different fabrics. A dense design on a lightweight performance fabric needs the correct stabilizer to prevent puckering; a cap needs different tensioning than a flat panel. Getting these choices right is the difference between embroidery that looks professional and embroidery that distorts after the first wash.</p>
+        <p>We match backing, stabilizer, thread type and stitch density to your specific fabric and placement — a level of control that comes from embroidering within our own manufacturing line rather than sending the work to a third-party decorator.</p>
+      </div>
+
+      <div class="text-block">
+        <h2>One Note on Color Matching for Embroidery</h2>
+        <p>Unlike screen printing or sublimation, where we can mix inks and dyes to hit a precise Pantone reference, embroidery colors are limited to the stock range offered by thread suppliers — threads can't be custom-mixed the way ink can. We'll match your brand colors to the closest available thread shades and confirm them with you before production, so there are no surprises.</p>
+        <p>If exact color matching across a large brand program is critical, we'll talk you through where embroidery, printing or a combination of both makes the most sense for each part of your product.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq">
+    <div class="container">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Embroidery Questions, Answered Directly</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you digitize artwork, or do I need to provide a digitized file?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>We digitize your artwork in-house — you can send a standard logo file and we'll convert it into a production-ready embroidery file suited to your garment and placement.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What garments can you embroider?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Caps, polos, workwear, jackets, bags and most woven and knit apparel. Very lightweight or highly stretchy fabrics need the correct backing, which we select per fabric.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What's the difference between flat and 3D puff embroidery?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Flat embroidery sits flush against the fabric — standard for most logos. 3D puff embroidery uses foam under the stitching to raise the design, most common on structured caps.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can you color-match my exact brand colors in embroidery?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Embroidery threads come in a fixed stock range and can't be custom-mixed like ink. We match your brand colors to the closest available thread shades and confirm them before production.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can you combine embroidery and printing on the same garment?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes — because we run embroidery, screen printing and sublimation in-house, we can combine methods on a single garment within one production timeline.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you produce embroidered patches?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes — custom embroidered patches in any shape or size, which we can also apply to your garments.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is the minimum order quantity for embroidery?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>MOQs vary by garment and embroidery type. Share your product and quantity target and we'll confirm exact minimums.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Stitch Your Brand Onto Apparel Built to Last</h2>
+      <p>Send your logo and target garment through the <a href="https://blackforgex.com/contact" target="_top">BlackForgeX contact page</a> — we'll confirm the right embroidery type, backing and thread before anything goes into production.</p>
+      <a class="btn" href="https://blackforgex.com/contact" target="_top">Get Started</a>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll('.bfx-page .faq-item');
+    items.forEach(function (item) {
+      var btn = item.querySelector('.faq-question');
+      var answer = item.querySelector('.faq-answer');
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        items.forEach(function (other) {
+          other.classList.remove('open');
+          other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          other.querySelector('.faq-answer').style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://blackforgex.com/#organization",
+      "name": "BlackForgeX",
+      "url": "https://blackforgex.com",
+      "logo": "https://blackforgex.com/logo.png",
+      "description": "BlackForgeX is an OEM and ODM technical apparel manufacturer based in Sialkot, Pakistan, specializing in outdoor, tactical, workwear and private label apparel production.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sialkot",
+        "addressCountry": "PK"
+      },
+      "areaServed": "Worldwide",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://blackforgex.com/contact"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://blackforgex.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://blackforgex.com/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Embroidery",
+          "item": "https://blackforgex.com/services/embroidery"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Custom Machine Embroidery for Apparel",
+      "provider": {
+        "@id": "https://blackforgex.com/#organization"
+      },
+      "areaServed": "Worldwide",
+      "description": "Custom machine embroidery for outdoor, tactical, workwear and private label apparel brands, including flat embroidery, 3D puff embroidery, custom patches and appliqué, and chenille specialty embroidery, with in-house digitizing.",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Apparel brands, OEM buyers, ODM buyers, private label brands"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you digitize artwork, or do I need to provide a digitized file?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We digitize your artwork in-house — you can send a standard logo file and we'll convert it into a production-ready embroidery file suited to your garment and placement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What garments can you embroider?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Caps, polos, workwear, jackets, bags and most woven and knit apparel. Very lightweight or highly stretchy fabrics need the correct backing, which we select per fabric."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between flat and 3D puff embroidery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Flat embroidery sits flush against the fabric — standard for most logos. 3D puff embroidery uses foam under the stitching to raise the design, most common on structured caps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you color-match my exact brand colors in embroidery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Embroidery threads come in a fixed stock range and can't be custom-mixed like ink. We match your brand colors to the closest available thread shades and confirm them before production."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you combine embroidery and printing on the same garment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — because we run embroidery, screen printing and sublimation in-house, we can combine methods on a single garment within one production timeline."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you produce embroidered patches?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — custom embroidered patches in any shape or size, which we can also apply to your garments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the minimum order quantity for embroidery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MOQs vary by garment and embroidery type. Share your product and quantity target and we'll confirm exact minimums."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
