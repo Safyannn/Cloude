@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Pack &amp; Sample Development | BlackForgeX</title>
+  <meta name="description" content="Factory-ready tech pack services by BlackForgeX — technical sketches, graded measurements, BOM &amp; construction specs for jackets, workwear, tactical &amp; outdoor apparel.">
+  <meta name="keywords" content="tech pack services, apparel tech pack, technical package, garment tech pack, sample development, clothing manufacturer tech pack, tech pack for jackets, outdoor apparel tech pack, BlackForgeX">
+  <link rel="canonical" href="https://blackforgex.com/services/tech-pack-development">
+</head>
+<body>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+  :root {
+    --red: #d60000;
+    --red-hover: #b80000;
+    --dark: #111111;
+    --body: #666666;
+    --white: #ffffff;
+    --bg-light: #e6e7ea;
+    --border: #ececec;
+  }
+
+  html, body { margin: 0 !important; padding: 0 !important; width: 100%; overflow-x: hidden; }
+
+  .bfx-page, .bfx-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .bfx-page {
+    overflow-x: hidden;
+    width: 100%;
+    background: var(--white);
+    color: var(--body);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .bfx-page img { max-width: 100%; display: block; }
+
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .bfx-page h1, .bfx-page h2 { color: var(--dark); font-weight: 700; line-height: 1.2; }
+  .bfx-page h3 { color: var(--dark); font-weight: 600; line-height: 1.3; }
+
+  .bfx-page a { color: var(--red); text-decoration: none; transition: color 0.2s ease; }
+  .bfx-page a:hover { color: var(--red-hover); }
+  .bfx-page a:focus-visible,
+  .bfx-page button:focus-visible {
+    outline: 3px solid var(--red);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  .bfx-page .btn {
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 16px 36px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .bfx-page .btn:hover {
+    background: var(--red-hover);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(214, 0, 0, 0.25);
+  }
+
+  .section-label {
+    display: inline-block;
+    color: var(--red);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .section-title { font-size: 40px; margin-bottom: 20px; }
+  .section-intro { max-width: 820px; font-size: 17px; }
+
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: var(--dark);
+    color: var(--white);
+  }
+
+  /* ===== Hero ===== */
+  .hero { padding: 72px 0; background: var(--white); }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .hero h1 { font-size: 44px; margin-bottom: 24px; }
+  .hero p { font-size: 18px; margin-bottom: 36px; max-width: 580px; }
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+  .hero-media {
+    border-radius: 16px;
+    overflow: hidden;
+    height: 460px;
+    background: var(--dark);
+  }
+
+  /* ===== Intro ===== */
+  .intro { padding: 72px 0; background: var(--bg-light); }
+  .intro-inner { max-width: 900px; margin: 0 auto; text-align: center; }
+  .intro h2 { font-size: 34px; margin-bottom: 20px; }
+  .intro p { font-size: 17px; }
+
+  /* ===== Tech pack type cards ===== */
+  .types { padding: 72px 0; background: var(--white); }
+  .types-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .type-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .type-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 44px rgba(17, 17, 17, 0.1);
+  }
+  .type-sketch {
+    height: 190px;
+    background: #f4f5f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  .type-sketch img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .type-card-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .type-card h3 { font-size: 17px; margin-bottom: 10px; }
+  .type-card p { font-size: 14px; margin-bottom: 16px; flex-grow: 1; }
+  .type-card a { font-weight: 600; font-size: 14px; }
+
+  /* ===== What's included ===== */
+  .included { padding: 72px 0; background: var(--dark); }
+  .included .section-label { color: var(--red); }
+  .included h2 { color: var(--white); font-size: 34px; margin-bottom: 16px; }
+  .included .lead { color: #b5b5b5; font-size: 17px; max-width: 760px; margin-bottom: 44px; }
+  .included-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+  .included-item {
+    background: #1b1b1b;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 22px 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .included-item svg { flex-shrink: 0; width: 22px; height: 22px; stroke: var(--red); margin-top: 2px; }
+  .included-item span { color: var(--white); font-size: 15px; font-weight: 500; }
+
+  /* ===== Banner stripes ===== */
+  .stripe { padding: 64px 0; }
+  .stripe-dark { background: var(--dark); }
+  .stripe-photo-1 {
+    background: linear-gradient(rgba(17, 17, 17, 0.86), rgba(17, 17, 17, 0.86)), url('https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/tech-pack/web/stripe-designer.jpg') center/cover no-repeat var(--dark);
+  }
+  .stripe-photo-2 {
+    background: linear-gradient(rgba(17, 17, 17, 0.86), rgba(17, 17, 17, 0.86)), url('https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/tech-pack/web/stripe-sample.jpg') center/cover no-repeat var(--dark);
+  }
+  .stripe-light { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .stripe-inner { max-width: 900px; }
+  .stripe h2 { font-size: 32px; margin-bottom: 18px; }
+  .stripe-dark h2 { color: var(--white); }
+  .stripe p { font-size: 16.5px; margin-bottom: 30px; }
+  .stripe-dark p { color: #b5b5b5; }
+
+  /* ===== Mid CTA ===== */
+  .mid-cta {
+    padding: 72px 0;
+    background: linear-gradient(rgba(17, 17, 17, 0.85), rgba(17, 17, 17, 0.85)), url('https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/tech-pack/web/midcta-swatches.jpg') center/cover no-repeat var(--dark);
+    text-align: center;
+  }
+  .mid-cta h2 { color: var(--white); font-size: 36px; max-width: 820px; margin: 0 auto 20px; }
+  .mid-cta p { color: #d5d5d5; font-size: 17px; max-width: 680px; margin: 0 auto 36px; }
+
+  /* ===== SEO text blocks ===== */
+  .seo-blocks { padding: 72px 0; background: var(--white); }
+  .text-block {
+    max-width: 820px;
+    margin: 0 auto 44px;
+    text-align: center;
+  }
+  .text-block:last-child { margin-bottom: 0; }
+  .text-block h2 { font-size: 30px; margin-bottom: 18px; }
+  .text-block p { font-size: 16px; margin-bottom: 16px; }
+  .text-block p:last-child { margin-bottom: 0; }
+
+  /* ===== FAQ ===== */
+  .faq { padding: 72px 0; background: var(--bg-light); }
+  .faq .section-title { font-size: 28px; }
+  .faq-list { max-width: 900px; margin: 48px auto 0; }
+  .faq-item {
+    background: var(--white);
+    border-radius: 14px;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 28px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16.5px;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+  }
+  .faq-question .faq-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: var(--red);
+    transition: transform 0.25s ease;
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  .faq-answer p { padding: 0 28px 24px; font-size: 15.5px; }
+
+  /* ===== Final CTA ===== */
+  .final-cta { padding: 72px 0; background: var(--dark); text-align: center; }
+  .final-cta h2 { color: var(--white); font-size: 38px; max-width: 820px; margin: 0 auto 20px; }
+  .final-cta p { color: #b5b5b5; font-size: 17px; max-width: 660px; margin: 0 auto 36px; }
+  .bfx-page .final-cta p a { color: var(--white); text-decoration: underline; text-underline-offset: 3px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bfx-page *, .bfx-page *::before, .bfx-page *::after {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .hero h1 { font-size: 36px; }
+    .section-title { font-size: 34px; }
+    .hero-grid { gap: 40px; }
+    .stripe h2 { font-size: 28px; }
+    .types-grid { grid-template-columns: repeat(2, 1fr); }
+    .included-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    .container { padding: 0 20px; }
+    .hero { padding: 48px 0; }
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 30px; }
+    .hero p, .section-intro, .intro p { font-size: 16px; }
+    .hero-media { height: 320px; }
+    .intro, .types, .included, .mid-cta, .seo-blocks, .faq, .final-cta { padding: 48px 0; }
+    .stripe { padding: 48px 0; }
+    .intro h2, .included h2 { font-size: 27px; }
+    .section-title { font-size: 27px; }
+    .mid-cta h2, .final-cta h2 { font-size: 28px; }
+    .faq-question { padding: 18px 20px; font-size: 15.5px; }
+    .faq-answer p { padding: 0 20px 20px; font-size: 15px; }
+  }
+
+  @media (max-width: 520px) {
+    .hero h1 { font-size: 26px; }
+    .section-title { font-size: 25px; }
+    .stripe h2, .text-block h2, .intro h2, .included h2 { font-size: 22px; }
+    .types-grid, .included-grid { grid-template-columns: 1fr; }
+    .section-label { font-size: 12.5px; letter-spacing: 1.5px; }
+    .bfx-page .btn { width: 100%; text-align: center; padding: 15px 28px; }
+  }
+
+  /* ===== Boxed sections (Hostinger grid-friendly) ===== */
+  .intro, .types, .included, .stripe, .mid-cta, .final-cta, .faq {
+    border-radius: 24px;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  @media (max-width: 768px) {
+    .intro, .types, .included, .stripe, .mid-cta, .final-cta, .faq {
+      border-radius: 18px;
+      margin: 8px 0;
+    }
+  }
+</style>
+
+<div class="bfx-page">
+
+  <!-- ===== 1. HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="section-label">Tech Pack &amp; Sample Development</span>
+          <h1>From Concept to Factory-Ready: Tech Packs Built for Technical Apparel</h1>
+          <p>A vague sketch produces a vague garment. BlackForgeX turns your design into a precise, production-ready tech pack — measurements, construction, materials and trims documented so your product comes out the way you pictured it, the first time.</p>
+          <div class="hero-actions">
+            <a class="btn" href="https://blackforgex.com/contact" target="_top">Get Started</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img class="photo" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/tech-pack/web/hero-techpack.jpg" alt="Production-ready apparel tech pack specification laid out with fabric swatches" width="1300" height="866">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. INTRO ===== -->
+  <section class="intro">
+    <div class="container">
+      <div class="intro-inner">
+        <span class="section-label">Why It Matters</span>
+        <h2>The Tech Pack Is the Single Most Important Document in Apparel Production</h2>
+        <p>Every costly production mistake — the wrong fit, the wrong seam, the wrong fabric weight — traces back to a tech pack that was unclear or missing entirely. A tech pack is the blueprint a factory follows: it removes guesswork, cuts down on sampling rounds, and protects you from paying for a bulk run that doesn't match your vision. Whether you're a first-time founder with a rough sketch or an established brand formalizing an existing product, a proper tech pack is where dependable production starts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. TECH PACK TYPE CARDS ===== -->
+  <section class="types">
+    <div class="container">
+      <span class="section-label">Tech Packs We Build</span>
+      <h2 class="section-title">Documentation for Every Technical Apparel Category</h2>
+      <p class="section-intro">Most tech pack providers cover a handful of generic garment types. BlackForgeX documents the construction detail that technical and outdoor apparel actually depends on — across every category we manufacture.</p>
+      <div class="types-grid">
+
+        <div class="type-card">
+          <div class="type-sketch"><img src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/tech-pack/web/card-jacket.jpg" alt="Jacket and outerwear tech pack technical sketch" loading="lazy" width="1000" height="707"></div>
+          <div class="type-card-body">
+            <h3>Jacket &amp; Outerwear Tech Packs</h3>
+            <p>Waterproof shells, softshells, hardshells, puffers and windbreakers each carry construction details a generic tech pack misses — seam taping, membrane specs, zipper types, insulation weight and storm flap construction. We document all of it.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="type-card">
+          <div class="type-sketch"><img src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/tech-pack/web/card-pants.jpg" alt="Technical pant tech pack technical sketch" loading="lazy" width="1000" height="707"></div>
+          <div class="type-card-body">
+            <h3>Technical Pant Tech Packs</h3>
+            <p>Cargo pants, hiking pants and outdoor trousers documented with articulated knee construction, reinforcement points, pocket configuration, waistband and hardware specifications.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="type-card">
+          <div class="type-sketch"><img src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/tech-pack/web/card-workwear.jpg" alt="Workwear and uniform tech pack technical sketch" loading="lazy" width="768" height="1024"></div>
+          <div class="type-card-body">
+            <h3>Workwear &amp; Uniform Tech Packs</h3>
+            <p>Durable workwear and uniform tech packs covering reinforced stress points, heavy-duty stitching, functional pockets, and compliance-relevant construction details.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="type-card">
+          <div class="type-sketch"><img src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/tech-pack/web/card-tactical.jpg" alt="Tactical apparel tech pack technical sketch" loading="lazy" width="800" height="800"></div>
+          <div class="type-card-body">
+            <h3>Tactical Apparel Tech Packs</h3>
+            <p>Tactical garments documented with MOLLE/webbing placement, reinforced panels, hardware, and the load-bearing construction details these products depend on.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="type-card">
+          <div class="type-sketch"><img src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/tech-pack/web/card-baselayer.jpg" alt="Base layer and activewear tech pack technical sketch" loading="lazy" width="842" height="596"></div>
+          <div class="type-card-body">
+            <h3>Base Layer &amp; Activewear Tech Packs</h3>
+            <p>Performance base layers, sportswear and activewear documented with flatlock seam construction, fabric stretch direction, panel placement and moisture-management fabric specs.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="type-card">
+          <div class="type-sketch"><img src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/tech-pack/web/card-fleece.jpg" alt="Fleece and mid-layer tech pack technical sketch" loading="lazy" width="1000" height="649"></div>
+          <div class="type-card-body">
+            <h3>Fleece &amp; Mid-Layer Tech Packs</h3>
+            <p>Fleece jackets, pullovers and mid-layers with pile weight, seam construction, zipper and cuff detailing documented for consistent production.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="type-card">
+          <div class="type-sketch"><img src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/tech-pack/web/card-headwear.jpg" alt="Headwear tech pack technical sketch for caps" loading="lazy" width="1000" height="727"></div>
+          <div class="type-card-body">
+            <h3>Headwear Tech Packs</h3>
+            <p>Caps, beanies and technical headwear documented with panel construction, sizing, closure type and branding placement.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+        <div class="type-card">
+          <div class="type-sketch"><img src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/tech-pack/web/card-custom.jpg" alt="Custom and hybrid product tech pack specification sheet" loading="lazy" width="680" height="453"></div>
+          <div class="type-card-body">
+            <h3>Custom &amp; Hybrid Product Tech Packs</h3>
+            <p>Have a product that doesn't fit a standard category? We build tech packs for custom and hybrid designs — send us your concept and we'll document it for production.</p>
+            <a href="https://blackforgex.com/contact" target="_top">Get a Quote</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. WHAT'S INCLUDED ===== -->
+  <section class="included">
+    <div class="container">
+      <span class="section-label">What's In a BlackForgeX Tech Pack</span>
+      <h2>Everything a Factory Needs, Nothing It Has to Guess</h2>
+      <p class="lead">A complete tech pack removes the back-and-forth that slows production. Every BlackForgeX tech pack includes:</p>
+      <div class="included-grid">
+        <div class="included-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Technical flat sketches (front, back, and detail views)</span></div>
+        <div class="included-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Full graded measurement specifications across your size range</span></div>
+        <div class="included-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Bill of materials — every fabric, trim, thread and component</span></div>
+        <div class="included-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Construction and stitching details, seam by seam</span></div>
+        <div class="included-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Fabric specifications including weight, composition and finish</span></div>
+        <div class="included-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Color references and colorways</span></div>
+        <div class="included-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Label, hangtag and packaging placement</span></div>
+        <div class="included-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Print, embroidery or branding placement details</span></div>
+        <div class="included-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Special construction notes and callouts</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. BANNER STRIPE 1 ===== -->
+  <section class="stripe stripe-dark stripe-photo-1">
+    <div class="container">
+      <div class="stripe-inner">
+        <h2>Fewer Sampling Rounds, Lower Development Cost</h2>
+        <p>Every unclear detail in a design becomes a sampling round — and every sampling round costs time and money. A precise tech pack front-loads those decisions, so your first sample comes back closer to right, and you reach production-ready faster.</p>
+        <a class="btn" href="https://blackforgex.com/contact" target="_top">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. BANNER STRIPE 2 ===== -->
+  <section class="stripe stripe-light">
+    <div class="container">
+      <div class="stripe-inner">
+        <h2>Tech Pack and Production, Under One Roof</h2>
+        <p>Because BlackForgeX both creates tech packs and manufactures the garments, your documentation is written by the same team that will produce the product — not by a freelancer disconnected from the factory floor. That means fewer translation errors between design and production.</p>
+        <a class="btn" href="https://blackforgex.com/contact" target="_top">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. BANNER STRIPE 3 ===== -->
+  <section class="stripe stripe-dark stripe-photo-2">
+    <div class="container">
+      <div class="stripe-inner">
+        <h2>Already Have a Tech Pack? We'll Work With It</h2>
+        <p>If you arrive with an existing tech pack, we'll review it against our production capabilities and flag anything that needs clarifying before sampling — so you don't discover a gap halfway through development.</p>
+        <a class="btn" href="https://blackforgex.com/contact" target="_top">Inquire Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 8. MID-PAGE CTA ===== -->
+  <section class="mid-cta">
+    <div class="container">
+      <span class="section-label">Let's Get Started</span>
+      <h2>Turn Your Sketch Into a Production-Ready Blueprint</h2>
+      <p>Send us your design — even a rough sketch or reference garment — and we'll walk you through building a tech pack that gets your product made right.</p>
+      <a class="btn" href="https://blackforgex.com/contact" target="_top">Schedule a Consultation</a>
+    </div>
+  </section>
+
+  <!-- ===== 9-11. SEO TEXT BLOCKS ===== -->
+  <section class="seo-blocks">
+    <div class="container">
+
+      <div class="text-block">
+        <h2>Professional Tech Pack Services for Apparel Brands</h2>
+        <p>A tech pack is a detailed specification document that tells a manufacturer exactly how to produce your garment — measurements, materials, construction methods, colors and finishing, all in one place. Without it, a factory is left interpreting your intent, which is how fit problems, wrong fabrics and inconsistent bulk runs happen.</p>
+        <p>BlackForgeX creates factory-ready tech packs for technical, outdoor and performance apparel — the categories where construction detail matters most and where a generic apparel tech pack falls short.</p>
+      </div>
+
+      <div class="text-block">
+        <h2>Built by a Manufacturer, Not Just a Design Studio</h2>
+        <p>Many tech pack providers are design studios that have never run a production line. The gap between a nice-looking tech pack and a truly production-ready one shows up on the factory floor — in details that a designer might not know a machine operator needs.</p>
+        <p>Our tech packs are built with production in mind from the first sketch, because the same company documenting your product is the one capable of manufacturing it. That connection between documentation and production is what keeps errors low and sampling rounds few.</p>
+      </div>
+
+      <div class="text-block">
+        <h2>A Tech Pack Is an Investment That Pays for Itself</h2>
+        <p>Brands sometimes try to skip the tech pack to save money upfront — and then pay far more in extra sampling rounds, production errors and delayed launches. A precise tech pack is one of the cheapest ways to protect a much larger production investment.</p>
+        <p>Whether you need a single tech pack for one product or documentation across an entire collection, we scale the work to your stage — from a first-time launch to an established brand standardizing its catalog.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq">
+    <div class="container">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Tech Pack Questions, Answered Directly</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is a tech pack and why do I need one?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>A tech pack is a detailed specification document a factory uses to produce your garment — covering sketches, measurements, materials, construction and finishing. It removes guesswork and reduces costly production errors.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What's included in a BlackForgeX tech pack?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Technical flat sketches, graded measurements, a full bill of materials, construction and stitching details, fabric specs, color references, and label/branding placement.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            I only have a rough sketch — can you still make a tech pack?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes. You can send a rough sketch, a reference garment, or even a description, and we'll build it into a production-ready tech pack.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you make tech packs for technical and outdoor apparel specifically?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes — jackets, softshells, technical pants, workwear, tactical apparel, base layers and more. These are the categories our tech packs are built around.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can you produce the garment after making the tech pack?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes — BlackForgeX both creates tech packs and manufactures apparel, so you can move from documentation straight into sampling and production with one partner.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            I already have a tech pack — can you use it?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes. We'll review your existing tech pack against our production capabilities and flag anything that needs clarifying before sampling begins.</p></div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How does a good tech pack save me money?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>It reduces the number of sampling rounds and prevents production errors, both of which cost far more than the tech pack itself.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Build the Blueprint Before You Build the Product</h2>
+      <p>Send your design or reference garment through the <a href="https://blackforgex.com/contact" target="_top">BlackForgeX contact page</a> — we'll turn it into a factory-ready tech pack and, when you're ready, produce it under the same roof.</p>
+      <a class="btn" href="https://blackforgex.com/contact" target="_top">Get Started</a>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll('.bfx-page .faq-item');
+    items.forEach(function (item) {
+      var btn = item.querySelector('.faq-question');
+      var answer = item.querySelector('.faq-answer');
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        items.forEach(function (other) {
+          other.classList.remove('open');
+          other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          other.querySelector('.faq-answer').style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://blackforgex.com/#organization",
+      "name": "BlackForgeX",
+      "url": "https://blackforgex.com",
+      "logo": "https://blackforgex.com/logo.png",
+      "description": "BlackForgeX is an OEM and ODM technical apparel manufacturer based in Sialkot, Pakistan, specializing in outdoor, tactical, workwear and private label apparel production.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sialkot",
+        "addressCountry": "PK"
+      },
+      "areaServed": "Worldwide",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://blackforgex.com/contact"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://blackforgex.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://blackforgex.com/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tech Pack &amp; Sample Development",
+          "item": "https://blackforgex.com/services/tech-pack-development"
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "serviceType": "Apparel Tech Pack and Sample Development",
+      "provider": {
+        "@id": "https://blackforgex.com/#organization"
+      },
+      "areaServed": "Worldwide",
+      "description": "Factory-ready tech pack and sample development for technical, outdoor, tactical and workwear apparel, including flat sketches, graded measurements, bill of materials, construction specs and branding placement, built by a manufacturer.",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Apparel brands, OEM buyers, ODM buyers, private label brands"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a tech pack and why do I need one?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A tech pack is a detailed specification document a factory uses to produce your garment — covering sketches, measurements, materials, construction and finishing. It removes guesswork and reduces costly production errors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's included in a BlackForgeX tech pack?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Technical flat sketches, graded measurements, a full bill of materials, construction and stitching details, fabric specs, color references, and label/branding placement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I only have a rough sketch — can you still make a tech pack?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can send a rough sketch, a reference garment, or even a description, and we'll build it into a production-ready tech pack."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you make tech packs for technical and outdoor apparel specifically?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — jackets, softshells, technical pants, workwear, tactical apparel, base layers and more. These are the categories our tech packs are built around."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you produce the garment after making the tech pack?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — BlackForgeX both creates tech packs and manufactures apparel, so you can move from documentation straight into sampling and production with one partner."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I already have a tech pack — can you use it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We'll review your existing tech pack against our production capabilities and flag anything that needs clarifying before sampling begins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does a good tech pack save me money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It reduces the number of sampling rounds and prevents production errors, both of which cost far more than the tech pack itself."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
