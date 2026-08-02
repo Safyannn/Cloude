@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Apparel Products | BlackForgeX Manufacturer</title>
+  <meta name="description" content="Browse BlackForgeX's full manufacturing range — waterproof &amp; puffer jackets, technical pants, workwear, tactical clothing, activewear and more, built to your spec.">
+  <meta name="keywords" content="technical apparel manufacturer, outdoor clothing products, jacket manufacturer, workwear manufacturer, tactical clothing manufacturer, activewear manufacturer, private label apparel, BlackForgeX products">
+  <link rel="canonical" href="https://blackforgex.com/products">
+</head>
+<body>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+  :root { --red:#d60000; --red-hover:#b80000; --dark:#111111; --body:#666666; --white:#ffffff; --bg-light:#e6e7ea; --border:#ececec; }
+  html, body { margin:0 !important; padding:0 !important; width:100%; overflow-x:hidden; }
+  .bfx-page, .bfx-page * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
+  .bfx-page { overflow-x:hidden; width:100%; background:var(--white); color:var(--body); font-size:16px; line-height:1.6; }
+  .bfx-page img { max-width:100%; display:block; }
+  .container { max-width:1320px; margin:0 auto; padding:0 32px; }
+  .bfx-page h1, .bfx-page h2 { color:var(--dark); font-weight:700; line-height:1.2; }
+  .bfx-page h3 { color:var(--dark); font-weight:600; line-height:1.3; }
+  .bfx-page a { color:var(--red); text-decoration:none; transition:color .2s ease; }
+  .bfx-page a:hover { color:var(--red-hover); }
+  .bfx-page a:focus-visible, .bfx-page button:focus-visible { outline:3px solid var(--red); outline-offset:3px; border-radius:4px; }
+  .bfx-page .btn { display:inline-block; background:var(--red); color:var(--white); font-weight:600; font-size:16px; padding:16px 36px; border-radius:12px; border:none; cursor:pointer; transition:background .25s ease, transform .25s ease, box-shadow .25s ease; }
+  .bfx-page .btn:hover { background:var(--red-hover); color:var(--white); transform:translateY(-2px); box-shadow:0 12px 28px rgba(214,0,0,.25); }
+  .section-label { display:inline-block; color:var(--red); font-weight:600; font-size:14px; letter-spacing:2px; text-transform:uppercase; margin-bottom:16px; }
+  .section-title { font-size:40px; margin-bottom:20px; }
+  .section-intro { max-width:820px; font-size:17px; }
+
+  /* Hero */
+  .hero { position:relative; min-height:560px; display:flex; align-items:center; background:linear-gradient(rgba(17,17,17,.62), rgba(17,17,17,.72)), url("https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/hero.jpg") center/cover no-repeat var(--dark); }
+  .hero .container { padding-top:80px; padding-bottom:80px; }
+  .hero-inner { max-width:760px; }
+  .hero .section-label { color:#ff5a5a; }
+  .hero h1 { color:var(--white); font-size:52px; margin-bottom:24px; }
+  .hero p { color:#e0e0e0; font-size:19px; margin-bottom:36px; max-width:640px; }
+
+  /* Intro */
+  .intro { padding:72px 0; background:var(--white); text-align:center; }
+  .intro-inner { max-width:900px; margin:0 auto; }
+  .intro h2 { font-size:34px; margin-bottom:18px; }
+  .intro p { font-size:17px; }
+
+  /* Product groups */
+  .pgroup { padding:44px 0; background:var(--white); }
+  .pgroup:nth-child(even) { background:var(--bg-light); }
+  .pgroup-title { font-size:28px; margin-bottom:28px; padding-bottom:14px; border-bottom:3px solid var(--red); display:inline-block; }
+  .pgrid { display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
+  .pcard { position:relative; display:block; height:340px; border-radius:16px; overflow:hidden; background:var(--dark); box-shadow:0 6px 20px rgba(17,17,17,.08); transition:transform .3s ease, box-shadow .3s ease; }
+  .pcard:hover { transform:translateY(-6px); box-shadow:0 22px 46px rgba(17,17,17,.22); }
+  .pcard-img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .5s ease; }
+  .pcard:hover .pcard-img { transform:scale(1.07); }
+  .pcard::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(17,17,17,0) 30%, rgba(17,17,17,.55) 62%, rgba(17,17,17,.92) 100%); }
+  .pcard-noimg { background:linear-gradient(150deg,#1b1b1b,#111 60%,#050505); }
+  .pcard-noimg::before { content:""; position:absolute; top:22px; left:22px; width:40px; height:4px; background:var(--red); border-radius:3px; }
+  .pcard-body { position:absolute; left:0; right:0; bottom:0; z-index:1; padding:24px; }
+  .pcard-body h3 { color:var(--white); font-size:19px; margin-bottom:6px; }
+  .pcard-body p { color:#cfcfcf; font-size:13.5px; line-height:1.5; margin-bottom:12px; max-height:0; opacity:0; overflow:hidden; transition:max-height .35s ease, opacity .3s ease, margin .35s ease; }
+  .pcard:hover .pcard-body p, .pcard:focus-visible .pcard-body p { max-height:80px; opacity:1; }
+  .pcard-cta { display:inline-flex; align-items:center; gap:7px; color:var(--white); font-weight:600; font-size:13.5px; }
+  .pcard-cta svg { width:16px; height:16px; transition:transform .25s ease; }
+  .pcard:hover .pcard-cta svg { transform:translateX(4px); }
+
+  /* Mid CTA */
+  .mid-cta { padding:72px 0; background:linear-gradient(rgba(17,17,17,.85), rgba(17,17,17,.85)), url("https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/midcta.jpg") center/cover no-repeat var(--dark); text-align:center; }
+  .mid-cta h2 { color:var(--white); font-size:36px; max-width:820px; margin:0 auto 20px; }
+  .mid-cta p { color:#d5d5d5; font-size:17px; max-width:680px; margin:0 auto 36px; }
+
+  /* SEO text */
+  .seo-blocks { padding:72px 0; background:var(--white); }
+  .text-block { max-width:820px; margin:0 auto 44px; text-align:center; }
+  .text-block:last-child { margin-bottom:0; }
+  .text-block h2 { font-size:30px; margin-bottom:18px; }
+  .text-block p { font-size:16px; margin-bottom:16px; }
+  .text-block p:last-child { margin-bottom:0; }
+
+  /* FAQ */
+  .faq { padding:72px 0; background:var(--bg-light); }
+  .faq .section-title { font-size:28px; }
+  .faq-list { max-width:900px; margin:48px auto 0; }
+  .faq-item { background:var(--white); border-radius:14px; margin-bottom:14px; overflow:hidden; }
+  .faq-question { width:100%; background:none; border:none; text-align:left; display:flex; justify-content:space-between; align-items:center; gap:20px; padding:22px 28px; font-family:'Poppins',sans-serif; font-size:16.5px; font-weight:600; color:var(--dark); cursor:pointer; }
+  .faq-question .faq-icon { flex-shrink:0; width:24px; height:24px; color:var(--red); transition:transform .25s ease; }
+  .faq-item.open .faq-icon { transform:rotate(45deg); }
+  .faq-answer { max-height:0; overflow:hidden; transition:max-height .3s ease; }
+  .faq-answer p { padding:0 28px 24px; font-size:15.5px; }
+
+  /* Final CTA */
+  .final-cta { padding:72px 0; background:var(--dark); text-align:center; }
+  .final-cta h2 { color:var(--white); font-size:38px; max-width:820px; margin:0 auto 20px; }
+  .final-cta p { color:#b5b5b5; font-size:17px; max-width:660px; margin:0 auto 36px; }
+  .bfx-page .final-cta p a { color:var(--white); text-decoration:underline; text-underline-offset:3px; }
+
+  @media (prefers-reduced-motion: reduce) { .bfx-page *, .bfx-page *::before, .bfx-page *::after { transition:none !important; animation:none !important; } }
+  @media (max-width:1024px) { .hero h1 { font-size:40px; } .pgrid { grid-template-columns:repeat(3,1fr); } .section-title { font-size:34px; } }
+  @media (max-width:768px) {
+    .container { padding:0 20px; }
+    .hero { min-height:auto; } .hero .container { padding-top:56px; padding-bottom:56px; } .hero h1 { font-size:32px; } .hero p { font-size:16px; }
+    .intro, .mid-cta, .seo-blocks, .faq, .final-cta { padding:48px 0; } .pgroup { padding:32px 0; }
+    .pgrid { grid-template-columns:repeat(2,1fr); gap:16px; }
+    .pcard { height:280px; }
+    .pcard-body p { max-height:80px; opacity:1; }
+    .intro h2, .section-title { font-size:27px; } .mid-cta h2, .final-cta h2 { font-size:28px; }
+    .faq-question { padding:18px 20px; font-size:15.5px; } .faq-answer p { padding:0 20px 20px; font-size:15px; }
+  }
+  @media (max-width:520px) { .hero h1 { font-size:27px; } .pgrid { grid-template-columns:1fr; } .pcard { height:300px; } .section-label { font-size:12.5px; letter-spacing:1.5px; } .bfx-page .btn { width:100%; text-align:center; padding:15px 28px; } }
+
+  /* Boxed sections (Hostinger grid-friendly) */
+  .hero, .mid-cta, .final-cta, .faq { border-radius:24px; overflow:hidden; margin:10px 0; }
+  @media (max-width:768px) { .hero, .mid-cta, .final-cta, .faq { border-radius:18px; margin:8px 0; } }
+</style>
+
+<div class="bfx-page">
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <span class="section-label">Our Products</span>
+        <h1>Technical Outdoor Apparel, Manufactured to Your Specifications</h1>
+        <p>From waterproof shells to tactical gear, BlackForgeX manufactures across the full range of technical and outdoor apparel — every product built to your fabric, fit and branding requirements, not sold off a shelf.</p>
+        <a class="btn" href="https://blackforgex.com/contact" target="_top">Request a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="container">
+      <div class="intro-inner">
+        <span class="section-label">Full Manufacturing Range</span>
+        <h2>One Manufacturer, Every Category Your Brand Needs</h2>
+        <p>Whether your brand needs a single technical jacket program or a full catalog spanning outerwear, workwear and activewear, BlackForgeX manufactures it under one roof in Sialkot. Browse by category below — each product page covers the construction details, fabric options and customization available for that specific garment type.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pgroup">
+    <div class="container">
+      <h2 class="pgroup-title">Outerwear &amp; Jackets</h2>
+      <div class="pgrid">
+        <a class="pcard" href="https://blackforgex.com/waterproof-jackets" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/waterproof.jpg" alt="Waterproof Jackets manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Waterproof Jackets</h3>
+            <p>Fully seam-sealed shells built to keep moisture out in sustained wet conditions.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard" href="https://blackforgex.com/rain-jackets" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/rain.jpg" alt="Rain Jackets manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Rain Jackets</h3>
+            <p>Lightweight, packable rain protection for everyday outdoor wear.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard" href="https://blackforgex.com/softshell-jackets" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/softshell.jpg" alt="Softshell Jackets manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Softshell Jackets</h3>
+            <p>Flexible, breathable outer layers for active use in variable weather.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard" href="https://blackforgex.com/hardshell-jackets" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/hardshell.jpg" alt="Hardshell Jackets manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Hardshell Jackets</h3>
+            <p>Rugged, weatherproof protection built for harsh, demanding conditions.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard" href="https://blackforgex.com/puffer-jackets" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/puffer.jpg" alt="Puffer Jackets manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Puffer Jackets</h3>
+            <p>Insulated jackets built for warmth-to-weight performance in cold conditions.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard pcard-noimg" href="https://blackforgex.com/down-jackets" target="_top">
+          
+          <div class="pcard-body">
+            <h3>Down Jackets</h3>
+            <p>High warmth-to-weight insulation for extreme cold, built with premium down or synthetic fill.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard" href="https://blackforgex.com/fleece-jackets" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/fleece.jpg" alt="Fleece Jackets manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Fleece Jackets</h3>
+            <p>Mid-layer warmth with a soft hand-feel, built for layering or standalone wear.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard" href="https://blackforgex.com/windbreakers" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/windbreaker.jpg" alt="Windbreakers manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Windbreakers</h3>
+            <p>Lightweight wind protection without the bulk of a full shell.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pgroup">
+    <div class="container">
+      <h2 class="pgroup-title">Technical Bottoms</h2>
+      <div class="pgrid">
+        <a class="pcard" href="https://blackforgex.com/cargo-pants" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/cargo.jpg" alt="Cargo Pants manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Cargo Pants</h3>
+            <p>Multi-pocket, reinforced pants built for function and durability.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard" href="https://blackforgex.com/outdoor-pants" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/outdoor-pants.jpg" alt="Outdoor Pants manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Outdoor Pants</h3>
+            <p>Technical trousers built for hiking, trekking and general outdoor use.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard pcard-noimg" href="https://blackforgex.com/insulated-pants" target="_top">
+          
+          <div class="pcard-body">
+            <h3>Insulated Pants</h3>
+            <p>Cold-weather trousers built with insulation for warmth in freezing conditions.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard pcard-noimg" href="https://blackforgex.com/convertible-pants" target="_top">
+          
+          <div class="pcard-body">
+            <h3>Convertible Pants</h3>
+            <p>Zip-off trousers that convert to shorts, built for versatility on the trail.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pgroup">
+    <div class="container">
+      <h2 class="pgroup-title">Activity-Specific Apparel</h2>
+      <div class="pgrid">
+        <a class="pcard" href="https://blackforgex.com/hiking-apparel" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/hiking.jpg" alt="Hiking Apparel manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Hiking Apparel</h3>
+            <p>Purpose-built layers and garments for trail and trekking use.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard" href="https://blackforgex.com/ski-wear" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/ski.jpg" alt="Ski Wear manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Ski Wear</h3>
+            <p>Insulated, weatherproof apparel built for on-slope performance.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard" href="https://blackforgex.com/snowboard-apparel" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/snowboard.jpg" alt="Snowboard Apparel manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Snowboard Apparel</h3>
+            <p>Durable, freedom-of-movement garments built for snowboard use.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard" href="https://blackforgex.com/base-layers" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/baselayer.jpg" alt="Base Layers manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Base Layers</h3>
+            <p>Moisture-wicking foundation layers for temperature regulation.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pgroup">
+    <div class="container">
+      <h2 class="pgroup-title">Workwear &amp; Tactical</h2>
+      <div class="pgrid">
+        <a class="pcard" href="https://blackforgex.com/workwear" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/workwear.jpg" alt="Workwear manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Workwear</h3>
+            <p>Durable, functional garments built for demanding work environments.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard" href="https://blackforgex.com/uniforms" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/uniforms.jpg" alt="Uniforms manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Uniforms</h3>
+            <p>Consistent, brand-specific uniform programs manufactured at scale.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard" href="https://blackforgex.com/tactical-clothing" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/tactical.jpg" alt="Tactical Clothing manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Tactical Clothing</h3>
+            <p>Reinforced, load-bearing garments built for tactical use.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard pcard-noimg" href="https://blackforgex.com/safety-wear" target="_top">
+          
+          <div class="pcard-body">
+            <h3>Safety Wear</h3>
+            <p>High-visibility and protective garments built to compliance-relevant standards.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pgroup">
+    <div class="container">
+      <h2 class="pgroup-title">Sportswear &amp; Everyday Basics</h2>
+      <div class="pgrid">
+        <a class="pcard" href="https://blackforgex.com/sportswear" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/sportswear.jpg" alt="Sportswear manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Sportswear</h3>
+            <p>Performance apparel built for athletic use and movement.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard" href="https://blackforgex.com/activewear" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/activewear.jpg" alt="Activewear manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Activewear</h3>
+            <p>Everyday performance apparel for training and casual athletic wear.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard" href="https://blackforgex.com/hoodies" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/hoodies.jpg" alt="Hoodies manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>Hoodies</h3>
+            <p>Custom hoodies manufactured to your fabric weight and fit specification.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+        <a class="pcard" href="https://blackforgex.com/t-shirts" target="_top">
+          <img class="pcard-img" src="https://raw.githubusercontent.com/Safyannn/Cloude/claude/skills-inventory-check-q1p592/images/products-hub/web/tshirt.jpg" alt="T-Shirts manufactured by BlackForgeX" loading="lazy">
+          <div class="pcard-body">
+            <h3>T-Shirts</h3>
+            <p>Foundational apparel manufactured at any volume, fabric or fit.</p>
+            <span class="pcard-cta">View Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mid-cta">
+    <div class="container">
+      <span class="section-label" style="color:#ff5a5a;">Don't See Your Product?</span>
+      <h2>We Manufacture Beyond This List Too</h2>
+      <p>This covers our core categories, but if your product doesn't fit neatly into one of them, we still want to hear about it — send us your concept and we'll tell you honestly whether it's a fit for our production capability.</p>
+      <a class="btn" href="https://blackforgex.com/contact" target="_top">Get In Touch</a>
+    </div>
+  </section>
+
+  <section class="seo-blocks">
+    <div class="container">
+      <div class="text-block">
+        <h2>A Full-Range Manufacturer for Outdoor and Technical Apparel Brands</h2>
+        <p>Sourcing different product categories from different factories creates inconsistency — different quality standards, different lead times, different points of contact. BlackForgeX manufactures across outerwear, bottoms, activewear, workwear and tactical apparel from one facility, so your entire product catalog is held to the same production standard.</p>
+        <p>Every product category on this page can be produced as OEM, ODM or private label, with the same pattern development, sampling and quality inspection process applied regardless of which garment type you're ordering.</p>
+      </div>
+      <div class="text-block">
+        <h2>Every Product Category Is Fully Customizable</h2>
+        <p>Nothing on this page is a fixed, off-the-shelf design. Fabric, fit, construction details, trims, labeling and packaging are all specified by your brand — each product page covers what's customizable for that specific garment type, from seam construction on a waterproof jacket to fabric weight on a hoodie.</p>
+        <p>If you're developing a full seasonal collection spanning multiple categories, one merchandising team manages the entire program, rather than coordinating separately across vendors for jackets, bottoms and basics.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Product Questions, Answered Directly</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can you manufacture a full product line across multiple categories?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes — we manufacture outerwear, bottoms, activewear, workwear and tactical apparel from one facility, so a full seasonal collection can be produced by one team.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is the minimum order quantity per product?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>MOQs vary by product category and complexity. Share your target product and quantity and we'll confirm exact minimums.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can I get custom fabric and colors for any product on this page?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes — fabric, color and construction are specified by your brand for every product category we manufacture.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer private label manufacturing for these products?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes — every category can be produced as OEM, ODM or fully private label with your own branding.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            My product isn't listed here — can you still make it?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Possibly. Send us your concept and we'll tell you honestly whether it fits our production capability.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you provide tech pack and sample development for these products?
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-answer"><p>Yes — tech pack creation and sample development are available for any product category, including custom or hybrid designs.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container">
+      <h2>Build Your Catalog With One Manufacturing Partner</h2>
+      <p>Tell us which products your brand needs through the <a href="https://blackforgex.com/contact" target="_top">BlackForgeX contact page</a> — from a single jacket program to a full seasonal collection, produced under one roof.</p>
+      <a class="btn" href="https://blackforgex.com/contact" target="_top">Request a Quote</a>
+    </div>
+  </section>
+
+</div>
+
+<script>
+  (function () {
+    var items = document.querySelectorAll('.bfx-page .faq-item');
+    items.forEach(function (item) {
+      var btn = item.querySelector('.faq-question');
+      var answer = item.querySelector('.faq-answer');
+      btn.addEventListener('click', function () {
+        var isOpen = item.classList.contains('open');
+        items.forEach(function (other) {
+          other.classList.remove('open');
+          other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          other.querySelector('.faq-answer').style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+  })();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://blackforgex.com/#organization",
+      "name": "BlackForgeX",
+      "url": "https://blackforgex.com",
+      "logo": "https://blackforgex.com/logo.png",
+      "description": "BlackForgeX is an OEM and ODM technical apparel manufacturer based in Sialkot, Pakistan, specializing in outdoor, tactical, workwear and private label apparel production.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sialkot",
+        "addressCountry": "PK"
+      },
+      "areaServed": "Worldwide",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://blackforgex.com/contact"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://blackforgex.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Products",
+          "item": "https://blackforgex.com/products"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "name": "BlackForgeX Products",
+      "url": "https://blackforgex.com/products",
+      "description": "Full range of technical and outdoor apparel manufactured by BlackForgeX, including outerwear, technical bottoms, activity-specific apparel, workwear, tactical clothing and everyday basics.",
+      "isPartOf": {
+        "@id": "https://blackforgex.com/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can you manufacture a full product line across multiple categories?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — we manufacture outerwear, bottoms, activewear, workwear and tactical apparel from one facility, so a full seasonal collection can be produced by one team."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the minimum order quantity per product?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MOQs vary by product category and complexity. Share your target product and quantity and we'll confirm exact minimums."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get custom fabric and colors for any product on this page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — fabric, color and construction are specified by your brand for every product category we manufacture."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer private label manufacturing for these products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — every category can be produced as OEM, ODM or fully private label with your own branding."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My product isn't listed here — can you still make it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Possibly. Send us your concept and we'll tell you honestly whether it fits our production capability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide tech pack and sample development for these products?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — tech pack creation and sample development are available for any product category, including custom or hybrid designs."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
