@@ -270,7 +270,7 @@ Yes, but choose the method with the fabric in mind. Heat and needle holes can co
 
 ## About This Guide
 
-This guide was written by the editorial team at a Sialkot apparel manufacturer that produces ski and outdoor wear for brands. Every statistic and regulation cited was checked against its source on October 6, 2026. It is general guidance, not legal advice: confirm PFAS and customs questions with a compliance lawyer and a licensed customs broker. Questions or corrections are welcome through the [contact page](https://blackforgex.com/contact/); learn more [about the team](https://blackforgex.com/about/).
+This guide was written by the editorial team at a Sialkot apparel manufacturer that produces ski and outdoor wear for brands. Every statistic and regulation cited was checked against the cited sources on October 6, 2026. It is general guidance, not legal advice: confirm PFAS and customs questions with a compliance lawyer and a licensed customs broker. Questions or corrections are welcome through the [contact page](https://blackforgex.com/contact/); learn more [about the team](https://blackforgex.com/about/).
 
 ## Ready to Turn Your Tech Pack Into Samples?
 
