@@ -13,14 +13,16 @@ tags: ["ski wear brand", "ski apparel manufacturing", "PFAS compliance", "outerw
 
 Starting a ski wear brand is mostly a manufacturing and compliance problem, not a design problem. A ski jacket has to keep someone dry and warm through a full day on a chairlift, and in 2026 it also has to clear PFAS rules that changed how waterproof gear is made. This guide walks you through the seven decisions that matter, in the order you need to make them: what to make first, how to spec it, which chemical rules apply, how to pick a factory, how to test, when to order, and how big your first run should be.
 
-The demand is there, but it is volatile. U.S. ski areas logged 61.5 million skier visits in 2024-25, the second-best season on record ([SGB Media](https://sgbonline.com/report-u-s-ski-areas-boast-second-highest-ever-visitation-rates-on-solid-snowfall/), May 2025), then fell to 52.6 million in 2025-26, a drop of nearly 9 million visits, as the West had a poor snow year ([NSAA data via Colorado Sun](https://coloradosun.com/2026/05/05/us-skier-visits-drop-2025-26/), May 2026). A new brand has to plan for both kinds of winter.
+The demand is there, but it is volatile. U.S. ski areas logged 61.6 million skier visits in 2024-25, the second-best season on record, then fell to 52.6 million in 2025-26, a drop of about 9 million visits (15%), as the West had a poor snow year ([NSAA data via Colorado Sun](https://coloradosun.com/2026/05/05/us-skier-visits-drop-2025-26/), May 2026). A new brand has to plan for both kinds of winter.
 
 > **Key Takeaways**
 >
 > - Start with one product lane. Hardshells need membrane lamination and seam taping, so they cost more to develop than fleece, softshells or base layers.
 > - Put numbers in your tech pack: waterproof rating in mm (ISO 811), breathability as RET (ISO 11092), seam-taping scope and insulation weight.
 > - Specify PFAS-free water repellency now. California and New York have banned PFAS in consumer apparel since January 1, 2025; their 2028 exemption covers only expert gear for extreme wet conditions. The EU's PFHxA limits for consumer clothing apply from October 10, 2026.
-> - Plan a first run you could sell through in a low-snow winter like 2025-26, when U.S. skier visits fell by nearly 9 million.
+> - Plan a first run you could sell through in a low-snow winter like 2025-26, when U.S. skier visits fell by about 9 million.
+
+**In this guide:** [Step 1: Pick a lane](#step-1) · [Step 2: Write the spec](#step-2) · [Step 3: PFAS rules](#step-3) · [Step 4: Choose a factory](#step-4) · [Step 5: Sample and test](#step-5) · [Step 6: Plan the calendar](#step-6) · [Step 7: Size the first run](#step-7) · [Common mistakes](#mistakes) · [FAQ](#faq)
 
 ## Before You Begin
 
@@ -32,7 +34,7 @@ You will move faster if you have these in hand before contacting factories:
 - **A target sales channel.** Direct-to-consumer, specialty retail or both. This sets your timeline (Step 6).
 - **Time:** expect most of a year from first tech pack to goods in hand for a technical shell.
 
-## Step 1: Pick One Product Lane You Can Own
+## Step 1: Pick One Product Lane You Can Own {#step-1}
 
 By the end of this step you should have a single product category and one sentence on why skiers will choose it.
 
@@ -48,13 +50,13 @@ Ski wear splits into lanes with very different manufacturing demands:
 
 Many brands enter through the lower-risk lanes and add technical shells once they have customers and cash flow. Others lead with a hero shell because that is what the category judges them on. Both work; what fails is trying to launch all five lanes at once with a small budget.
 
-Participation data supports a careful choice. Snowsports Industries America's 2024-25 preview found total U.S. participants up 2.4%, while alpine skiing fell 1.8% and cross-country skiing rose 5.8% ([SIA via Snow Industry News](https://www.snowindustrynews.com/articles/snowsports-industries-america-sia-drops-fresh-data-on-winter-sports-participation), June 2025). One season is not a trend, but a brand built for Nordic skiers would be entering a segment that grew last season while alpine shrank. (SIA tracks alpine touring separately, so this figure does not describe touring.)
+Participation data supports a careful choice. Snowsports Industries America's 2024-25 preview found total U.S. participants up 2.4%, while alpine skiing fell 1.8% and cross-country skiing rose 5.8% ([SIA via Snow Industry News](https://www.snowindustrynews.com/articles/snowsports-industries-america-sia-drops-fresh-data-on-winter-sports-participation), June 2025). One season is not a trend, but a brand built for Nordic skiers would be entering a segment that grew in 2024-25 while alpine shrank. (SIA tracks alpine touring separately, so this figure does not describe touring.)
 
 **Verify:** you can name your lane, your customer, and the two competitors they buy from now.
 
 For what the most demanding lane involves in production, see this [hardshell jacket manufacturing page](https://blackforgex.com/hardshell-jacket-manufacturer/).
 
-## Step 2: Write a Spec Sheet With Real Numbers
+## Step 2: Write a Spec Sheet With Real Numbers {#step-2}
 
 By the end of this step you should have a tech pack a factory can quote from without guessing.
 
@@ -83,11 +85,11 @@ Fabric ratings are only half the story. A 20,000 mm fabric still leaks through a
 
 **Verify:** a factory can quote your tech pack without asking you what "waterproof" means. For what a full tech pack includes, see this [tech pack and sample development page](https://blackforgex.com/tech-pack-sample-development/).
 
-## Step 3: Plan for PFAS Rules From Day One
+## Step 3: Plan for PFAS Rules From Day One {#step-3}
 
 By the end of this step you should know which chemical finishes you will accept and what paperwork you will demand from suppliers.
 
-For decades, the durable water repellent (DWR) finish on ski jackets relied on PFAS ("forever chemicals"). That is ending, and the deadlines fall inside a new brand's first few seasons.
+For decades, the durable water repellent (DWR) finish on ski jackets relied on PFAS ("forever chemicals"). The main bans are already in force, and more deadlines follow.
 
 <figure class="chart">
 <svg viewBox="0 0 720 300" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PFAS regulatory timeline for ski wear, 2025 to 2028">
@@ -126,7 +128,7 @@ For decades, the durable water repellent (DWR) finish on ski jackets relied on P
 What the rules say:
 
 - **California (AB 1817)** has banned "regulated PFAS" in most textiles since January 1, 2025. Regulated means intentionally added, or total organic fluorine of 100 ppm or more, falling to 50 ppm on January 1, 2027. Manufacturers must give distributors a certificate of compliance ([Bureau Veritas summary](https://www.cps.bureauveritas.com/newsroom/california-signs-pfas-textile-articles-bill-ab-1817)). A narrow category, "outdoor apparel for severe wet conditions", is exempt until January 1, 2028 but must be labeled "Made with PFAS chemicals" ([Venable](https://www.venable.com/insights/publications/2024/10/fashion-industry-beware-pfas-bans-on-apparel)). That category means extreme, extended-use gear such as outerwear for offshore fishing and sailing, whitewater kayaking and mountaineering ([Taft Law](https://taftlaw.com/news-events/law-bulletins/new-california-bill-restricts-pfas-content-in-textiles)).
-- **New York (ECL 37-0121)** banned intentionally added PFAS in apparel from January 1, 2025, and extends the ban to outdoor apparel for severe wet conditions on January 1, 2028. Its guidance describes that category as extreme, extended-use products, such as waterproof rather than water-resistant items ([NY DEC](https://dec.ny.gov/environmental-protection/pollution-prevention/pfas-in-apparel-law)).
+- **New York (ECL 37-0121)** banned intentionally added PFAS in apparel from January 1, 2025, and extends the ban to outdoor apparel for severe wet conditions on January 1, 2028. Its guidance describes that category as extreme, extended-use products, such as waterproof rather than water-resistant items; being waterproof is necessary but not sufficient to qualify ([NY DEC](https://dec.ny.gov/environmental-protection/pollution-prevention/pfas-in-apparel-law)).
 - **The EU** restricts PFHxA, a common short-chain PFAS, under Commission Regulation (EU) 2024/2462. Limits of 25 ppb for PFHxA and 1,000 ppb for related substances apply to clothing for the general public from October 10, 2026 ([regulation text on EUR-Lex](https://eur-lex.europa.eu/eli/reg/2024/2462/oj); [UL Solutions summary](https://www.ul.com/news/pfhxa-and-related-substances-commission-regulation-eu-20242462)). A much broader EU-wide PFAS restriction is still in committee, with a final ECHA opinion expected by the end of 2026 ([European Outdoor Group](https://www.europeanoutdoorgroup.com/members-knowledge-hub/echa-updates-pfas-restriction-process-and-timelines)).
 
 The practical reading: do not plan around the 2028 date. A resort ski jacket sold to the general public is unlikely to count as expert severe-wet gear, so treat your line as covered by the bans already in force, and get a compliance lawyer's view before relying on the exemption for any style. Building on a PFAS-free DWR from the first sample also keeps one product sellable in California, New York and the EU.
@@ -139,7 +141,7 @@ What to do:
 
 **Verify:** every material on your bill of materials has a PFAS declaration on file.
 
-## Step 4: Choose a Factory That Has Built Your Lane Before
+## Step 4: Choose a Factory That Has Built Your Lane Before {#step-4}
 
 By the end of this step you should have two or three factories quoting the same tech pack.
 
@@ -152,13 +154,21 @@ Ski wear factories differ more than most apparel factories. A plant that sews ex
 - **Which test reports will you supply?** Hydrostatic head, RET and PFAS testing from an independent lab.
 - **What are written lead times** for each stage: fabric, sampling, bulk and shipping?
 
+Ask for itemized quotes so you can compare factories line by line. The biggest cost drivers in ski wear are usually:
+
+- **Fabric:** laminated membranes and custom colors cost more and can carry their own mill minimums.
+- **Construction:** fully taped seams, waterproof zips and articulated patterns add labor time.
+- **Sampling:** each extra sample round adds fees and weeks.
+- **Testing:** every lab method (hydrostatic head, RET, PFAS screening) is billed separately.
+- **Order size:** small runs spread setup costs over fewer units.
+
 Branding needs its own check. Logos on technical fabrics behave differently than on cotton: heat from curing or heat transfers can damage coatings and membranes, and DWR finishes resist ink adhesion. Ask for wash and adhesion tests on the actual production fabric before approving a print or embroidery method. Embroidery also punches holes in a waterproof layer, so it belongs on panels without a membrane or needs backing tape.
 
-Plan for customs too. In the U.S. tariff schedule, ski-suits have their own subheading (HTS 6211.20) ([HTS Hub lookup](https://www.htshub.com/us-hs/search/621120)), while ski jackets and pants sold as separates generally fall under the outerwear and trouser headings (6201-6204). Duty rates vary with fiber content, construction and whether the garment is water resistant. Check the official [USITC Harmonized Tariff Schedule](https://hts.usitc.gov/) and get a customs broker's classification before you set retail prices.
+Plan for customs too. In the U.S. tariff schedule, ski-suits have their own subheading (HTS 6211.20), while ski jackets and pants sold as separates generally fall under the outerwear and trouser headings (6201-6204). Duty rates vary with fiber content, construction and whether the garment is water resistant. Check the official [USITC Harmonized Tariff Schedule](https://hts.usitc.gov/) and get a customs broker's classification before you set retail prices.
 
 **Verify:** you have comparable quotes and can explain why the cheapest one is cheap.
 
-## Step 5: Sample, Then Test in the Lab and on Snow
+## Step 5: Sample, Then Test in the Lab and on Snow {#step-5}
 
 By the end of this step you should have an approved sample and the test reports to back up every claim on your hangtag.
 
@@ -172,7 +182,7 @@ Do not print a waterproof rating on a hangtag that you have not tested. Claims a
 
 **Verify:** your hangtag claims match your lab reports line by line.
 
-## Step 6: Work Backward From Your Selling Season
+## Step 6: Work Backward From Your Selling Season {#step-6}
 
 By the end of this step you should have a dated calendar with a buffer.
 
@@ -189,14 +199,14 @@ If you plan to sell wholesale, ask target retailers for their buying calendar ea
 
 **Verify:** every stage has a date, an owner and a buffer.
 
-## Step 7: Size Your First Run for a Bad Winter
+## Step 7: Size Your First Run for a Bad Winter {#step-7}
 
 By the end of this step you should have a first-order quantity you can sell through even if the snow does not come.
 
 <figure class="chart">
 <svg viewBox="0 0 640 320" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="U.S. skier visits in millions by season">
 <title>U.S. skier visits by season (millions)</title>
-<desc>2022-23: 65.4 million (record). 2023-24: 60.5 million. 2024-25: 61.5 million. 2025-26: 52.6 million, down 8.9 million visits.</desc>
+<desc>2022-23: 65.4 million (record). 2023-24: 60.5 million. 2024-25: 61.6 million. 2025-26: 52.6 million, down 9.0 million visits.</desc>
 <line x1="60" y1="270" x2="610" y2="270" stroke="#94a3b8" stroke-width="2"></line>
 <rect x="95" y="58" width="90" height="212" fill="#0d9488"></rect>
 <rect x="225" y="74" width="90" height="196" fill="#0d9488"></rect>
@@ -204,19 +214,19 @@ By the end of this step you should have a first-order quantity you can sell thro
 <rect x="485" y="100" width="90" height="170" fill="#dc2626"></rect>
 <text x="140" y="48" fill="#64748b" font-size="16" text-anchor="middle">65.4M</text>
 <text x="270" y="64" fill="#64748b" font-size="16" text-anchor="middle">60.5M</text>
-<text x="400" y="60" fill="#64748b" font-size="16" text-anchor="middle">61.5M</text>
+<text x="400" y="60" fill="#64748b" font-size="16" text-anchor="middle">61.6M</text>
 <text x="530" y="90" fill="#dc2626" font-size="16" text-anchor="middle">52.6M</text>
 <text x="140" y="295" fill="#64748b" font-size="14" text-anchor="middle">2022-23</text>
 <text x="270" y="295" fill="#64748b" font-size="14" text-anchor="middle">2023-24</text>
 <text x="400" y="295" fill="#64748b" font-size="14" text-anchor="middle">2024-25</text>
 <text x="530" y="295" fill="#64748b" font-size="14" text-anchor="middle">2025-26</text>
 <text x="140" y="315" fill="#94a3b8" font-size="12" text-anchor="middle">record</text>
-<text x="530" y="315" fill="#dc2626" font-size="12" text-anchor="middle">-8.9M visits</text>
+<text x="530" y="315" fill="#dc2626" font-size="12" text-anchor="middle">-9.0M visits</text>
 </svg>
-<figcaption>U.S. skier visits by season. 2022-23 and 2023-24 values derived from NSAA's reported changes (2024-25 trailed the record by 3.9M and rose 1.7%); 2024-25 and 2025-26 are NSAA preliminary figures. Sources: NSAA via SGB Media and Colorado Sun. Chart: BlackForgeX.</figcaption>
+<figcaption>U.S. skier visits by season. 2022-23 and 2023-24 values derived from NSAA's preliminary 2024-25 release (61.5M, 3.9M below the record, up 1.7%); 2024-25 (61.6M final) and 2025-26 (preliminary) as reported by Colorado Sun. Sources: NSAA via SGB Media and Colorado Sun. Chart: BlackForgeX.</figcaption>
 </figure>
 
-The 2025-26 season shows why this matters. Snowfall at U.S. ski areas averaged 112 inches against a ten-year average of 169, and the season ranked 32nd of 48 on record. Good snow in the East softened the blow: Northeast visits rose from 12.5 million to 12.9 million while Western resorts struggled ([NSAA data via Colorado Sun](https://coloradosun.com/2026/05/05/us-skier-visits-drop-2025-26/)). One season earlier, the industry posted its second-best year ever ([SGB Media](https://sgbonline.com/report-u-s-ski-areas-boast-second-highest-ever-visitation-rates-on-solid-snowfall/)).
+The 2025-26 season shows why this matters. Snowfall at U.S. ski areas averaged 112 inches against a ten-year average of 169, and total visits ranked 32nd of 48 seasons on record. Good snow in the East softened the blow: Northeast visits rose from 12.5 million to 12.9 million while Western resorts struggled ([NSAA data via Colorado Sun](https://coloradosun.com/2026/05/05/us-skier-visits-drop-2025-26/)). One season earlier, the industry posted its second-best year ever ([SGB Media](https://sgbonline.com/report-u-s-ski-areas-boast-second-highest-ever-visitation-rates-on-solid-snowfall/), which reported the preliminary 61.5 million).
 
 For a new brand, that swing argues for three habits:
 
@@ -228,7 +238,7 @@ Preorders help too. Taking deposits before you place bulk turns your forecast in
 
 **Verify:** you can explain how you would clear your stock if next winter looks like 2025-26.
 
-## Common Mistakes to Avoid
+## Common Mistakes to Avoid {#mistakes}
 
 **Launching too many styles.** Each style and colorway carries its own minimums and sampling costs. Five well-made styles beat fifteen thin ones.
 
@@ -244,7 +254,7 @@ Preorders help too. Taking deposits before you place bulk turns your forecast in
 
 If you have followed these steps, you now have a single product lane, a tech pack with measurable specs, PFAS declarations for every material, comparable factory quotes, tested and approved samples, a dated calendar and a first order sized for a weak winter. Your next stretch goal is a second lane: base layers and mid-layers are a natural add-on because they sell to the same skier and share your size chart. This [base layer manufacturing page](https://blackforgex.com/base-layers-manufacturer/) covers thermal, compression and merino options.
 
-## Frequently Asked Questions
+## Frequently Asked Questions {#faq}
 
 ### How long does it take to launch a ski wear brand?
 
@@ -257,6 +267,10 @@ No. 3-layer laminates are the most durable construction and suit backcountry use
 ### Can I put my logo on a waterproof jacket?
 
 Yes, but choose the method with the fabric in mind. Heat and needle holes can compromise a membrane, so test any print, transfer or embroidery on the production fabric and keep decoration off critical waterproof panels where possible. This [screen printing page](https://blackforgex.com/screen-printing/) explains why waterproof shells, fleece and cotton each need a different ink system and cure.
+
+## About This Guide
+
+This guide was written by the editorial team at a Sialkot apparel manufacturer that produces ski and outdoor wear for brands. Every statistic and regulation cited was checked against its source on October 6, 2026. It is general guidance, not legal advice: confirm PFAS and customs questions with a compliance lawyer and a licensed customs broker. Questions or corrections are welcome through the [contact page](https://blackforgex.com/contact/); learn more [about the team](https://blackforgex.com/about/).
 
 ## Ready to Turn Your Tech Pack Into Samples?
 
